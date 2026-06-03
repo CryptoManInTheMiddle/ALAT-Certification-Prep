@@ -1,0 +1,29 @@
+[
+  { "week": 1, "day": "Mon", "topic": "Regulatory frameworks: AWA, PHS Policy, the Guide, AAALAC", "chapter": "REG" },
+  { "week": 1, "day": "Tue", "topic": "USDA pain categories B–E; FDA GLP; Ag Guide", "chapter": "REG" },
+  { "week": 1, "day": "Wed", "topic": "IACUC composition, semiannual review, DMR vs FCR", "chapter": "IAC" },
+  { "week": 1, "day": "Thu", "topic": "IACUC suspension, IO role, the AUP", "chapter": "IAC" },
+  { "week": 1, "day": "Fri", "topic": "The 3Rs (Russell & Burch)", "chapter": "3RS" },
+  { "week": 1, "day": "Sat", "topic": "Week 1 review + interleaved practice set", "chapter": "REG" },
+
+  { "week": 2, "day": "Mon", "topic": "Macroenvironment: temp, humidity, ACH, light, noise", "chapter": "ENV" },
+  { "week": 2, "day": "Tue", "topic": "Caging & space; micro vs macroenvironment; IVC vs static", "chapter": "CAGE" },
+  { "week": 2, "day": "Wed", "topic": "Sanitation: sanitize/disinfect/sterilize; autoclave; indicators", "chapter": "SAN" },
+  { "week": 2, "day": "Thu", "topic": "Facility ops: BSC classes, pressure gradients, security, disaster plans", "chapter": "FAC" },
+  { "week": 2, "day": "Fri", "topic": "Nutrition & feed; daily husbandry; quarantine & enrichment", "chapter": "HUS" },
+  { "week": 2, "day": "Sat", "topic": "Week 2 review + interleaved practice set", "chapter": "ENV" },
+
+  { "week": 3, "day": "Mon", "topic": "Mice: reproduction, pheromone effects, handling, disease", "chapter": "SPM" },
+  { "week": 3, "day": "Tue", "topic": "Rats & small rodents: anatomy quirks, hamster/gerbil/guinea pig", "chapter": "SPR" },
+  { "week": 3, "day": "Wed", "topic": "Rabbits: induced ovulation, GI stasis, restraint, snuffles", "chapter": "SPB" },
+  { "week": 3, "day": "Thu", "topic": "NHPs: Herpes B, TB testing, quarantine, PPE; other species", "chapter": "SPN" },
+  { "week": 3, "day": "Fri", "topic": "Genetics, anesthesia, euthanasia, research techniques", "chapter": "GEN" },
+  { "week": 3, "day": "Sat", "topic": "Week 3 review + occupational health & safety", "chapter": "OHS" },
+
+  { "week": 4, "day": "Mon", "topic": "Drill weak spots (lowest-mastery objectives)", "chapter": "RES" },
+  { "week": 4, "day": "Tue", "topic": "Spaced review of all due items", "chapter": "REG" },
+  { "week": 4, "day": "Wed", "topic": "Full 120-question timed simulation #1", "chapter": "ALL" },
+  { "week": 4, "day": "Thu", "topic": "Review simulation results; targeted drilling", "chapter": "ALL" },
+  { "week": 4, "day": "Fri", "topic": "Full 120-question timed simulation #2", "chapter": "ALL" },
+  { "week": 4, "day": "Sat", "topic": "Final review; confirm readiness ≥80%", "chapter": "ALL" }
+]
