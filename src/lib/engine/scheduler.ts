@@ -186,8 +186,10 @@ export function buildExamSet(items: Item[], objectives: Objective[], total = 120
     const pool = shuffle(byObjective.get(obj.code) ?? []);
     if (pool.length === 0) continue;
     const target = Math.round((obj.blueprint_wt / totalWt) * total);
-    for (let i = 0; i < target; i++) {
-      picked.push(pool[i % pool.length]); // allow reuse if the pool is thin
+    // Draw unique items only; if the pool is thin we take what exists (the bank
+    // grows via the generation pipeline). No item repeats within one exam.
+    for (let i = 0; i < Math.min(target, pool.length); i++) {
+      picked.push(pool[i]);
     }
   }
 

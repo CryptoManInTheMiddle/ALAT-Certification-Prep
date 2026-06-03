@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <rect width="512" height="512" rx="96" fill="#0a0f14"/>
+  <!-- Stylized flask / beaker mark in clinical teal -->
+  <g fill="none" stroke="#2fd0b2" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M206 96v118L120 360a40 40 0 0036 56h200a40 40 0 0036-56l-86-146V96"/>
+    <path d="M188 96h136"/>
+    <path d="M168 300h176" stroke="#13b89a"/>
+  </g>
+  <circle cx="232" cy="330" r="12" fill="#5fe0c8"/>
+  <circle cx="290" cy="362" r="9" fill="#5fe0c8"/>
+</svg>

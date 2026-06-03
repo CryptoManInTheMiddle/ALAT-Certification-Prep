@@ -1,10 +1,10 @@
-import { createEmptyCard, fsrs, Rating, State, type Card } from "ts-fsrs";
+import { createEmptyCard, fsrs, Rating, State, type Card, type Grade } from "ts-fsrs";
 import type { AnswerGrade, ReviewState } from "@/lib/types";
 
 // One shared scheduler instance. Defaults follow ts-fsrs recommendations.
 const scheduler = fsrs();
 
-const GRADE_TO_RATING: Record<AnswerGrade, Rating> = {
+const GRADE_TO_RATING: Record<AnswerGrade, Grade> = {
   again: Rating.Again,
   hard: Rating.Hard,
   good: Rating.Good,

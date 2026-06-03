@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: theme("colors.ink.DEFAULT");
+  color: #e6edf3;
+  -webkit-tap-highlight-color: transparent;
+  overscroll-behavior-y: none;
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl bg-ink-raised border border-ink-line p-4;
+  }
+  .btn {
+    @apply rounded-xl px-4 py-3 font-medium transition-colors active:scale-[0.99] select-none;
+  }
+  .btn-primary {
+    @apply btn bg-clinical-500 text-ink hover:bg-clinical-400;
+  }
+  .btn-ghost {
+    @apply btn bg-ink-line/40 text-slate-200 hover:bg-ink-line;
+  }
+  /* Large tap target for answer options (mobile-first). */
+  .option {
+    @apply w-full text-left rounded-xl border border-ink-line bg-ink-raised px-4 py-4 text-[15px] leading-snug transition-colors;
+  }
+}
+
+/* Respect the device safe areas (notch / home indicator) for the tab bar. */
+.pb-safe {
+  padding-bottom: calc(env(safe-area-inset-bottom) + 0.5rem);
+}
