@@ -1,0 +1,22 @@
+[
+  { "code": "REG", "domain": "II", "title": "Regulatory frameworks", "blueprint_wt": 10, "description": "AWA (USDA-APHIS), PHS Policy (OLAW), the Guide, AAALAC, FDA GLP (21 CFR 58), Ag Guide, USDA pain categories B–E." },
+  { "code": "IAC", "domain": "II", "title": "IACUC", "blueprint_wt": 9, "description": "Composition (AWA min 3 vs PHS min 5), semiannual program review & facility inspection, designated member review (DMR) vs full committee review (FCR), quorum, protocol suspension, Institutional Official role, animal use protocol (AUP)." },
+  { "code": "FAC", "domain": "II", "title": "Facility operations", "blueprint_wt": 6, "description": "Biosafety cabinet classes I/II/III, fume hood vs BSC, positive vs negative pressure rooms, facility security, disaster/contingency planning." },
+  { "code": "3RS", "domain": "I", "title": "The 3Rs", "blueprint_wt": 3, "description": "Replacement, Reduction, Refinement (Russell & Burch, 1959)." },
+  { "code": "ENV", "domain": "I", "title": "Macroenvironment", "blueprint_wt": 6, "description": "Temperature ranges, relative humidity 30–70%, air changes 10–15 ACH, light intensity (≤325 lux for albino rodents), 12:12 light cycle, noise <85 dB." },
+  { "code": "CAGE", "domain": "I", "title": "Caging & space", "blueprint_wt": 5, "description": "Cage height minimums, floor-area requirements, individually ventilated (IVC) vs static caging, microenvironment vs macroenvironment." },
+  { "code": "SAN", "domain": "I", "title": "Sanitation", "blueprint_wt": 5, "description": "Sanitize vs disinfect vs sterilize, 180°F (82.2°C) final rinse, autoclave 121°C/15 psi/15 min, biological indicators (Geobacillus stearothermophilus)." },
+  { "code": "FEED", "domain": "I", "title": "Nutrition & feed", "blueprint_wt": 3, "description": "Diet types (natural-ingredient, purified, chemically defined, certified, autoclavable, irradiated), milling date & shelf life, storage." },
+  { "code": "HUS", "domain": "I", "title": "Daily husbandry", "blueprint_wt": 6, "description": "Animal identification, cage cards, records, environmental enrichment, quarantine & acclimation, SPF status." },
+  { "code": "SPM", "domain": "I", "title": "Species: mice", "blueprint_wt": 6, "description": "Strains, breeding, postpartum estrus, handling, common diseases, Whitten/Bruce/Lee-Boot effects." },
+  { "code": "SPR", "domain": "I", "title": "Species: rats", "blueprint_wt": 4, "description": "Gestation, ringtail, strains, absence of gallbladder, inability to vomit (non-emesis)." },
+  { "code": "SPS", "domain": "I", "title": "Species: small rodents", "blueprint_wt": 4, "description": "Hamster (solitary, ~16-day gestation), gerbil (spontaneous seizures, ventral scent gland), guinea pig (dietary Vitamin C requirement, dystocia)." },
+  { "code": "SPB", "domain": "I", "title": "Species: rabbits", "blueprint_wt": 5, "description": "Induced ovulator, GI stasis, calcium metabolism, cecotrophy, Pasteurella (snuffles), proper restraint." },
+  { "code": "SPN", "domain": "I", "title": "Species: NHPs", "blueprint_wt": 4, "description": "Herpes B virus (Macacine herpesvirus 1), TB palpebral testing, 6-week quarantine, social housing, PPE." },
+  { "code": "SPO", "domain": "I", "title": "Species: other", "blueprint_wt": 4, "description": "Dog/cat/swine (3-3-3 rule)/ruminants/ferrets; fish/birds/amphibians/reptiles." },
+  { "code": "OHS", "domain": "I", "title": "Occupational health & safety", "blueprint_wt": 5, "description": "Laboratory animal allergy (LAA) prevalence & allergens, zoonoses, vaccinations, hierarchy of controls, respiratory protection." },
+  { "code": "GEN", "domain": "I", "title": "Genetics", "blueprint_wt": 3, "description": "Inbred/outbred/F1 hybrid/congenic/transgenic/knockout, standardized nomenclature." },
+  { "code": "ANE", "domain": "I", "title": "Anesthesia", "blueprint_wt": 3, "description": "Isoflurane, anesthetic depth (pedal withdrawal reflex), physiologic monitoring." },
+  { "code": "EUT", "domain": "I", "title": "Euthanasia", "blueprint_wt": 4, "description": "AVMA Guidelines (2020), CO2 displacement 30–70%/min, cervical dislocation (<200 g), verification of death." },
+  { "code": "RES", "domain": "I", "title": "Research techniques", "blueprint_wt": 5, "description": "Injection routes, oral gavage, blood-volume limits, DEA controlled-substance schedules, experimental design, unit conversions." }
+]
