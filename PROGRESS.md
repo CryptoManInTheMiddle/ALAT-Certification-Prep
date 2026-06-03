@@ -1,0 +1,83 @@
+# LabReady — Build Progress
+
+_Adaptive, learning-science-driven prep for the AALAS **ALAT** certification exam._
+
+Last updated: 2026-06-03
+
+## How this build is architected
+
+The app **runs fully offline today** with zero external credentials: the seed
+bank is bundled and version-controlled, and all user progress (FSRS schedule,
+mastery, attempts, sessions, notes) persists to `localStorage`. The data layer
+is **Supabase-ready** — when `NEXT_PUBLIC_SUPABASE_URL` / `..._ANON_KEY` are set,
+the clients in `src/lib/supabase/*` activate and the schema in
+`supabase/migrations/0001_init.sql` (with RLS) + `supabase/seed/seed.ts` load the
+same content server-side. The Anthropic generation key is **server-only**
+(`/api/generate-items`) and verified absent from the client bundle.
+
+```
+npm run dev        # local dev (offline, localStorage-backed)
+npm run build      # production build (green)
+npm run typecheck  # tsc --noEmit (clean)
+npm test           # vitest — 16 passing engine + content tests
+```
+
+## Phase status
+
+| Phase | Scope | Status |
+|------|-------|--------|
+| 0 | Scaffold: Next 14 App Router, Tailwind, TS, clinical dark tokens | ✅ Done |
+| 1 | Schema + RLS, objectives/lessons/study-plan seed, 55 verified items, validator | ✅ Done |
+| 2 | Practice engine: id-based shuffle, latency/confidence, rich feedback, attempts, scheduler | ✅ Done |
+| 3 | FSRS (`ts-fsrs`), `review_state` + `objective_mastery`, due-only Review | ✅ Done |
+| 4 | 120-Q blueprint-weighted timed simulator, readiness score + dashboard | ✅ Done |
+| 5 | Learn mode, Drill, Notes, Progress analytics (trend/radar/calibration) | ✅ Done |
+| 6 | Generation pipeline: grounded `/api/generate-items`, JSON validation, variant grouping, inactive-until-reviewed | ✅ Built (needs `ANTHROPIC_API_KEY` to run live) |
+| 7 | PWA: manifest, offline service worker, install prompt, mobile-first UI | ✅ Done (see icon note below) |
+
+## What's implemented
+
+- **Engines** (`src/lib/engine/`): FSRS wrapper, EWMA difficulty-weighted mastery,
+  blueprint readiness with saturating coverage factor, adaptive scheduler
+  (overdue → weak → confident-wrong → coverage, with ≤2-in-a-row interleaving),
+  id-based option shuffle, grade derivation. **16 unit tests** cover the rules.
+- **Five study modes**: Learn, Practice (adaptive/interleaved), Drill (weak +
+  confident-wrong + recent misses), Simulate (2h/120-Q), Review (due-only).
+- **Screens**: Home dashboard (readiness gauge, domain stats, due/streak, daily
+  tip), Learn, Practice, Simulate, Review, Drill, Progress, Notes.
+- **PWA**: installable manifest, offline service worker caching the app shell +
+  bundled bank, "Add to Home Screen" prompt.
+
+## Known gaps / next steps
+
+1. **Seed bank size.** 55 human-verified items cover all 20 objectives (2–4 each).
+   Launch acceptance wants **≥5 per objective and ≥150 total**. Grow via the
+   Phase 6 generation pipeline (each candidate is validated + held inactive for
+   human spot-check) plus continued manual authoring. _Accuracy guardrail: do not
+   activate generated items without review._
+2. **PWA icons are SVG.** `public/icons/*.svg` install fine on modern Chrome;
+   add rasterized 192/512 PNGs for broadest store/Lighthouse compatibility.
+3. **Supabase live wiring.** Schema + loader + clients exist but were not run
+   against a live project in this environment (no credentials). Next: run
+   `0001_init.sql`, `npx tsx supabase/seed/seed.ts`, wire magic-link auth UI, and
+   add a sync bridge so the local store flushes attempts to Supabase on reconnect.
+4. **Offline attempt queue → Supabase sync.** Local persistence works; the
+   reconnect-sync bridge to Supabase is still to be built (Phase 7 polish).
+5. **Readiness band calibration.** Bands use the spec's defaults; calibrate
+   against accumulated simulator scores over time.
+
+## Acceptance checklist (CLAUDE.md §12)
+
+- [x] Answer options shuffle every render; correctness stored by `option_id`.
+- [x] FSRS scheduling live; Review serves only due items; per-objective mastery.
+- [x] Adaptive difficulty + interleaving (no >2 same-objective in a row — tested).
+- [x] 120-Q / 2-hour simulator, blueprint domain mix, readiness snapshot.
+- [x] Readiness score + plain-language band on the dashboard.
+- [x] Wrong answers show why-correct + per-distractor why-wrong + hook + source.
+- [x] Installable PWA; offline practice works (bundled bank + service worker).
+- [x] Generation pipeline built with grounding + validation + human-review flag.
+- [x] No secrets in client bundle (verified).
+- [ ] ≥5 verified items per objective / ≥150 total _(currently 55 — see gap #1)._
+- [ ] Deployed on Vercel + live Supabase RLS verified _(infra step — see gap #3)._
+- [ ] Offline attempts sync to Supabase on reconnect _(see gap #4)._
+- [ ] Magic-link login on phone _(auth UI pending — see gap #3)._
