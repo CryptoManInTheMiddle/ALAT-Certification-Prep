@@ -21,4 +21,12 @@ describe("seed bank content contract", () => {
     for (const code of covered) expect(known.has(code)).toBe(true);
     expect(covered.size).toBeGreaterThanOrEqual(18);
   });
+
+  it("provides at least 5 items per objective (launch bar)", () => {
+    const counts = new Map<string, number>();
+    for (const it of items as Item[]) counts.set(it.objective, (counts.get(it.objective) ?? 0) + 1);
+    for (const o of objectives as Objective[]) {
+      expect(counts.get(o.code) ?? 0, `objective ${o.code} needs >=5 items`).toBeGreaterThanOrEqual(5);
+    }
+  });
 });

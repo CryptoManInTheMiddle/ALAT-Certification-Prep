@@ -1,717 +1,4286 @@
 [
   {
-    "id": "reg-001", "objective": "REG", "difficulty": "easy",
+    "id": "reg-001",
+    "objective": "REG",
+    "difficulty": "easy",
     "stem": "Which federal agency is responsible for enforcing the Animal Welfare Act (AWA)?",
     "explanation": "The AWA is enforced by the United States Department of Agriculture through its Animal and Plant Health Inspection Service (USDA-APHIS), Animal Care unit, which conducts unannounced facility inspections.",
     "hook": "AWA = APHIS (both start with A).",
     "source": "ALAT Manual, Regulations; 9 CFR Ch. I",
     "options": [
-      { "id": "reg-001-a", "text": "USDA-APHIS", "is_correct": true },
-      { "id": "reg-001-b", "text": "OLAW (NIH)", "is_correct": false, "distractor_note": "OLAW administers the PHS Policy, not the AWA." },
-      { "id": "reg-001-c", "text": "FDA", "is_correct": false, "distractor_note": "FDA enforces the Good Laboratory Practice (GLP) regulations, 21 CFR 58." },
-      { "id": "reg-001-d", "text": "AAALAC International", "is_correct": false, "distractor_note": "AAALAC is a private, voluntary accrediting body — it has no enforcement authority." }
+      {
+        "id": "reg-001-a",
+        "text": "USDA-APHIS",
+        "is_correct": true
+      },
+      {
+        "id": "reg-001-b",
+        "text": "OLAW (NIH)",
+        "is_correct": false,
+        "distractor_note": "OLAW administers the PHS Policy, not the AWA."
+      },
+      {
+        "id": "reg-001-c",
+        "text": "FDA",
+        "is_correct": false,
+        "distractor_note": "FDA enforces the Good Laboratory Practice (GLP) regulations, 21 CFR 58."
+      },
+      {
+        "id": "reg-001-d",
+        "text": "AAALAC International",
+        "is_correct": false,
+        "distractor_note": "AAALAC is a private, voluntary accrediting body — it has no enforcement authority."
+      }
     ]
   },
   {
-    "id": "reg-002", "objective": "REG", "difficulty": "medium",
+    "id": "reg-002",
+    "objective": "REG",
+    "difficulty": "medium",
     "stem": "Which of the following is administered by the Office of Laboratory Animal Welfare (OLAW)?",
     "explanation": "OLAW, within the NIH, administers the PHS Policy on Humane Care and Use of Laboratory Animals, which applies to all PHS-funded activities and requires institutions to follow the Guide.",
     "hook": "OLAW → PHS Policy → 'follow the Guide.'",
     "source": "PHS Policy on Humane Care and Use of Laboratory Animals",
     "options": [
-      { "id": "reg-002-a", "text": "The PHS Policy on Humane Care and Use of Laboratory Animals", "is_correct": true },
-      { "id": "reg-002-b", "text": "The Animal Welfare Act", "is_correct": false, "distractor_note": "The AWA is administered by USDA-APHIS." },
-      { "id": "reg-002-c", "text": "Good Laboratory Practice regulations", "is_correct": false, "distractor_note": "GLP (21 CFR 58) is an FDA regulation." },
-      { "id": "reg-002-d", "text": "AAALAC accreditation", "is_correct": false, "distractor_note": "AAALAC is a private accrediting organization, not part of the PHS." }
+      {
+        "id": "reg-002-a",
+        "text": "The PHS Policy on Humane Care and Use of Laboratory Animals",
+        "is_correct": true
+      },
+      {
+        "id": "reg-002-b",
+        "text": "The Animal Welfare Act",
+        "is_correct": false,
+        "distractor_note": "The AWA is administered by USDA-APHIS."
+      },
+      {
+        "id": "reg-002-c",
+        "text": "Good Laboratory Practice regulations",
+        "is_correct": false,
+        "distractor_note": "GLP (21 CFR 58) is an FDA regulation."
+      },
+      {
+        "id": "reg-002-d",
+        "text": "AAALAC accreditation",
+        "is_correct": false,
+        "distractor_note": "AAALAC is a private accrediting organization, not part of the PHS."
+      }
     ]
   },
   {
-    "id": "reg-003", "objective": "REG", "difficulty": "medium",
+    "id": "reg-003",
+    "objective": "REG",
+    "difficulty": "medium",
     "stem": "A study involves a procedure that causes more than momentary pain or distress, but the animals receive appropriate anesthetics and analgesics. Into which USDA pain/distress category does this fall?",
     "explanation": "USDA Category D covers procedures that cause pain or distress for which appropriate anesthetic, analgesic, or tranquilizing drugs ARE used.",
     "hook": "D = Drugs given (pain relieved). E = no rElief.",
     "source": "USDA APHIS Annual Report categories B–E",
     "options": [
-      { "id": "reg-003-a", "text": "Category D", "is_correct": true },
-      { "id": "reg-003-b", "text": "Category B", "is_correct": false, "distractor_note": "Category B is animals bred/held for use but not yet used in a procedure." },
-      { "id": "reg-003-c", "text": "Category C", "is_correct": false, "distractor_note": "Category C is procedures with no more than momentary pain or distress (no drugs needed)." },
-      { "id": "reg-003-d", "text": "Category E", "is_correct": false, "distractor_note": "Category E is pain/distress for which relieving drugs would interfere with the study and are withheld." }
+      {
+        "id": "reg-003-a",
+        "text": "Category D",
+        "is_correct": true
+      },
+      {
+        "id": "reg-003-b",
+        "text": "Category B",
+        "is_correct": false,
+        "distractor_note": "Category B is animals bred/held for use but not yet used in a procedure."
+      },
+      {
+        "id": "reg-003-c",
+        "text": "Category C",
+        "is_correct": false,
+        "distractor_note": "Category C is procedures with no more than momentary pain or distress (no drugs needed)."
+      },
+      {
+        "id": "reg-003-d",
+        "text": "Category E",
+        "is_correct": false,
+        "distractor_note": "Category E is pain/distress for which relieving drugs would interfere with the study and are withheld."
+      }
     ]
   },
   {
-    "id": "reg-004", "objective": "REG", "difficulty": "hard",
+    "id": "reg-004",
+    "objective": "REG",
+    "difficulty": "hard",
     "stem": "Which animals are specifically EXCLUDED from the regulatory definition of 'animal' under the Animal Welfare Act?",
     "explanation": "The AWA definition of 'animal' excludes birds, rats of the genus Rattus, and mice of the genus Mus bred for use in research, plus farm animals used for food/fiber.",
     "hook": "Purpose-bred rats, mice & birds are NOT AWA-covered (but ARE covered by PHS Policy/the Guide).",
     "source": "AWA, 9 CFR 1.1 definition of 'animal'",
     "options": [
-      { "id": "reg-004-a", "text": "Birds and purpose-bred rats (Rattus) and mice (Mus)", "is_correct": true },
-      { "id": "reg-004-b", "text": "Nonhuman primates", "is_correct": false, "distractor_note": "NHPs are fully covered by the AWA." },
-      { "id": "reg-004-c", "text": "Rabbits and guinea pigs", "is_correct": false, "distractor_note": "Rabbits and guinea pigs are AWA-covered species." },
-      { "id": "reg-004-d", "text": "Dogs and cats", "is_correct": false, "distractor_note": "Dogs and cats are explicitly covered and have additional AWA requirements." }
+      {
+        "id": "reg-004-a",
+        "text": "Birds and purpose-bred rats (Rattus) and mice (Mus)",
+        "is_correct": true
+      },
+      {
+        "id": "reg-004-b",
+        "text": "Nonhuman primates",
+        "is_correct": false,
+        "distractor_note": "NHPs are fully covered by the AWA."
+      },
+      {
+        "id": "reg-004-c",
+        "text": "Rabbits and guinea pigs",
+        "is_correct": false,
+        "distractor_note": "Rabbits and guinea pigs are AWA-covered species."
+      },
+      {
+        "id": "reg-004-d",
+        "text": "Dogs and cats",
+        "is_correct": false,
+        "distractor_note": "Dogs and cats are explicitly covered and have additional AWA requirements."
+      }
     ]
   },
   {
-    "id": "iac-001", "objective": "IAC", "difficulty": "medium",
+    "id": "iac-001",
+    "objective": "IAC",
+    "difficulty": "medium",
     "stem": "Under the Animal Welfare Act, what is the minimum number of members required on an IACUC?",
     "explanation": "The AWA requires a minimum of 3 IACUC members, including a Doctor of Veterinary Medicine with program authority and one member not affiliated with the institution. (PHS Policy requires a minimum of 5.)",
     "hook": "AWA = 3, PHS = 5.",
     "source": "AWA 9 CFR 2.31; PHS Policy IV.A.3",
     "options": [
-      { "id": "iac-001-a", "text": "3", "is_correct": true },
-      { "id": "iac-001-b", "text": "5", "is_correct": false, "distractor_note": "5 is the PHS Policy minimum, not the AWA minimum." },
-      { "id": "iac-001-c", "text": "2", "is_correct": false, "distractor_note": "Two members would not satisfy required roles (vet + nonaffiliated + chair)." },
-      { "id": "iac-001-d", "text": "7", "is_correct": false, "distractor_note": "No framework sets the minimum at 7." }
+      {
+        "id": "iac-001-a",
+        "text": "3",
+        "is_correct": true
+      },
+      {
+        "id": "iac-001-b",
+        "text": "5",
+        "is_correct": false,
+        "distractor_note": "5 is the PHS Policy minimum, not the AWA minimum."
+      },
+      {
+        "id": "iac-001-c",
+        "text": "2",
+        "is_correct": false,
+        "distractor_note": "Two members would not satisfy required roles (vet + nonaffiliated + chair)."
+      },
+      {
+        "id": "iac-001-d",
+        "text": "7",
+        "is_correct": false,
+        "distractor_note": "No framework sets the minimum at 7."
+      }
     ]
   },
   {
-    "id": "iac-002", "objective": "IAC", "difficulty": "medium",
+    "id": "iac-002",
+    "objective": "IAC",
+    "difficulty": "medium",
     "stem": "How often must the IACUC conduct program reviews and facility inspections?",
     "explanation": "The IACUC must review the animal care and use program and inspect all animal facilities at least once every six months (semiannually).",
     "hook": "Semiannual = every 6 months.",
     "source": "AWA 9 CFR 2.31(c); PHS Policy IV.B",
     "options": [
-      { "id": "iac-002-a", "text": "At least every 6 months (semiannually)", "is_correct": true },
-      { "id": "iac-002-b", "text": "Annually", "is_correct": false, "distractor_note": "Once a year is not frequent enough; the requirement is every 6 months." },
-      { "id": "iac-002-c", "text": "Every 3 months", "is_correct": false, "distractor_note": "Quarterly review is more often than required by regulation." },
-      { "id": "iac-002-d", "text": "Only when a new protocol is submitted", "is_correct": false, "distractor_note": "Reviews/inspections are on a fixed semiannual schedule, independent of protocol submissions." }
+      {
+        "id": "iac-002-a",
+        "text": "At least every 6 months (semiannually)",
+        "is_correct": true
+      },
+      {
+        "id": "iac-002-b",
+        "text": "Annually",
+        "is_correct": false,
+        "distractor_note": "Once a year is not frequent enough; the requirement is every 6 months."
+      },
+      {
+        "id": "iac-002-c",
+        "text": "Every 3 months",
+        "is_correct": false,
+        "distractor_note": "Quarterly review is more often than required by regulation."
+      },
+      {
+        "id": "iac-002-d",
+        "text": "Only when a new protocol is submitted",
+        "is_correct": false,
+        "distractor_note": "Reviews/inspections are on a fixed semiannual schedule, independent of protocol submissions."
+      }
     ]
   },
   {
-    "id": "iac-003", "objective": "IAC", "difficulty": "hard",
+    "id": "iac-003",
+    "objective": "IAC",
+    "difficulty": "hard",
     "stem": "During Designated Member Review (DMR) of a protocol, what action can ANY IACUC member take?",
     "explanation": "Any member may, at any time, request Full Committee Review (FCR). If even one member requests it, the protocol cannot be approved by DMR and must go to the convened committee.",
     "hook": "Any one member can 'call the protocol to the full committee.'",
     "source": "PHS Policy IV.C.2; OLAW guidance on DMR vs FCR",
     "options": [
-      { "id": "iac-003-a", "text": "Request Full Committee Review", "is_correct": true },
-      { "id": "iac-003-b", "text": "Unilaterally approve the protocol alone", "is_correct": false, "distractor_note": "A single designated reviewer may approve, but only after all members had the chance to call for FCR; any member acting alone cannot override that process." },
-      { "id": "iac-003-c", "text": "Permanently suspend the investigator", "is_correct": false, "distractor_note": "Suspension requires a majority vote of a quorum, not a single member." },
-      { "id": "iac-003-d", "text": "Waive the semiannual inspection", "is_correct": false, "distractor_note": "The semiannual inspection requirement cannot be waived." }
+      {
+        "id": "iac-003-a",
+        "text": "Request Full Committee Review",
+        "is_correct": true
+      },
+      {
+        "id": "iac-003-b",
+        "text": "Unilaterally approve the protocol alone",
+        "is_correct": false,
+        "distractor_note": "A single designated reviewer may approve, but only after all members had the chance to call for FCR; any member acting alone cannot override that process."
+      },
+      {
+        "id": "iac-003-c",
+        "text": "Permanently suspend the investigator",
+        "is_correct": false,
+        "distractor_note": "Suspension requires a majority vote of a quorum, not a single member."
+      },
+      {
+        "id": "iac-003-d",
+        "text": "Waive the semiannual inspection",
+        "is_correct": false,
+        "distractor_note": "The semiannual inspection requirement cannot be waived."
+      }
     ]
   },
   {
-    "id": "iac-004", "objective": "IAC", "difficulty": "hard",
+    "id": "iac-004",
+    "objective": "IAC",
+    "difficulty": "hard",
     "stem": "What is required for the IACUC to suspend an ongoing activity?",
     "explanation": "Suspension requires a review of the matter at a convened meeting of a quorum of the IACUC and a suspension vote by a majority of the quorum present.",
     "hook": "Suspension = majority of a quorum at a convened meeting.",
     "source": "AWA 9 CFR 2.31(d)(6); PHS Policy IV.C.6",
     "options": [
-      { "id": "iac-004-a", "text": "A majority vote of a quorum at a convened meeting", "is_correct": true },
-      { "id": "iac-004-b", "text": "A single decision by the attending veterinarian", "is_correct": false, "distractor_note": "The veterinarian can stop a procedure for welfare reasons, but formal protocol suspension is an IACUC vote." },
-      { "id": "iac-004-c", "text": "Approval from USDA before any action", "is_correct": false, "distractor_note": "The IACUC acts first; the IO then reports the suspension to USDA/OLAW." },
-      { "id": "iac-004-d", "text": "Unanimous consent of all members", "is_correct": false, "distractor_note": "A majority of the quorum suffices, not unanimity." }
+      {
+        "id": "iac-004-a",
+        "text": "A majority vote of a quorum at a convened meeting",
+        "is_correct": true
+      },
+      {
+        "id": "iac-004-b",
+        "text": "A single decision by the attending veterinarian",
+        "is_correct": false,
+        "distractor_note": "The veterinarian can stop a procedure for welfare reasons, but formal protocol suspension is an IACUC vote."
+      },
+      {
+        "id": "iac-004-c",
+        "text": "Approval from USDA before any action",
+        "is_correct": false,
+        "distractor_note": "The IACUC acts first; the IO then reports the suspension to USDA/OLAW."
+      },
+      {
+        "id": "iac-004-d",
+        "text": "Unanimous consent of all members",
+        "is_correct": false,
+        "distractor_note": "A majority of the quorum suffices, not unanimity."
+      }
     ]
   },
   {
-    "id": "3rs-001", "objective": "3RS", "difficulty": "easy",
+    "id": "3rs-001",
+    "objective": "3RS",
+    "difficulty": "easy",
     "stem": "Who originally described the 3Rs (Replacement, Reduction, Refinement)?",
     "explanation": "W.M.S. Russell and R.L. Burch introduced the 3Rs in their 1959 book 'The Principles of Humane Experimental Technique.'",
     "hook": "Russell & Burch, 1959.",
     "source": "Russell & Burch, 1959",
     "options": [
-      { "id": "3rs-001-a", "text": "Russell and Burch", "is_correct": true },
-      { "id": "3rs-001-b", "text": "Pasteur and Koch", "is_correct": false, "distractor_note": "Pasteur and Koch are foundational microbiologists, unrelated to the 3Rs." },
-      { "id": "3rs-001-c", "text": "Russell and Burch's contemporary the AVMA", "is_correct": false, "distractor_note": "The AVMA publishes euthanasia guidelines, not the 3Rs concept." },
-      { "id": "3rs-001-d", "text": "The National Research Council", "is_correct": false, "distractor_note": "The NRC publishes the Guide; it did not originate the 3Rs." }
+      {
+        "id": "3rs-001-a",
+        "text": "Russell and Burch",
+        "is_correct": true
+      },
+      {
+        "id": "3rs-001-b",
+        "text": "Pasteur and Koch",
+        "is_correct": false,
+        "distractor_note": "Pasteur and Koch are foundational microbiologists, unrelated to the 3Rs."
+      },
+      {
+        "id": "3rs-001-c",
+        "text": "Russell and Burch's contemporary the AVMA",
+        "is_correct": false,
+        "distractor_note": "The AVMA publishes euthanasia guidelines, not the 3Rs concept."
+      },
+      {
+        "id": "3rs-001-d",
+        "text": "The National Research Council",
+        "is_correct": false,
+        "distractor_note": "The NRC publishes the Guide; it did not originate the 3Rs."
+      }
     ]
   },
   {
-    "id": "3rs-002", "objective": "3RS", "difficulty": "medium",
+    "id": "3rs-002",
+    "objective": "3RS",
+    "difficulty": "medium",
     "stem": "Modifying a procedure to minimize or eliminate pain and distress is an example of which of the 3Rs?",
     "explanation": "Refinement means modifying husbandry or procedures to minimize pain, distress, and lasting harm and to enhance animal well-being (e.g., better analgesia, enrichment).",
     "hook": "Refinement = Reduce suffering per animal.",
     "source": "ALAT Manual; Russell & Burch 1959",
     "options": [
-      { "id": "3rs-002-a", "text": "Refinement", "is_correct": true },
-      { "id": "3rs-002-b", "text": "Reduction", "is_correct": false, "distractor_note": "Reduction is using fewer animals to obtain the same information." },
-      { "id": "3rs-002-c", "text": "Replacement", "is_correct": false, "distractor_note": "Replacement is substituting non-animal methods or less-sentient species." },
-      { "id": "3rs-002-d", "text": "Reproducibility", "is_correct": false, "distractor_note": "Reproducibility is not one of the 3Rs." }
+      {
+        "id": "3rs-002-a",
+        "text": "Refinement",
+        "is_correct": true
+      },
+      {
+        "id": "3rs-002-b",
+        "text": "Reduction",
+        "is_correct": false,
+        "distractor_note": "Reduction is using fewer animals to obtain the same information."
+      },
+      {
+        "id": "3rs-002-c",
+        "text": "Replacement",
+        "is_correct": false,
+        "distractor_note": "Replacement is substituting non-animal methods or less-sentient species."
+      },
+      {
+        "id": "3rs-002-d",
+        "text": "Reproducibility",
+        "is_correct": false,
+        "distractor_note": "Reproducibility is not one of the 3Rs."
+      }
     ]
   },
   {
-    "id": "env-001", "objective": "ENV", "difficulty": "easy",
+    "id": "env-001",
+    "objective": "ENV",
+    "difficulty": "easy",
     "stem": "According to the Guide, what is the recommended relative humidity range for most rodent housing?",
     "explanation": "The Guide recommends a relative humidity range of 30% to 70% for most laboratory mammals. Low humidity in rats is associated with ringtail.",
     "hook": "Humidity 30–70%.",
     "source": "Guide for the Care and Use of Laboratory Animals, 8th ed.",
     "options": [
-      { "id": "env-001-a", "text": "30–70%", "is_correct": true },
-      { "id": "env-001-b", "text": "10–30%", "is_correct": false, "distractor_note": "Too dry — low humidity predisposes rats to ringtail." },
-      { "id": "env-001-c", "text": "70–90%", "is_correct": false, "distractor_note": "Excessively humid; promotes ammonia and microbial growth." },
-      { "id": "env-001-d", "text": "50–100%", "is_correct": false, "distractor_note": "The upper bound is 70%, not 100%." }
+      {
+        "id": "env-001-a",
+        "text": "30–70%",
+        "is_correct": true
+      },
+      {
+        "id": "env-001-b",
+        "text": "10–30%",
+        "is_correct": false,
+        "distractor_note": "Too dry — low humidity predisposes rats to ringtail."
+      },
+      {
+        "id": "env-001-c",
+        "text": "70–90%",
+        "is_correct": false,
+        "distractor_note": "Excessively humid; promotes ammonia and microbial growth."
+      },
+      {
+        "id": "env-001-d",
+        "text": "50–100%",
+        "is_correct": false,
+        "distractor_note": "The upper bound is 70%, not 100%."
+      }
     ]
   },
   {
-    "id": "env-002", "objective": "ENV", "difficulty": "medium",
+    "id": "env-002",
+    "objective": "ENV",
+    "difficulty": "medium",
     "stem": "The Guide suggests a general room ventilation rate of how many air changes per hour (ACH)?",
     "explanation": "10–15 fresh-air changes per hour is the long-standing general guideline, though the Guide notes ventilation should be based on heat load and performance rather than a fixed number.",
     "hook": "10–15 ACH.",
     "source": "Guide, 8th ed., Environment",
     "options": [
-      { "id": "env-002-a", "text": "10–15 ACH", "is_correct": true },
-      { "id": "env-002-b", "text": "2–5 ACH", "is_correct": false, "distractor_note": "Too low to control heat, humidity, and ammonia in an animal room." },
-      { "id": "env-002-c", "text": "20–30 ACH", "is_correct": false, "distractor_note": "Higher than the general guideline and can create drafts/noise." },
-      { "id": "env-002-d", "text": "1 ACH", "is_correct": false, "distractor_note": "Grossly inadequate ventilation." }
+      {
+        "id": "env-002-a",
+        "text": "10–15 ACH",
+        "is_correct": true
+      },
+      {
+        "id": "env-002-b",
+        "text": "2–5 ACH",
+        "is_correct": false,
+        "distractor_note": "Too low to control heat, humidity, and ammonia in an animal room."
+      },
+      {
+        "id": "env-002-c",
+        "text": "20–30 ACH",
+        "is_correct": false,
+        "distractor_note": "Higher than the general guideline and can create drafts/noise."
+      },
+      {
+        "id": "env-002-d",
+        "text": "1 ACH",
+        "is_correct": false,
+        "distractor_note": "Grossly inadequate ventilation."
+      }
     ]
   },
   {
-    "id": "env-003", "objective": "ENV", "difficulty": "medium",
+    "id": "env-003",
+    "objective": "ENV",
+    "difficulty": "medium",
     "stem": "What light cycle is most commonly used for laboratory rodents?",
     "explanation": "A 12:12 (12 hours light, 12 hours dark) photoperiod is standard for most laboratory rodents to maintain normal circadian rhythms and breeding.",
     "hook": "12 on / 12 off.",
     "source": "Guide, 8th ed.",
     "options": [
-      { "id": "env-003-a", "text": "12 hours light : 12 hours dark", "is_correct": true },
-      { "id": "env-003-b", "text": "24 hours continuous light", "is_correct": false, "distractor_note": "Constant light can cause retinal damage and disrupt reproduction." },
-      { "id": "env-003-c", "text": "8 hours light : 16 hours dark", "is_correct": false, "distractor_note": "Not the standard; can alter breeding cycles." },
-      { "id": "env-003-d", "text": "6 hours light : 6 hours dark", "is_correct": false, "distractor_note": "A 12-hour total cycle disrupts normal circadian timing." }
+      {
+        "id": "env-003-a",
+        "text": "12 hours light : 12 hours dark",
+        "is_correct": true
+      },
+      {
+        "id": "env-003-b",
+        "text": "24 hours continuous light",
+        "is_correct": false,
+        "distractor_note": "Constant light can cause retinal damage and disrupt reproduction."
+      },
+      {
+        "id": "env-003-c",
+        "text": "8 hours light : 16 hours dark",
+        "is_correct": false,
+        "distractor_note": "Not the standard; can alter breeding cycles."
+      },
+      {
+        "id": "env-003-d",
+        "text": "6 hours light : 6 hours dark",
+        "is_correct": false,
+        "distractor_note": "A 12-hour total cycle disrupts normal circadian timing."
+      }
     ]
   },
   {
-    "id": "env-004", "objective": "ENV", "difficulty": "hard",
+    "id": "env-004",
+    "objective": "ENV",
+    "difficulty": "hard",
     "stem": "To prevent phototoxic retinopathy in albino rodents, illumination at cage level is generally kept at or below approximately:",
     "explanation": "Light intensity of about 325 lux (~30 foot-candles) roughly 1 m above the floor is commonly cited as adequate for animal care while protecting albino rodents from light-induced retinal damage.",
     "hook": "≈325 lux for albino eyes.",
     "source": "Guide, 8th ed., Illumination",
     "options": [
-      { "id": "env-004-a", "text": "~325 lux", "is_correct": true },
-      { "id": "env-004-b", "text": "~3,000 lux", "is_correct": false, "distractor_note": "Far too bright for albino rodents; risks retinal degeneration." },
-      { "id": "env-004-c", "text": "~10 lux", "is_correct": false, "distractor_note": "Too dim for safe husbandry tasks." },
-      { "id": "env-004-d", "text": "~1,000 lux", "is_correct": false, "distractor_note": "Higher than recommended at cage level for albino animals." }
+      {
+        "id": "env-004-a",
+        "text": "~325 lux",
+        "is_correct": true
+      },
+      {
+        "id": "env-004-b",
+        "text": "~3,000 lux",
+        "is_correct": false,
+        "distractor_note": "Far too bright for albino rodents; risks retinal degeneration."
+      },
+      {
+        "id": "env-004-c",
+        "text": "~10 lux",
+        "is_correct": false,
+        "distractor_note": "Too dim for safe husbandry tasks."
+      },
+      {
+        "id": "env-004-d",
+        "text": "~1,000 lux",
+        "is_correct": false,
+        "distractor_note": "Higher than recommended at cage level for albino animals."
+      }
     ]
   },
   {
-    "id": "cage-001", "objective": "CAGE", "difficulty": "medium",
+    "id": "cage-001",
+    "objective": "CAGE",
+    "difficulty": "medium",
     "stem": "Which term describes the conditions WITHIN an animal's primary enclosure (the cage), such as the air, temperature, and humidity immediately surrounding the animal?",
     "explanation": "The microenvironment is the immediate physical environment within the primary enclosure; the macroenvironment is the secondary enclosure (the room).",
     "hook": "Micro = inside the cage; Macro = the room.",
     "source": "Guide, 8th ed.; ALAT Manual",
     "options": [
-      { "id": "cage-001-a", "text": "Microenvironment", "is_correct": true },
-      { "id": "cage-001-b", "text": "Macroenvironment", "is_correct": false, "distractor_note": "The macroenvironment is the room (secondary enclosure), not inside the cage." },
-      { "id": "cage-001-c", "text": "Barrier environment", "is_correct": false, "distractor_note": "A barrier refers to a containment/biosecurity scheme, not the in-cage conditions." },
-      { "id": "cage-001-d", "text": "Ambient environment", "is_correct": false, "distractor_note": "'Ambient' loosely means surrounding air but is not the defined term for in-cage conditions." }
+      {
+        "id": "cage-001-a",
+        "text": "Microenvironment",
+        "is_correct": true
+      },
+      {
+        "id": "cage-001-b",
+        "text": "Macroenvironment",
+        "is_correct": false,
+        "distractor_note": "The macroenvironment is the room (secondary enclosure), not inside the cage."
+      },
+      {
+        "id": "cage-001-c",
+        "text": "Barrier environment",
+        "is_correct": false,
+        "distractor_note": "A barrier refers to a containment/biosecurity scheme, not the in-cage conditions."
+      },
+      {
+        "id": "cage-001-d",
+        "text": "Ambient environment",
+        "is_correct": false,
+        "distractor_note": "'Ambient' loosely means surrounding air but is not the defined term for in-cage conditions."
+      }
     ]
   },
   {
-    "id": "cage-002", "objective": "CAGE", "difficulty": "medium",
+    "id": "cage-002",
+    "objective": "CAGE",
+    "difficulty": "medium",
     "stem": "A key advantage of individually ventilated caging (IVC) over static (filter-top) caging is that it:",
     "explanation": "IVC systems supply HEPA-filtered air directly to each cage, improving intracage air quality (lower ammonia/CO2), allowing longer intervals between changes, and enhancing biosecurity between cages.",
     "hook": "IVC = each cage gets its own fresh, filtered air.",
     "source": "ALAT Manual, Caging",
     "options": [
-      { "id": "cage-002-a", "text": "Provides filtered airflow to each individual cage, improving intracage air quality", "is_correct": true },
-      { "id": "cage-002-b", "text": "Eliminates the need to ever change bedding", "is_correct": false, "distractor_note": "Bedding still must be changed; IVC only extends the interval." },
-      { "id": "cage-002-c", "text": "Removes the need for any room ventilation", "is_correct": false, "distractor_note": "The room (macroenvironment) still requires ventilation." },
-      { "id": "cage-002-d", "text": "Allows housing without any IACUC oversight", "is_correct": false, "distractor_note": "Caging type does not change IACUC oversight requirements." }
+      {
+        "id": "cage-002-a",
+        "text": "Provides filtered airflow to each individual cage, improving intracage air quality",
+        "is_correct": true
+      },
+      {
+        "id": "cage-002-b",
+        "text": "Eliminates the need to ever change bedding",
+        "is_correct": false,
+        "distractor_note": "Bedding still must be changed; IVC only extends the interval."
+      },
+      {
+        "id": "cage-002-c",
+        "text": "Removes the need for any room ventilation",
+        "is_correct": false,
+        "distractor_note": "The room (macroenvironment) still requires ventilation."
+      },
+      {
+        "id": "cage-002-d",
+        "text": "Allows housing without any IACUC oversight",
+        "is_correct": false,
+        "distractor_note": "Caging type does not change IACUC oversight requirements."
+      }
     ]
   },
   {
-    "id": "san-001", "objective": "SAN", "difficulty": "medium",
+    "id": "san-001",
+    "objective": "SAN",
+    "difficulty": "medium",
     "stem": "Which process is defined as the complete destruction or elimination of ALL microbial life, including bacterial spores?",
     "explanation": "Sterilization eliminates all microorganisms including spores. Disinfection kills most pathogens but not necessarily spores; sanitization reduces microbial load to safe levels.",
     "hook": "Sterilize = nothing survives (even spores).",
     "source": "ALAT Manual, Sanitation",
     "options": [
-      { "id": "san-001-a", "text": "Sterilization", "is_correct": true },
-      { "id": "san-001-b", "text": "Disinfection", "is_correct": false, "distractor_note": "Disinfection kills most microbes but may not destroy spores." },
-      { "id": "san-001-c", "text": "Sanitization", "is_correct": false, "distractor_note": "Sanitization only reduces microbes to a safe level." },
-      { "id": "san-001-d", "text": "Decontamination", "is_correct": false, "distractor_note": "Decontamination is a general term for removing/neutralizing hazards, not specifically killing all spores." }
+      {
+        "id": "san-001-a",
+        "text": "Sterilization",
+        "is_correct": true
+      },
+      {
+        "id": "san-001-b",
+        "text": "Disinfection",
+        "is_correct": false,
+        "distractor_note": "Disinfection kills most microbes but may not destroy spores."
+      },
+      {
+        "id": "san-001-c",
+        "text": "Sanitization",
+        "is_correct": false,
+        "distractor_note": "Sanitization only reduces microbes to a safe level."
+      },
+      {
+        "id": "san-001-d",
+        "text": "Decontamination",
+        "is_correct": false,
+        "distractor_note": "Decontamination is a general term for removing/neutralizing hazards, not specifically killing all spores."
+      }
     ]
   },
   {
-    "id": "san-002", "objective": "SAN", "difficulty": "medium",
+    "id": "san-002",
+    "objective": "SAN",
+    "difficulty": "medium",
     "stem": "Standard gravity-displacement steam autoclave parameters for sterilization are approximately:",
     "explanation": "A common cycle is 121°C (250°F) at 15 psi for at least 15 minutes; denser loads require longer times.",
     "hook": "121°C / 15 psi / 15 min.",
     "source": "ALAT Manual, Sterilization",
     "options": [
-      { "id": "san-002-a", "text": "121°C, 15 psi, 15 minutes", "is_correct": true },
-      { "id": "san-002-b", "text": "60°C, 5 psi, 5 minutes", "is_correct": false, "distractor_note": "Too low a temperature/pressure to sterilize." },
-      { "id": "san-002-c", "text": "100°C, 0 psi, 60 minutes", "is_correct": false, "distractor_note": "Boiling at atmospheric pressure does not reliably kill spores." },
-      { "id": "san-002-d", "text": "200°C, 30 psi, 2 minutes", "is_correct": false, "distractor_note": "Not the standard steam cycle; 200°C is dry-heat territory." }
+      {
+        "id": "san-002-a",
+        "text": "121°C, 15 psi, 15 minutes",
+        "is_correct": true
+      },
+      {
+        "id": "san-002-b",
+        "text": "60°C, 5 psi, 5 minutes",
+        "is_correct": false,
+        "distractor_note": "Too low a temperature/pressure to sterilize."
+      },
+      {
+        "id": "san-002-c",
+        "text": "100°C, 0 psi, 60 minutes",
+        "is_correct": false,
+        "distractor_note": "Boiling at atmospheric pressure does not reliably kill spores."
+      },
+      {
+        "id": "san-002-d",
+        "text": "200°C, 30 psi, 2 minutes",
+        "is_correct": false,
+        "distractor_note": "Not the standard steam cycle; 200°C is dry-heat territory."
+      }
     ]
   },
   {
-    "id": "san-003", "objective": "SAN", "difficulty": "hard",
+    "id": "san-003",
+    "objective": "SAN",
+    "difficulty": "hard",
     "stem": "In mechanical cage washers, the final rinse is typically maintained at a minimum temperature of:",
     "explanation": "A final rinse of at least 82.2°C (180°F) is the conventional standard to ensure effective sanitation of caging and equipment.",
     "hook": "180°F final rinse.",
     "source": "Guide, 8th ed.; ALAT Manual, Sanitation",
     "options": [
-      { "id": "san-003-a", "text": "180°F (82.2°C)", "is_correct": true },
-      { "id": "san-003-b", "text": "120°F (48.9°C)", "is_correct": false, "distractor_note": "Too cool to reliably sanitize." },
-      { "id": "san-003-c", "text": "212°F (100°C)", "is_correct": false, "distractor_note": "Boiling is hotter than required and not the standard rinse specification." },
-      { "id": "san-003-d", "text": "150°F (65.6°C)", "is_correct": false, "distractor_note": "Below the 180°F sanitation benchmark." }
+      {
+        "id": "san-003-a",
+        "text": "180°F (82.2°C)",
+        "is_correct": true
+      },
+      {
+        "id": "san-003-b",
+        "text": "120°F (48.9°C)",
+        "is_correct": false,
+        "distractor_note": "Too cool to reliably sanitize."
+      },
+      {
+        "id": "san-003-c",
+        "text": "212°F (100°C)",
+        "is_correct": false,
+        "distractor_note": "Boiling is hotter than required and not the standard rinse specification."
+      },
+      {
+        "id": "san-003-d",
+        "text": "150°F (65.6°C)",
+        "is_correct": false,
+        "distractor_note": "Below the 180°F sanitation benchmark."
+      }
     ]
   },
   {
-    "id": "san-004", "objective": "SAN", "difficulty": "hard",
+    "id": "san-004",
+    "objective": "SAN",
+    "difficulty": "hard",
     "stem": "Which organism's spores are used in biological indicators to verify steam autoclave (steam sterilization) efficacy?",
     "explanation": "Geobacillus stearothermophilus spores are highly heat-resistant and are the standard biological indicator for steam sterilization.",
     "hook": "Steam → Geobacillus stearothermophilus.",
     "source": "ALAT Manual, Sterilization quality control",
     "options": [
-      { "id": "san-004-a", "text": "Geobacillus stearothermophilus", "is_correct": true },
-      { "id": "san-004-b", "text": "Escherichia coli", "is_correct": false, "distractor_note": "E. coli is not spore-forming and is killed easily; not a sterilization indicator." },
-      { "id": "san-004-c", "text": "Bacillus atrophaeus", "is_correct": false, "distractor_note": "B. atrophaeus is the indicator for dry-heat and ethylene oxide, not steam." },
-      { "id": "san-004-d", "text": "Staphylococcus aureus", "is_correct": false, "distractor_note": "A vegetative pathogen, not a heat-resistant spore indicator." }
+      {
+        "id": "san-004-a",
+        "text": "Geobacillus stearothermophilus",
+        "is_correct": true
+      },
+      {
+        "id": "san-004-b",
+        "text": "Escherichia coli",
+        "is_correct": false,
+        "distractor_note": "E. coli is not spore-forming and is killed easily; not a sterilization indicator."
+      },
+      {
+        "id": "san-004-c",
+        "text": "Bacillus atrophaeus",
+        "is_correct": false,
+        "distractor_note": "B. atrophaeus is the indicator for dry-heat and ethylene oxide, not steam."
+      },
+      {
+        "id": "san-004-d",
+        "text": "Staphylococcus aureus",
+        "is_correct": false,
+        "distractor_note": "A vegetative pathogen, not a heat-resistant spore indicator."
+      }
     ]
   },
   {
-    "id": "feed-001", "objective": "FEED", "difficulty": "medium",
+    "id": "feed-001",
+    "objective": "FEED",
+    "difficulty": "medium",
     "stem": "What is the typical maximum shelf life of standard (non-stabilized) rodent chow from its milling date?",
     "explanation": "Standard rodent diets are generally used within about 6 months of the milling date because vitamins (notably vitamin C and A) degrade over time.",
     "hook": "Chow: use within ~6 months of milling.",
     "source": "ALAT Manual, Nutrition",
     "options": [
-      { "id": "feed-001-a", "text": "About 6 months", "is_correct": true },
-      { "id": "feed-001-b", "text": "About 5 years", "is_correct": false, "distractor_note": "Far too long — vitamins degrade well before then." },
-      { "id": "feed-001-c", "text": "About 1 week", "is_correct": false, "distractor_note": "Unnecessarily short; properly stored chow lasts months." },
-      { "id": "feed-001-d", "text": "Indefinite if kept dry", "is_correct": false, "distractor_note": "Even dry chow loses nutritional value (vitamin degradation) over time." }
+      {
+        "id": "feed-001-a",
+        "text": "About 6 months",
+        "is_correct": true
+      },
+      {
+        "id": "feed-001-b",
+        "text": "About 5 years",
+        "is_correct": false,
+        "distractor_note": "Far too long — vitamins degrade well before then."
+      },
+      {
+        "id": "feed-001-c",
+        "text": "About 1 week",
+        "is_correct": false,
+        "distractor_note": "Unnecessarily short; properly stored chow lasts months."
+      },
+      {
+        "id": "feed-001-d",
+        "text": "Indefinite if kept dry",
+        "is_correct": false,
+        "distractor_note": "Even dry chow loses nutritional value (vitamin degradation) over time."
+      }
     ]
   },
   {
-    "id": "feed-002", "objective": "FEED", "difficulty": "medium",
+    "id": "feed-002",
+    "objective": "FEED",
+    "difficulty": "medium",
     "stem": "Guinea pig diets must be specially formulated and used promptly primarily because guinea pigs require a dietary source of:",
     "explanation": "Like primates and humans, guinea pigs cannot synthesize vitamin C and must receive it in the diet; vitamin C degrades in stored feed, so guinea pig chow has a short shelf life.",
     "hook": "Guinea pigs need vitamin C (like us).",
     "source": "ALAT Manual, Guinea pig nutrition",
     "options": [
-      { "id": "feed-002-a", "text": "Vitamin C (ascorbic acid)", "is_correct": true },
-      { "id": "feed-002-b", "text": "Vitamin D", "is_correct": false, "distractor_note": "Guinea pigs are not uniquely dependent on dietary vitamin D in this way." },
-      { "id": "feed-002-c", "text": "Taurine", "is_correct": false, "distractor_note": "Taurine is an essential dietary requirement for cats, not the guinea pig's defining need." },
-      { "id": "feed-002-d", "text": "Vitamin K", "is_correct": false, "distractor_note": "Vitamin K deficiency is not the reason guinea pig chow is special." }
+      {
+        "id": "feed-002-a",
+        "text": "Vitamin C (ascorbic acid)",
+        "is_correct": true
+      },
+      {
+        "id": "feed-002-b",
+        "text": "Vitamin D",
+        "is_correct": false,
+        "distractor_note": "Guinea pigs are not uniquely dependent on dietary vitamin D in this way."
+      },
+      {
+        "id": "feed-002-c",
+        "text": "Taurine",
+        "is_correct": false,
+        "distractor_note": "Taurine is an essential dietary requirement for cats, not the guinea pig's defining need."
+      },
+      {
+        "id": "feed-002-d",
+        "text": "Vitamin K",
+        "is_correct": false,
+        "distractor_note": "Vitamin K deficiency is not the reason guinea pig chow is special."
+      }
     ]
   },
   {
-    "id": "hus-001", "objective": "HUS", "difficulty": "medium",
+    "id": "hus-001",
+    "objective": "HUS",
+    "difficulty": "medium",
     "stem": "The primary purpose of a quarantine period for newly received animals is to:",
     "explanation": "Quarantine separates and observes incoming animals to detect and prevent the introduction of disease into the resident colony, and to allow health assessment before release.",
     "hook": "Quarantine protects the resident colony.",
     "source": "ALAT Manual, Quarantine & acclimation",
     "options": [
-      { "id": "hus-001-a", "text": "Prevent introduction of disease into the existing colony", "is_correct": true },
-      { "id": "hus-001-b", "text": "Allow animals to gain weight before study", "is_correct": false, "distractor_note": "Weight gain is not the purpose of quarantine." },
-      { "id": "hus-001-c", "text": "Satisfy a billing requirement", "is_correct": false, "distractor_note": "Quarantine is a biosecurity measure, not an administrative billing step." },
-      { "id": "hus-001-d", "text": "Permanently isolate animals for the whole study", "is_correct": false, "distractor_note": "Quarantine is a temporary holding/observation period, not lifelong isolation." }
+      {
+        "id": "hus-001-a",
+        "text": "Prevent introduction of disease into the existing colony",
+        "is_correct": true
+      },
+      {
+        "id": "hus-001-b",
+        "text": "Allow animals to gain weight before study",
+        "is_correct": false,
+        "distractor_note": "Weight gain is not the purpose of quarantine."
+      },
+      {
+        "id": "hus-001-c",
+        "text": "Satisfy a billing requirement",
+        "is_correct": false,
+        "distractor_note": "Quarantine is a biosecurity measure, not an administrative billing step."
+      },
+      {
+        "id": "hus-001-d",
+        "text": "Permanently isolate animals for the whole study",
+        "is_correct": false,
+        "distractor_note": "Quarantine is a temporary holding/observation period, not lifelong isolation."
+      }
     ]
   },
   {
-    "id": "hus-002", "objective": "HUS", "difficulty": "easy",
+    "id": "hus-002",
+    "objective": "HUS",
+    "difficulty": "easy",
     "stem": "The abbreviation 'SPF' applied to a rodent colony stands for:",
     "explanation": "SPF means Specific Pathogen Free — the animals are documented to be free of a defined list of specific pathogens (not necessarily all microorganisms).",
     "hook": "SPF = Specific Pathogen Free (a defined list).",
     "source": "ALAT Manual, Health monitoring",
     "options": [
-      { "id": "hus-002-a", "text": "Specific Pathogen Free", "is_correct": true },
-      { "id": "hus-002-b", "text": "Sterile Pathogen Filter", "is_correct": false, "distractor_note": "Not a real term; SPF refers to the animals' defined health status." },
-      { "id": "hus-002-c", "text": "Standard Pathogen Format", "is_correct": false, "distractor_note": "Invented phrase; not a husbandry term." },
-      { "id": "hus-002-d", "text": "Sanitized Pen Facility", "is_correct": false, "distractor_note": "SPF describes animal health status, not a facility type." }
+      {
+        "id": "hus-002-a",
+        "text": "Specific Pathogen Free",
+        "is_correct": true
+      },
+      {
+        "id": "hus-002-b",
+        "text": "Sterile Pathogen Filter",
+        "is_correct": false,
+        "distractor_note": "Not a real term; SPF refers to the animals' defined health status."
+      },
+      {
+        "id": "hus-002-c",
+        "text": "Standard Pathogen Format",
+        "is_correct": false,
+        "distractor_note": "Invented phrase; not a husbandry term."
+      },
+      {
+        "id": "hus-002-d",
+        "text": "Sanitized Pen Facility",
+        "is_correct": false,
+        "distractor_note": "SPF describes animal health status, not a facility type."
+      }
     ]
   },
   {
-    "id": "hus-003", "objective": "HUS", "difficulty": "medium",
+    "id": "hus-003",
+    "objective": "HUS",
+    "difficulty": "medium",
     "stem": "Which of the following is an example of environmental enrichment for laboratory mice?",
     "explanation": "Nesting material is a highly valued form of enrichment for mice, supporting thermoregulation and natural nest-building behavior. Enrichment promotes species-typical behavior and well-being.",
     "hook": "Mice love nesting material.",
     "source": "Guide, 8th ed., Environmental enrichment",
     "options": [
-      { "id": "hus-003-a", "text": "Providing nesting material", "is_correct": true },
-      { "id": "hus-003-b", "text": "Increasing room light intensity", "is_correct": false, "distractor_note": "Brighter light is a stressor for rodents, not enrichment." },
-      { "id": "hus-003-c", "text": "Housing all mice singly", "is_correct": false, "distractor_note": "Mice are social; single housing reduces welfare unless justified." },
-      { "id": "hus-003-d", "text": "Reducing the cage size", "is_correct": false, "distractor_note": "Less space is the opposite of enrichment." }
+      {
+        "id": "hus-003-a",
+        "text": "Providing nesting material",
+        "is_correct": true
+      },
+      {
+        "id": "hus-003-b",
+        "text": "Increasing room light intensity",
+        "is_correct": false,
+        "distractor_note": "Brighter light is a stressor for rodents, not enrichment."
+      },
+      {
+        "id": "hus-003-c",
+        "text": "Housing all mice singly",
+        "is_correct": false,
+        "distractor_note": "Mice are social; single housing reduces welfare unless justified."
+      },
+      {
+        "id": "hus-003-d",
+        "text": "Reducing the cage size",
+        "is_correct": false,
+        "distractor_note": "Less space is the opposite of enrichment."
+      }
     ]
   },
   {
-    "id": "spm-001", "objective": "SPM", "difficulty": "medium",
+    "id": "spm-001",
+    "objective": "SPM",
+    "difficulty": "medium",
     "stem": "The phenomenon in which the pheromones of a strange male mouse block the pregnancy of a recently mated female is called the:",
     "explanation": "The Bruce effect is pregnancy block caused by exposure to a strange (non-stud) male's pheromones during early pregnancy.",
     "hook": "Bruce = pregnancy Blocked by a stranger.",
     "source": "ALAT Manual, Mouse reproduction",
     "options": [
-      { "id": "spm-001-a", "text": "Bruce effect", "is_correct": true },
-      { "id": "spm-001-b", "text": "Whitten effect", "is_correct": false, "distractor_note": "The Whitten effect is synchronization/induction of estrus by male pheromones." },
-      { "id": "spm-001-c", "text": "Lee-Boot effect", "is_correct": false, "distractor_note": "The Lee-Boot effect is suppression of estrus when females are grouped without a male." },
-      { "id": "spm-001-d", "text": "Postpartum estrus", "is_correct": false, "distractor_note": "Postpartum estrus is a fertile estrus shortly after giving birth, not pregnancy block." }
+      {
+        "id": "spm-001-a",
+        "text": "Bruce effect",
+        "is_correct": true
+      },
+      {
+        "id": "spm-001-b",
+        "text": "Whitten effect",
+        "is_correct": false,
+        "distractor_note": "The Whitten effect is synchronization/induction of estrus by male pheromones."
+      },
+      {
+        "id": "spm-001-c",
+        "text": "Lee-Boot effect",
+        "is_correct": false,
+        "distractor_note": "The Lee-Boot effect is suppression of estrus when females are grouped without a male."
+      },
+      {
+        "id": "spm-001-d",
+        "text": "Postpartum estrus",
+        "is_correct": false,
+        "distractor_note": "Postpartum estrus is a fertile estrus shortly after giving birth, not pregnancy block."
+      }
     ]
   },
   {
-    "id": "spm-002", "objective": "SPM", "difficulty": "easy",
+    "id": "spm-002",
+    "objective": "SPM",
+    "difficulty": "easy",
     "stem": "The approximate gestation period of the laboratory mouse is:",
     "explanation": "Mouse gestation is approximately 19–21 days. Pups are weaned at about 21 days of age.",
     "hook": "Mouse: ~3 weeks in, ~3 weeks to wean.",
     "source": "ALAT Manual, Mouse biology",
     "options": [
-      { "id": "spm-002-a", "text": "19–21 days", "is_correct": true },
-      { "id": "spm-002-b", "text": "10–12 days", "is_correct": false, "distractor_note": "Too short for a mouse; closer to nothing in mammals this size." },
-      { "id": "spm-002-c", "text": "30–32 days", "is_correct": false, "distractor_note": "That range is closer to a rabbit-ish length, not a mouse." },
-      { "id": "spm-002-d", "text": "63 days", "is_correct": false, "distractor_note": "~63 days is the dog/cat gestation, far longer than a mouse." }
+      {
+        "id": "spm-002-a",
+        "text": "19–21 days",
+        "is_correct": true
+      },
+      {
+        "id": "spm-002-b",
+        "text": "10–12 days",
+        "is_correct": false,
+        "distractor_note": "Too short for a mouse; closer to nothing in mammals this size."
+      },
+      {
+        "id": "spm-002-c",
+        "text": "30–32 days",
+        "is_correct": false,
+        "distractor_note": "That range is closer to a rabbit-ish length, not a mouse."
+      },
+      {
+        "id": "spm-002-d",
+        "text": "63 days",
+        "is_correct": false,
+        "distractor_note": "~63 days is the dog/cat gestation, far longer than a mouse."
+      }
     ]
   },
   {
-    "id": "spm-003", "objective": "SPM", "difficulty": "hard",
+    "id": "spm-003",
+    "objective": "SPM",
+    "difficulty": "hard",
     "stem": "The Whitten effect in mice refers to:",
     "explanation": "The Whitten effect is the synchronization and induction of estrus in a group of females following exposure to male pheromones, useful for timed matings.",
     "hook": "Whitten = male pheromone Wakes up (synchronizes) estrus.",
     "source": "ALAT Manual, Mouse reproduction",
     "options": [
-      { "id": "spm-003-a", "text": "Synchronization/induction of estrus by exposure to male pheromones", "is_correct": true },
-      { "id": "spm-003-b", "text": "Pregnancy block by a strange male", "is_correct": false, "distractor_note": "That is the Bruce effect." },
-      { "id": "spm-003-c", "text": "Estrus suppression in all-female groups", "is_correct": false, "distractor_note": "That is the Lee-Boot effect." },
-      { "id": "spm-003-d", "text": "Cannibalism of pups under stress", "is_correct": false, "distractor_note": "Not a named pheromone effect." }
+      {
+        "id": "spm-003-a",
+        "text": "Synchronization/induction of estrus by exposure to male pheromones",
+        "is_correct": true
+      },
+      {
+        "id": "spm-003-b",
+        "text": "Pregnancy block by a strange male",
+        "is_correct": false,
+        "distractor_note": "That is the Bruce effect."
+      },
+      {
+        "id": "spm-003-c",
+        "text": "Estrus suppression in all-female groups",
+        "is_correct": false,
+        "distractor_note": "That is the Lee-Boot effect."
+      },
+      {
+        "id": "spm-003-d",
+        "text": "Cannibalism of pups under stress",
+        "is_correct": false,
+        "distractor_note": "Not a named pheromone effect."
+      }
     ]
   },
   {
-    "id": "spr-001", "objective": "SPR", "difficulty": "medium",
+    "id": "spr-001",
+    "objective": "SPR",
+    "difficulty": "medium",
     "stem": "Which anatomical feature is ABSENT in the laboratory rat?",
     "explanation": "Rats lack a gallbladder; bile drains continuously from the liver into the small intestine. Rats also cannot vomit.",
     "hook": "Rats: no gallbladder, no vomiting.",
     "source": "ALAT Manual, Rat anatomy",
     "options": [
-      { "id": "spr-001-a", "text": "Gallbladder", "is_correct": true },
-      { "id": "spr-001-b", "text": "Spleen", "is_correct": false, "distractor_note": "Rats have a spleen." },
-      { "id": "spr-001-c", "text": "Cecum", "is_correct": false, "distractor_note": "Rats have a prominent cecum for hindgut fermentation." },
-      { "id": "spr-001-d", "text": "Pancreas", "is_correct": false, "distractor_note": "Rats have a (diffuse) pancreas." }
+      {
+        "id": "spr-001-a",
+        "text": "Gallbladder",
+        "is_correct": true
+      },
+      {
+        "id": "spr-001-b",
+        "text": "Spleen",
+        "is_correct": false,
+        "distractor_note": "Rats have a spleen."
+      },
+      {
+        "id": "spr-001-c",
+        "text": "Cecum",
+        "is_correct": false,
+        "distractor_note": "Rats have a prominent cecum for hindgut fermentation."
+      },
+      {
+        "id": "spr-001-d",
+        "text": "Pancreas",
+        "is_correct": false,
+        "distractor_note": "Rats have a (diffuse) pancreas."
+      }
     ]
   },
   {
-    "id": "spr-002", "objective": "SPR", "difficulty": "hard",
+    "id": "spr-002",
+    "objective": "SPR",
+    "difficulty": "hard",
     "stem": "Annular constrictions of the tail (ringtail) in young rats are most associated with:",
     "explanation": "Ringtail is classically associated with low environmental humidity (often <40%), sometimes combined with high temperature; it causes annular constrictions that can lead to tail necrosis.",
     "hook": "Ring-tail rings appear when the air is too DRY.",
     "source": "ALAT Manual, Rat husbandry",
     "options": [
-      { "id": "spr-002-a", "text": "Low relative humidity", "is_correct": true },
-      { "id": "spr-002-b", "text": "Excessively high humidity", "is_correct": false, "distractor_note": "Ringtail is linked to dry conditions, not high humidity." },
-      { "id": "spr-002-c", "text": "Vitamin C deficiency", "is_correct": false, "distractor_note": "Vitamin C deficiency affects guinea pigs (scurvy), not rat ringtail." },
-      { "id": "spr-002-d", "text": "Overcrowding alone", "is_correct": false, "distractor_note": "Density is not the primary cause; low humidity is the key factor." }
+      {
+        "id": "spr-002-a",
+        "text": "Low relative humidity",
+        "is_correct": true
+      },
+      {
+        "id": "spr-002-b",
+        "text": "Excessively high humidity",
+        "is_correct": false,
+        "distractor_note": "Ringtail is linked to dry conditions, not high humidity."
+      },
+      {
+        "id": "spr-002-c",
+        "text": "Vitamin C deficiency",
+        "is_correct": false,
+        "distractor_note": "Vitamin C deficiency affects guinea pigs (scurvy), not rat ringtail."
+      },
+      {
+        "id": "spr-002-d",
+        "text": "Overcrowding alone",
+        "is_correct": false,
+        "distractor_note": "Density is not the primary cause; low humidity is the key factor."
+      }
     ]
   },
   {
-    "id": "spr-003", "objective": "SPR", "difficulty": "medium",
+    "id": "spr-003",
+    "objective": "SPR",
+    "difficulty": "medium",
     "stem": "Red-tinged tears or nasal discharge ('red tears') seen around a stressed or ill rat's eyes are due to:",
     "explanation": "Chromodacryorrhea is the secretion of porphyrin-containing (reddish) tears from the Harderian gland, often a sign of stress or illness in rats — not blood.",
     "hook": "Red tears = porphyrin (Harderian gland), a stress sign — not bleeding.",
     "source": "ALAT Manual, Rat health",
     "options": [
-      { "id": "spr-003-a", "text": "Porphyrin secretion from the Harderian gland (chromodacryorrhea)", "is_correct": true },
-      { "id": "spr-003-b", "text": "Hemorrhage from the eye", "is_correct": false, "distractor_note": "The red color is porphyrin pigment, not blood." },
-      { "id": "spr-003-c", "text": "Normal healthy secretion requiring no concern", "is_correct": false, "distractor_note": "It commonly signals stress or illness and warrants evaluation." },
-      { "id": "spr-003-d", "text": "Vitamin A toxicity", "is_correct": false, "distractor_note": "Not related to vitamin A." }
+      {
+        "id": "spr-003-a",
+        "text": "Porphyrin secretion from the Harderian gland (chromodacryorrhea)",
+        "is_correct": true
+      },
+      {
+        "id": "spr-003-b",
+        "text": "Hemorrhage from the eye",
+        "is_correct": false,
+        "distractor_note": "The red color is porphyrin pigment, not blood."
+      },
+      {
+        "id": "spr-003-c",
+        "text": "Normal healthy secretion requiring no concern",
+        "is_correct": false,
+        "distractor_note": "It commonly signals stress or illness and warrants evaluation."
+      },
+      {
+        "id": "spr-003-d",
+        "text": "Vitamin A toxicity",
+        "is_correct": false,
+        "distractor_note": "Not related to vitamin A."
+      }
     ]
   },
   {
-    "id": "sps-001", "objective": "SPS", "difficulty": "medium",
+    "id": "sps-001",
+    "objective": "SPS",
+    "difficulty": "medium",
     "stem": "Which small rodent is typically housed singly because adults are highly aggressive/territorial toward one another?",
     "explanation": "Syrian (golden) hamsters are solitary and territorial; adults often fight if housed together. Their gestation is very short (~16 days).",
     "hook": "Hamster = loner.",
     "source": "ALAT Manual, Hamster husbandry",
     "options": [
-      { "id": "sps-001-a", "text": "Syrian hamster", "is_correct": true },
-      { "id": "sps-001-b", "text": "Mouse", "is_correct": false, "distractor_note": "Mice are social and usually group-housed." },
-      { "id": "sps-001-c", "text": "Guinea pig", "is_correct": false, "distractor_note": "Guinea pigs are social and do well in compatible groups." },
-      { "id": "sps-001-d", "text": "Gerbil", "is_correct": false, "distractor_note": "Gerbils are social and typically kept in bonded pairs/family groups." }
+      {
+        "id": "sps-001-a",
+        "text": "Syrian hamster",
+        "is_correct": true
+      },
+      {
+        "id": "sps-001-b",
+        "text": "Mouse",
+        "is_correct": false,
+        "distractor_note": "Mice are social and usually group-housed."
+      },
+      {
+        "id": "sps-001-c",
+        "text": "Guinea pig",
+        "is_correct": false,
+        "distractor_note": "Guinea pigs are social and do well in compatible groups."
+      },
+      {
+        "id": "sps-001-d",
+        "text": "Gerbil",
+        "is_correct": false,
+        "distractor_note": "Gerbils are social and typically kept in bonded pairs/family groups."
+      }
     ]
   },
   {
-    "id": "sps-002", "objective": "SPS", "difficulty": "hard",
+    "id": "sps-002",
+    "objective": "SPS",
+    "difficulty": "hard",
     "stem": "Gerbils are notable in the laboratory for their predisposition to:",
     "explanation": "Gerbils are prone to spontaneous epileptiform seizures, especially when startled or handled in a novel environment. They also have a prominent ventral (abdominal) scent gland.",
     "hook": "Gerbils: spontaneous seizures + belly scent gland.",
     "source": "ALAT Manual, Gerbil biology",
     "options": [
-      { "id": "sps-002-a", "text": "Spontaneous epileptiform seizures", "is_correct": true },
-      { "id": "sps-002-b", "text": "Requiring dietary vitamin C", "is_correct": false, "distractor_note": "Dietary vitamin C dependence is a guinea pig trait." },
-      { "id": "sps-002-c", "text": "Inability to breed in captivity", "is_correct": false, "distractor_note": "Gerbils breed readily as bonded pairs." },
-      { "id": "sps-002-d", "text": "Being obligate carnivores", "is_correct": false, "distractor_note": "Gerbils are omnivorous/granivorous, not obligate carnivores." }
+      {
+        "id": "sps-002-a",
+        "text": "Spontaneous epileptiform seizures",
+        "is_correct": true
+      },
+      {
+        "id": "sps-002-b",
+        "text": "Requiring dietary vitamin C",
+        "is_correct": false,
+        "distractor_note": "Dietary vitamin C dependence is a guinea pig trait."
+      },
+      {
+        "id": "sps-002-c",
+        "text": "Inability to breed in captivity",
+        "is_correct": false,
+        "distractor_note": "Gerbils breed readily as bonded pairs."
+      },
+      {
+        "id": "sps-002-d",
+        "text": "Being obligate carnivores",
+        "is_correct": false,
+        "distractor_note": "Gerbils are omnivorous/granivorous, not obligate carnivores."
+      }
     ]
   },
   {
-    "id": "spb-001", "objective": "SPB", "difficulty": "medium",
+    "id": "spb-001",
+    "objective": "SPB",
+    "difficulty": "medium",
     "stem": "Rabbits are classified reproductively as induced ovulators, meaning that:",
     "explanation": "Rabbits do not have a regular spontaneous estrous cycle; ovulation is triggered by the act of mating (induced ovulation), occurring about 10–13 hours after coitus.",
     "hook": "Rabbits ovulate on demand (mating triggers it).",
     "source": "ALAT Manual, Rabbit reproduction",
     "options": [
-      { "id": "spb-001-a", "text": "Ovulation is triggered by copulation rather than a spontaneous cycle", "is_correct": true },
-      { "id": "spb-001-b", "text": "They ovulate on a strict 28-day cycle", "is_correct": false, "distractor_note": "Rabbits are not spontaneous cyclic ovulators like that." },
-      { "id": "spb-001-c", "text": "They cannot ovulate without hormone injections", "is_correct": false, "distractor_note": "Mating itself induces ovulation; hormones are not required." },
-      { "id": "spb-001-d", "text": "They ovulate only seasonally in winter", "is_correct": false, "distractor_note": "Induced ovulation is mating-triggered, not strictly seasonal in the lab." }
+      {
+        "id": "spb-001-a",
+        "text": "Ovulation is triggered by copulation rather than a spontaneous cycle",
+        "is_correct": true
+      },
+      {
+        "id": "spb-001-b",
+        "text": "They ovulate on a strict 28-day cycle",
+        "is_correct": false,
+        "distractor_note": "Rabbits are not spontaneous cyclic ovulators like that."
+      },
+      {
+        "id": "spb-001-c",
+        "text": "They cannot ovulate without hormone injections",
+        "is_correct": false,
+        "distractor_note": "Mating itself induces ovulation; hormones are not required."
+      },
+      {
+        "id": "spb-001-d",
+        "text": "They ovulate only seasonally in winter",
+        "is_correct": false,
+        "distractor_note": "Induced ovulation is mating-triggered, not strictly seasonal in the lab."
+      }
     ]
   },
   {
-    "id": "spb-002", "objective": "SPB", "difficulty": "hard",
+    "id": "spb-002",
+    "objective": "SPB",
+    "difficulty": "hard",
     "stem": "When restraining a rabbit, supporting the hindquarters is critical primarily to prevent:",
     "explanation": "A kicking rabbit with unsupported hindquarters can hyperextend its spine and fracture/luxate the lumbar vertebrae, potentially causing paralysis. Always support the rear.",
     "hook": "Support the rear or risk a broken back.",
     "source": "ALAT Manual, Rabbit restraint",
     "options": [
-      { "id": "spb-002-a", "text": "Fracture or luxation of the lumbar spine", "is_correct": true },
-      { "id": "spb-002-b", "text": "Ear hematoma", "is_correct": false, "distractor_note": "Ear injury is not the main restraint risk addressed by supporting the hindquarters." },
-      { "id": "spb-002-c", "text": "Gastric torsion", "is_correct": false, "distractor_note": "Not the spinal-protection rationale for hindquarter support." },
-      { "id": "spb-002-d", "text": "Corneal ulceration", "is_correct": false, "distractor_note": "Unrelated to hindquarter support during restraint." }
+      {
+        "id": "spb-002-a",
+        "text": "Fracture or luxation of the lumbar spine",
+        "is_correct": true
+      },
+      {
+        "id": "spb-002-b",
+        "text": "Ear hematoma",
+        "is_correct": false,
+        "distractor_note": "Ear injury is not the main restraint risk addressed by supporting the hindquarters."
+      },
+      {
+        "id": "spb-002-c",
+        "text": "Gastric torsion",
+        "is_correct": false,
+        "distractor_note": "Not the spinal-protection rationale for hindquarter support."
+      },
+      {
+        "id": "spb-002-d",
+        "text": "Corneal ulceration",
+        "is_correct": false,
+        "distractor_note": "Unrelated to hindquarter support during restraint."
+      }
     ]
   },
   {
-    "id": "spb-003", "objective": "SPB", "difficulty": "medium",
+    "id": "spb-003",
+    "objective": "SPB",
+    "difficulty": "medium",
     "stem": "The infectious agent classically responsible for 'snuffles' (upper respiratory disease) in rabbits is:",
     "explanation": "Snuffles is most commonly caused by Pasteurella multocida, producing rhinitis, nasal discharge, and sneezing.",
     "hook": "Snuffles = Pasteurella.",
     "source": "ALAT Manual, Rabbit diseases",
     "options": [
-      { "id": "spb-003-a", "text": "Pasteurella multocida", "is_correct": true },
-      { "id": "spb-003-b", "text": "Bordetella bronchiseptica (as primary cause)", "is_correct": false, "distractor_note": "Bordetella can be present but Pasteurella is the classic snuffles agent in rabbits." },
-      { "id": "spb-003-c", "text": "Salmonella enteritidis", "is_correct": false, "distractor_note": "Salmonella causes enteric, not classic upper-respiratory 'snuffles'." },
-      { "id": "spb-003-d", "text": "Escherichia coli", "is_correct": false, "distractor_note": "E. coli is associated with enteritis in young rabbits, not snuffles." }
+      {
+        "id": "spb-003-a",
+        "text": "Pasteurella multocida",
+        "is_correct": true
+      },
+      {
+        "id": "spb-003-b",
+        "text": "Bordetella bronchiseptica (as primary cause)",
+        "is_correct": false,
+        "distractor_note": "Bordetella can be present but Pasteurella is the classic snuffles agent in rabbits."
+      },
+      {
+        "id": "spb-003-c",
+        "text": "Salmonella enteritidis",
+        "is_correct": false,
+        "distractor_note": "Salmonella causes enteric, not classic upper-respiratory 'snuffles'."
+      },
+      {
+        "id": "spb-003-d",
+        "text": "Escherichia coli",
+        "is_correct": false,
+        "distractor_note": "E. coli is associated with enteritis in young rabbits, not snuffles."
+      }
     ]
   },
   {
-    "id": "spb-004", "objective": "SPB", "difficulty": "medium",
+    "id": "spb-004",
+    "objective": "SPB",
+    "difficulty": "medium",
     "stem": "Cecotrophy in rabbits refers to:",
     "explanation": "Rabbits practice cecotrophy — they ingest soft, nutrient-rich cecotropes (night feces) directly from the anus to recover B vitamins, protein, and microbes. It is normal and essential.",
     "hook": "Cecotropes = the 'good' night feces rabbits re-eat.",
     "source": "ALAT Manual, Rabbit GI physiology",
     "options": [
-      { "id": "spb-004-a", "text": "Ingestion of nutrient-rich cecotropes (soft night feces)", "is_correct": true },
-      { "id": "spb-004-b", "text": "A pathological eating disorder requiring treatment", "is_correct": false, "distractor_note": "Cecotrophy is normal and necessary, not pathological." },
-      { "id": "spb-004-c", "text": "Regurgitation of stomach contents", "is_correct": false, "distractor_note": "Rabbits cannot vomit; cecotrophy involves feces, not regurgitation." },
-      { "id": "spb-004-d", "text": "Eating of bedding material", "is_correct": false, "distractor_note": "That would be pica, not cecotrophy." }
+      {
+        "id": "spb-004-a",
+        "text": "Ingestion of nutrient-rich cecotropes (soft night feces)",
+        "is_correct": true
+      },
+      {
+        "id": "spb-004-b",
+        "text": "A pathological eating disorder requiring treatment",
+        "is_correct": false,
+        "distractor_note": "Cecotrophy is normal and necessary, not pathological."
+      },
+      {
+        "id": "spb-004-c",
+        "text": "Regurgitation of stomach contents",
+        "is_correct": false,
+        "distractor_note": "Rabbits cannot vomit; cecotrophy involves feces, not regurgitation."
+      },
+      {
+        "id": "spb-004-d",
+        "text": "Eating of bedding material",
+        "is_correct": false,
+        "distractor_note": "That would be pica, not cecotrophy."
+      }
     ]
   },
   {
-    "id": "spn-001", "objective": "SPN", "difficulty": "hard",
+    "id": "spn-001",
+    "objective": "SPN",
+    "difficulty": "hard",
     "stem": "Which zoonotic agent carried by macaques is of greatest concern to personnel because human infection is frequently fatal?",
     "explanation": "Herpes B virus (Macacine herpesvirus 1 / Cercopithecine herpesvirus 1) is often subclinical in macaques but can cause fatal encephalitis in humans following bites, scratches, or mucosal exposure.",
     "hook": "B virus from macaques → deadly in humans.",
     "source": "ALAT Manual, NHP occupational hazards",
     "options": [
-      { "id": "spn-001-a", "text": "Herpes B virus (Macacine herpesvirus 1)", "is_correct": true },
-      { "id": "spn-001-b", "text": "Canine distemper virus", "is_correct": false, "distractor_note": "Distemper affects carnivores, not a primary NHP-to-human hazard." },
-      { "id": "spn-001-c", "text": "Feline leukemia virus", "is_correct": false, "distractor_note": "FeLV is a cat retrovirus, unrelated to macaque exposure." },
-      { "id": "spn-001-d", "text": "Myxoma virus", "is_correct": false, "distractor_note": "Myxoma virus affects rabbits." }
+      {
+        "id": "spn-001-a",
+        "text": "Herpes B virus (Macacine herpesvirus 1)",
+        "is_correct": true
+      },
+      {
+        "id": "spn-001-b",
+        "text": "Canine distemper virus",
+        "is_correct": false,
+        "distractor_note": "Distemper affects carnivores, not a primary NHP-to-human hazard."
+      },
+      {
+        "id": "spn-001-c",
+        "text": "Feline leukemia virus",
+        "is_correct": false,
+        "distractor_note": "FeLV is a cat retrovirus, unrelated to macaque exposure."
+      },
+      {
+        "id": "spn-001-d",
+        "text": "Myxoma virus",
+        "is_correct": false,
+        "distractor_note": "Myxoma virus affects rabbits."
+      }
     ]
   },
   {
-    "id": "spn-002", "objective": "SPN", "difficulty": "medium",
+    "id": "spn-002",
+    "objective": "SPN",
+    "difficulty": "medium",
     "stem": "The standard site for routine tuberculin (TB) skin testing in macaques is the:",
     "explanation": "NHPs are TB-tested by intradermal injection of tuberculin in the upper eyelid (palpebral), allowing easy observation of swelling/erythema at 24, 48, and 72 hours.",
     "hook": "TB test goes in the eyelid (palpebral).",
     "source": "ALAT Manual, NHP health surveillance",
     "options": [
-      { "id": "spn-002-a", "text": "Upper eyelid (palpebral, intradermal)", "is_correct": true },
-      { "id": "spn-002-b", "text": "Tail base", "is_correct": false, "distractor_note": "Not the standard NHP TB test site." },
-      { "id": "spn-002-c", "text": "Footpad", "is_correct": false, "distractor_note": "Footpad is not the routine palpebral TB site for macaques." },
-      { "id": "spn-002-d", "text": "Ear pinna only", "is_correct": false, "distractor_note": "The eyelid (palpebral) site is standard; the ear is not the routine site." }
+      {
+        "id": "spn-002-a",
+        "text": "Upper eyelid (palpebral, intradermal)",
+        "is_correct": true
+      },
+      {
+        "id": "spn-002-b",
+        "text": "Tail base",
+        "is_correct": false,
+        "distractor_note": "Not the standard NHP TB test site."
+      },
+      {
+        "id": "spn-002-c",
+        "text": "Footpad",
+        "is_correct": false,
+        "distractor_note": "Footpad is not the routine palpebral TB site for macaques."
+      },
+      {
+        "id": "spn-002-d",
+        "text": "Ear pinna only",
+        "is_correct": false,
+        "distractor_note": "The eyelid (palpebral) site is standard; the ear is not the routine site."
+      }
     ]
   },
   {
-    "id": "ohs-001", "objective": "OHS", "difficulty": "medium",
+    "id": "ohs-001",
+    "objective": "OHS",
+    "difficulty": "medium",
     "stem": "According to the hierarchy of controls, which type of control is considered MOST effective for reducing occupational exposure to a hazard?",
     "explanation": "The hierarchy ranks elimination/substitution and engineering controls above administrative controls and PPE. Engineering controls (e.g., ventilated cage changing stations) reduce exposure at the source and are preferred over relying on PPE.",
     "hook": "Engineering controls beat PPE (PPE is the last line).",
     "source": "ALAT Manual, Occupational health & safety; NIOSH hierarchy of controls",
     "options": [
-      { "id": "ohs-001-a", "text": "Engineering controls (e.g., ventilated workstations)", "is_correct": true },
-      { "id": "ohs-001-b", "text": "Personal protective equipment (PPE)", "is_correct": false, "distractor_note": "PPE is the LEAST effective tier — the last line of defense." },
-      { "id": "ohs-001-c", "text": "Posting warning signs", "is_correct": false, "distractor_note": "Signage is an administrative control, less effective than engineering controls." },
-      { "id": "ohs-001-d", "text": "Annual safety training only", "is_correct": false, "distractor_note": "Training is administrative and does not remove the hazard at the source." }
+      {
+        "id": "ohs-001-a",
+        "text": "Engineering controls (e.g., ventilated workstations)",
+        "is_correct": true
+      },
+      {
+        "id": "ohs-001-b",
+        "text": "Personal protective equipment (PPE)",
+        "is_correct": false,
+        "distractor_note": "PPE is the LEAST effective tier — the last line of defense."
+      },
+      {
+        "id": "ohs-001-c",
+        "text": "Posting warning signs",
+        "is_correct": false,
+        "distractor_note": "Signage is an administrative control, less effective than engineering controls."
+      },
+      {
+        "id": "ohs-001-d",
+        "text": "Annual safety training only",
+        "is_correct": false,
+        "distractor_note": "Training is administrative and does not remove the hazard at the source."
+      }
     ]
   },
   {
-    "id": "ohs-002", "objective": "OHS", "difficulty": "medium",
+    "id": "ohs-002",
+    "objective": "OHS",
+    "difficulty": "medium",
     "stem": "Laboratory animal allergy (LAA) most commonly results from exposure to allergens found in rodent:",
     "explanation": "Major rodent allergens are present in urine (e.g., mouse and rat urinary proteins), as well as dander, saliva, and hair. Aerosolized urinary proteins from soiled bedding are a leading cause of LAA.",
     "hook": "Rodent allergens hide in URINE (and dander/saliva).",
     "source": "ALAT Manual, Occupational health",
     "options": [
-      { "id": "ohs-002-a", "text": "Urine, dander, and saliva", "is_correct": true },
-      { "id": "ohs-002-b", "text": "Feed pellets only", "is_correct": false, "distractor_note": "Standard feed is not the principal LAA allergen source." },
-      { "id": "ohs-002-c", "text": "Cage plastic", "is_correct": false, "distractor_note": "The cage material is not the allergen; animal proteins are." },
-      { "id": "ohs-002-d", "text": "Disinfectant residue", "is_correct": false, "distractor_note": "Disinfectants can irritate but are not the LAA (allergy) source." }
+      {
+        "id": "ohs-002-a",
+        "text": "Urine, dander, and saliva",
+        "is_correct": true
+      },
+      {
+        "id": "ohs-002-b",
+        "text": "Feed pellets only",
+        "is_correct": false,
+        "distractor_note": "Standard feed is not the principal LAA allergen source."
+      },
+      {
+        "id": "ohs-002-c",
+        "text": "Cage plastic",
+        "is_correct": false,
+        "distractor_note": "The cage material is not the allergen; animal proteins are."
+      },
+      {
+        "id": "ohs-002-d",
+        "text": "Disinfectant residue",
+        "is_correct": false,
+        "distractor_note": "Disinfectants can irritate but are not the LAA (allergy) source."
+      }
     ]
   },
   {
-    "id": "gen-001", "objective": "GEN", "difficulty": "medium",
+    "id": "gen-001",
+    "objective": "GEN",
+    "difficulty": "medium",
     "stem": "An inbred strain of mice is produced by:",
     "explanation": "An inbred strain results from at least 20 consecutive generations of brother-sister (sibling) mating, producing animals that are essentially genetically identical (isogenic) and homozygous at virtually all loci.",
     "hook": "Inbred = 20+ generations of sib-sib mating → isogenic.",
     "source": "ALAT Manual, Genetics & nomenclature",
     "options": [
-      { "id": "gen-001-a", "text": "At least 20 generations of brother-sister mating", "is_correct": true },
-      { "id": "gen-001-b", "text": "Random mating of a large, diverse population", "is_correct": false, "distractor_note": "That describes an outbred stock, which maintains genetic variability." },
-      { "id": "gen-001-c", "text": "Crossing two different inbred strains once", "is_correct": false, "distractor_note": "A single cross of two inbred strains makes an F1 hybrid, not an inbred strain." },
-      { "id": "gen-001-d", "text": "Inserting a foreign gene", "is_correct": false, "distractor_note": "That produces a transgenic animal, independent of inbreeding." }
+      {
+        "id": "gen-001-a",
+        "text": "At least 20 generations of brother-sister mating",
+        "is_correct": true
+      },
+      {
+        "id": "gen-001-b",
+        "text": "Random mating of a large, diverse population",
+        "is_correct": false,
+        "distractor_note": "That describes an outbred stock, which maintains genetic variability."
+      },
+      {
+        "id": "gen-001-c",
+        "text": "Crossing two different inbred strains once",
+        "is_correct": false,
+        "distractor_note": "A single cross of two inbred strains makes an F1 hybrid, not an inbred strain."
+      },
+      {
+        "id": "gen-001-d",
+        "text": "Inserting a foreign gene",
+        "is_correct": false,
+        "distractor_note": "That produces a transgenic animal, independent of inbreeding."
+      }
     ]
   },
   {
-    "id": "gen-002", "objective": "GEN", "difficulty": "hard",
+    "id": "gen-002",
+    "objective": "GEN",
+    "difficulty": "hard",
     "stem": "Crossing two different inbred strains produces offspring that are:",
     "explanation": "The first filial (F1) generation from two inbred strains is uniformly heterozygous and genetically identical to one another (F1 hybrids), often showing 'hybrid vigor.'",
     "hook": "Inbred A × Inbred B = uniform F1 hybrids.",
     "source": "ALAT Manual, Genetics",
     "options": [
-      { "id": "gen-002-a", "text": "F1 hybrids — uniform and heterozygous", "is_correct": true },
-      { "id": "gen-002-b", "text": "A new inbred strain immediately", "is_correct": false, "distractor_note": "Inbred status requires 20+ generations of sib mating, not one cross." },
-      { "id": "gen-002-c", "text": "An outbred stock", "is_correct": false, "distractor_note": "F1 animals are genetically uniform, unlike a variable outbred stock." },
-      { "id": "gen-002-d", "text": "Congenic animals", "is_correct": false, "distractor_note": "Congenics are made by repeated backcrossing to transfer a single locus, not a single F1 cross." }
+      {
+        "id": "gen-002-a",
+        "text": "F1 hybrids — uniform and heterozygous",
+        "is_correct": true
+      },
+      {
+        "id": "gen-002-b",
+        "text": "A new inbred strain immediately",
+        "is_correct": false,
+        "distractor_note": "Inbred status requires 20+ generations of sib mating, not one cross."
+      },
+      {
+        "id": "gen-002-c",
+        "text": "An outbred stock",
+        "is_correct": false,
+        "distractor_note": "F1 animals are genetically uniform, unlike a variable outbred stock."
+      },
+      {
+        "id": "gen-002-d",
+        "text": "Congenic animals",
+        "is_correct": false,
+        "distractor_note": "Congenics are made by repeated backcrossing to transfer a single locus, not a single F1 cross."
+      }
     ]
   },
   {
-    "id": "ane-001", "objective": "ANE", "difficulty": "medium",
+    "id": "ane-001",
+    "objective": "ANE",
+    "difficulty": "medium",
     "stem": "Which reflex is commonly assessed to judge that a rodent has reached a surgical plane of anesthesia?",
     "explanation": "Loss of the pedal withdrawal reflex (no limb withdrawal when a toe/foot is firmly pinched) indicates a surgical plane of anesthesia in rodents.",
     "hook": "Toe pinch → no pull-back = deep enough.",
     "source": "ALAT Manual, Anesthesia monitoring",
     "options": [
-      { "id": "ane-001-a", "text": "Pedal withdrawal (toe-pinch) reflex", "is_correct": true },
-      { "id": "ane-001-b", "text": "Pupillary light reflex only", "is_correct": false, "distractor_note": "Not the standard primary monitor for surgical plane in rodents." },
-      { "id": "ane-001-c", "text": "Righting reflex", "is_correct": false, "distractor_note": "Loss of righting indicates the animal is anesthetized/unconscious but not necessarily at a surgical plane." },
-      { "id": "ane-001-d", "text": "Gag reflex", "is_correct": false, "distractor_note": "Not the routine reflex used to confirm surgical depth in rodents." }
+      {
+        "id": "ane-001-a",
+        "text": "Pedal withdrawal (toe-pinch) reflex",
+        "is_correct": true
+      },
+      {
+        "id": "ane-001-b",
+        "text": "Pupillary light reflex only",
+        "is_correct": false,
+        "distractor_note": "Not the standard primary monitor for surgical plane in rodents."
+      },
+      {
+        "id": "ane-001-c",
+        "text": "Righting reflex",
+        "is_correct": false,
+        "distractor_note": "Loss of righting indicates the animal is anesthetized/unconscious but not necessarily at a surgical plane."
+      },
+      {
+        "id": "ane-001-d",
+        "text": "Gag reflex",
+        "is_correct": false,
+        "distractor_note": "Not the routine reflex used to confirm surgical depth in rodents."
+      }
     ]
   },
   {
-    "id": "ane-002", "objective": "ANE", "difficulty": "easy",
+    "id": "ane-002",
+    "objective": "ANE",
+    "difficulty": "easy",
     "stem": "Isoflurane is best classified as a(n):",
     "explanation": "Isoflurane is a volatile inhalant anesthetic delivered via a precision vaporizer; its rapid uptake/recovery and ease of depth control make it widely used in rodents.",
     "hook": "Isoflurane = inhaled (vaporized) anesthetic.",
     "source": "ALAT Manual, Anesthetic agents",
     "options": [
-      { "id": "ane-002-a", "text": "Inhalant (volatile) anesthetic", "is_correct": true },
-      { "id": "ane-002-b", "text": "Injectable barbiturate", "is_correct": false, "distractor_note": "Isoflurane is inhaled, not an injectable barbiturate (e.g., pentobarbital)." },
-      { "id": "ane-002-c", "text": "Local anesthetic", "is_correct": false, "distractor_note": "Locals like lidocaine block nerves regionally; isoflurane is a general inhalant." },
-      { "id": "ane-002-d", "text": "Neuromuscular blocker", "is_correct": false, "distractor_note": "Paralytics provide no anesthesia; isoflurane is a true general anesthetic." }
+      {
+        "id": "ane-002-a",
+        "text": "Inhalant (volatile) anesthetic",
+        "is_correct": true
+      },
+      {
+        "id": "ane-002-b",
+        "text": "Injectable barbiturate",
+        "is_correct": false,
+        "distractor_note": "Isoflurane is inhaled, not an injectable barbiturate (e.g., pentobarbital)."
+      },
+      {
+        "id": "ane-002-c",
+        "text": "Local anesthetic",
+        "is_correct": false,
+        "distractor_note": "Locals like lidocaine block nerves regionally; isoflurane is a general inhalant."
+      },
+      {
+        "id": "ane-002-d",
+        "text": "Neuromuscular blocker",
+        "is_correct": false,
+        "distractor_note": "Paralytics provide no anesthesia; isoflurane is a true general anesthetic."
+      }
     ]
   },
   {
-    "id": "eut-001", "objective": "EUT", "difficulty": "medium",
+    "id": "eut-001",
+    "objective": "EUT",
+    "difficulty": "medium",
     "stem": "When using a CO2 chamber for rodent euthanasia, the AVMA recommends a gradual-fill displacement rate of approximately:",
     "explanation": "The AVMA Guidelines recommend a gradual fill of about 30–70% of the chamber volume per minute to minimize distress; animals should not be pre-filled into a 100% CO2 chamber.",
     "hook": "CO2 fill: 30–70% of chamber volume per minute.",
     "source": "AVMA Guidelines for the Euthanasia of Animals: 2020 Edition",
     "options": [
-      { "id": "eut-001-a", "text": "30–70% of chamber volume per minute", "is_correct": true },
-      { "id": "eut-001-b", "text": "100% prefilled before adding animals", "is_correct": false, "distractor_note": "Prefilling with 100% CO2 is aversive and not recommended for rodents." },
-      { "id": "eut-001-c", "text": "5% per minute", "is_correct": false, "distractor_note": "Too slow to be humane/effective within a reasonable time." },
-      { "id": "eut-001-d", "text": "200% per minute", "is_correct": false, "distractor_note": "Exceeds the recommended displacement range and increases distress." }
+      {
+        "id": "eut-001-a",
+        "text": "30–70% of chamber volume per minute",
+        "is_correct": true
+      },
+      {
+        "id": "eut-001-b",
+        "text": "100% prefilled before adding animals",
+        "is_correct": false,
+        "distractor_note": "Prefilling with 100% CO2 is aversive and not recommended for rodents."
+      },
+      {
+        "id": "eut-001-c",
+        "text": "5% per minute",
+        "is_correct": false,
+        "distractor_note": "Too slow to be humane/effective within a reasonable time."
+      },
+      {
+        "id": "eut-001-d",
+        "text": "200% per minute",
+        "is_correct": false,
+        "distractor_note": "Exceeds the recommended displacement range and increases distress."
+      }
     ]
   },
   {
-    "id": "eut-002", "objective": "EUT", "difficulty": "hard",
+    "id": "eut-002",
+    "objective": "EUT",
+    "difficulty": "hard",
     "stem": "After CO2 euthanasia of a mouse, what step should be taken to ENSURE death?",
     "explanation": "A secondary physical method (such as cervical dislocation or decapitation, or confirming cessation of heartbeat/respiration plus other signs) is used to ensure death, since animals can recover if removed prematurely.",
     "hook": "Always confirm death with a secondary method.",
     "source": "AVMA 2020; ALAT Manual, Euthanasia",
     "options": [
-      { "id": "eut-002-a", "text": "Apply a secondary method (e.g., cervical dislocation) and verify cessation of vital signs", "is_correct": true },
-      { "id": "eut-002-b", "text": "Immediately return the cage to the colony room", "is_correct": false, "distractor_note": "Premature removal risks the animal recovering; death must be confirmed first." },
-      { "id": "eut-002-c", "text": "Assume death after 30 seconds of gas", "is_correct": false, "distractor_note": "Time alone is insufficient; death must be verified." },
-      { "id": "eut-002-d", "text": "Refrigerate the animal while still in the chamber", "is_correct": false, "distractor_note": "Does not confirm death and is not an approved verification step." }
+      {
+        "id": "eut-002-a",
+        "text": "Apply a secondary method (e.g., cervical dislocation) and verify cessation of vital signs",
+        "is_correct": true
+      },
+      {
+        "id": "eut-002-b",
+        "text": "Immediately return the cage to the colony room",
+        "is_correct": false,
+        "distractor_note": "Premature removal risks the animal recovering; death must be confirmed first."
+      },
+      {
+        "id": "eut-002-c",
+        "text": "Assume death after 30 seconds of gas",
+        "is_correct": false,
+        "distractor_note": "Time alone is insufficient; death must be verified."
+      },
+      {
+        "id": "eut-002-d",
+        "text": "Refrigerate the animal while still in the chamber",
+        "is_correct": false,
+        "distractor_note": "Does not confirm death and is not an approved verification step."
+      }
     ]
   },
   {
-    "id": "eut-003", "objective": "EUT", "difficulty": "medium",
+    "id": "eut-003",
+    "objective": "EUT",
+    "difficulty": "medium",
     "stem": "Cervical dislocation is an acceptable physical method of euthanasia, without sedation, primarily for mice and for rats under approximately what body weight?",
     "explanation": "The AVMA notes cervical dislocation may be used in mice and in rats weighing less than about 200 g; larger rats require sedation/anesthesia first due to greater musculature.",
     "hook": "Cervical dislocation: rats under ~200 g.",
     "source": "AVMA Guidelines 2020",
     "options": [
-      { "id": "eut-003-a", "text": "200 g", "is_correct": true },
-      { "id": "eut-003-b", "text": "500 g", "is_correct": false, "distractor_note": "Above the ~200 g threshold, sedation/anesthesia is recommended first." },
-      { "id": "eut-003-c", "text": "1,000 g", "is_correct": false, "distractor_note": "Far above the weight where unsedated cervical dislocation is appropriate." },
-      { "id": "eut-003-d", "text": "50 g", "is_correct": false, "distractor_note": "Understates the threshold; the cited limit is ~200 g for rats." }
+      {
+        "id": "eut-003-a",
+        "text": "200 g",
+        "is_correct": true
+      },
+      {
+        "id": "eut-003-b",
+        "text": "500 g",
+        "is_correct": false,
+        "distractor_note": "Above the ~200 g threshold, sedation/anesthesia is recommended first."
+      },
+      {
+        "id": "eut-003-c",
+        "text": "1,000 g",
+        "is_correct": false,
+        "distractor_note": "Far above the weight where unsedated cervical dislocation is appropriate."
+      },
+      {
+        "id": "eut-003-d",
+        "text": "50 g",
+        "is_correct": false,
+        "distractor_note": "Understates the threshold; the cited limit is ~200 g for rats."
+      }
     ]
   },
   {
-    "id": "res-001", "objective": "RES", "difficulty": "medium",
+    "id": "res-001",
+    "objective": "RES",
+    "difficulty": "medium",
     "stem": "An intraperitoneal (IP) injection in a rodent is administered into the:",
     "explanation": "IP injection deposits material into the peritoneal (abdominal) cavity, typically in the lower right quadrant with the animal tilted head-down to move organs away from the needle.",
     "hook": "IP = into the peritoneal (belly) cavity.",
     "source": "ALAT Manual, Injection techniques",
     "options": [
-      { "id": "res-001-a", "text": "Abdominal (peritoneal) cavity", "is_correct": true },
-      { "id": "res-001-b", "text": "Muscle", "is_correct": false, "distractor_note": "That is intramuscular (IM), not intraperitoneal." },
-      { "id": "res-001-c", "text": "Vein", "is_correct": false, "distractor_note": "That is intravenous (IV)." },
-      { "id": "res-001-d", "text": "Under the skin", "is_correct": false, "distractor_note": "That is subcutaneous (SC/SQ)." }
+      {
+        "id": "res-001-a",
+        "text": "Abdominal (peritoneal) cavity",
+        "is_correct": true
+      },
+      {
+        "id": "res-001-b",
+        "text": "Muscle",
+        "is_correct": false,
+        "distractor_note": "That is intramuscular (IM), not intraperitoneal."
+      },
+      {
+        "id": "res-001-c",
+        "text": "Vein",
+        "is_correct": false,
+        "distractor_note": "That is intravenous (IV)."
+      },
+      {
+        "id": "res-001-d",
+        "text": "Under the skin",
+        "is_correct": false,
+        "distractor_note": "That is subcutaneous (SC/SQ)."
+      }
     ]
   },
   {
-    "id": "res-002", "objective": "RES", "difficulty": "hard",
+    "id": "res-002",
+    "objective": "RES",
+    "difficulty": "hard",
     "stem": "A common guideline for a single blood collection in a healthy animal is that no more than about ___ of the total blood volume should be removed, with several weeks for recovery before repeating.",
     "explanation": "A widely used rule is that up to ~10% of total blood volume may be collected at one time in a healthy animal (with ~2–4 weeks to recover); larger or repeated draws risk hypovolemia/anemia. Total blood volume is roughly 7–8% of body weight.",
     "hook": "Single draw ≤ 10% of blood volume; recover ~weeks.",
     "source": "ALAT Manual, Blood collection; NIH/ARAC guidelines",
     "options": [
-      { "id": "res-002-a", "text": "10%", "is_correct": true },
-      { "id": "res-002-b", "text": "40%", "is_correct": false, "distractor_note": "Removing 40% at once would cause dangerous hypovolemic shock." },
-      { "id": "res-002-c", "text": "25%", "is_correct": false, "distractor_note": "Exceeds the ~10% single-collection guideline for a healthy animal." },
-      { "id": "res-002-d", "text": "1%", "is_correct": false, "distractor_note": "Overly conservative; ~10% is the accepted single-draw limit." }
+      {
+        "id": "res-002-a",
+        "text": "10%",
+        "is_correct": true
+      },
+      {
+        "id": "res-002-b",
+        "text": "40%",
+        "is_correct": false,
+        "distractor_note": "Removing 40% at once would cause dangerous hypovolemic shock."
+      },
+      {
+        "id": "res-002-c",
+        "text": "25%",
+        "is_correct": false,
+        "distractor_note": "Exceeds the ~10% single-collection guideline for a healthy animal."
+      },
+      {
+        "id": "res-002-d",
+        "text": "1%",
+        "is_correct": false,
+        "distractor_note": "Overly conservative; ~10% is the accepted single-draw limit."
+      }
     ]
   },
   {
-    "id": "res-003", "objective": "RES", "difficulty": "medium",
+    "id": "res-003",
+    "objective": "RES",
+    "difficulty": "medium",
     "stem": "Oral gavage is a technique used to:",
     "explanation": "Gavage delivers a measured substance directly into the stomach via a feeding needle/tube passed through the mouth and esophagus, ensuring an exact dose.",
     "hook": "Gavage = dose straight to the stomach via a tube.",
     "source": "ALAT Manual, Dosing techniques",
     "options": [
-      { "id": "res-003-a", "text": "Deliver a measured substance directly into the stomach via a tube", "is_correct": true },
-      { "id": "res-003-b", "text": "Withdraw blood from the tail vein", "is_correct": false, "distractor_note": "Gavage is for administering substances, not collecting blood." },
-      { "id": "res-003-c", "text": "Inject material under the skin", "is_correct": false, "distractor_note": "That is a subcutaneous injection, not gavage." },
-      { "id": "res-003-d", "text": "Anesthetize an animal by inhalation", "is_correct": false, "distractor_note": "Gavage is an oral dosing method, unrelated to inhalant anesthesia." }
+      {
+        "id": "res-003-a",
+        "text": "Deliver a measured substance directly into the stomach via a tube",
+        "is_correct": true
+      },
+      {
+        "id": "res-003-b",
+        "text": "Withdraw blood from the tail vein",
+        "is_correct": false,
+        "distractor_note": "Gavage is for administering substances, not collecting blood."
+      },
+      {
+        "id": "res-003-c",
+        "text": "Inject material under the skin",
+        "is_correct": false,
+        "distractor_note": "That is a subcutaneous injection, not gavage."
+      },
+      {
+        "id": "res-003-d",
+        "text": "Anesthetize an animal by inhalation",
+        "is_correct": false,
+        "distractor_note": "Gavage is an oral dosing method, unrelated to inhalant anesthesia."
+      }
     ]
   },
   {
-    "id": "fac-001", "objective": "FAC", "difficulty": "hard",
+    "id": "fac-001",
+    "objective": "FAC",
+    "difficulty": "hard",
     "stem": "To protect a worker handling hazardous, possibly aerosol-generating agents AND to protect the product/animals from contamination, which device provides both personnel and product protection?",
     "explanation": "A Class II biosafety cabinet protects the worker, the product, and the environment using HEPA-filtered, directional airflow. (A Class I BSC protects personnel/environment but not the product; a chemical fume hood protects only the worker, not the product, and does not filter biologicals.)",
     "hook": "Class II BSC = personnel + product + environment protection.",
     "source": "ALAT Manual, Biosafety equipment",
     "options": [
-      { "id": "fac-001-a", "text": "Class II biosafety cabinet", "is_correct": true },
-      { "id": "fac-001-b", "text": "Chemical fume hood", "is_correct": false, "distractor_note": "A fume hood protects the worker from chemical vapors but does NOT protect the product and does not HEPA-filter biologicals." },
-      { "id": "fac-001-c", "text": "Class I biosafety cabinet", "is_correct": false, "distractor_note": "A Class I BSC protects personnel and environment but NOT the product/sample." },
-      { "id": "fac-001-d", "text": "Laminar-flow clean bench", "is_correct": false, "distractor_note": "A clean bench protects the product only and blows air toward the user — unsafe for hazardous agents." }
+      {
+        "id": "fac-001-a",
+        "text": "Class II biosafety cabinet",
+        "is_correct": true
+      },
+      {
+        "id": "fac-001-b",
+        "text": "Chemical fume hood",
+        "is_correct": false,
+        "distractor_note": "A fume hood protects the worker from chemical vapors but does NOT protect the product and does not HEPA-filter biologicals."
+      },
+      {
+        "id": "fac-001-c",
+        "text": "Class I biosafety cabinet",
+        "is_correct": false,
+        "distractor_note": "A Class I BSC protects personnel and environment but NOT the product/sample."
+      },
+      {
+        "id": "fac-001-d",
+        "text": "Laminar-flow clean bench",
+        "is_correct": false,
+        "distractor_note": "A clean bench protects the product only and blows air toward the user — unsafe for hazardous agents."
+      }
     ]
   },
   {
-    "id": "fac-002", "objective": "FAC", "difficulty": "medium",
+    "id": "fac-002",
+    "objective": "FAC",
+    "difficulty": "medium",
     "stem": "A room housing immunocompromised animals that must be protected from outside contaminants should be maintained at:",
     "explanation": "Clean/barrier areas (e.g., for immunocompromised or SPF animals) are kept under POSITIVE pressure so air flows OUT, keeping contaminants from entering. Hazard containment (e.g., infectious or quarantine rooms) uses NEGATIVE pressure so air flows IN.",
     "hook": "Protect the animals → positive pressure (air pushes out).",
     "source": "ALAT Manual, Facility design; Guide 8th ed.",
     "options": [
-      { "id": "fac-002-a", "text": "Positive pressure relative to the corridor", "is_correct": true },
-      { "id": "fac-002-b", "text": "Negative pressure relative to the corridor", "is_correct": false, "distractor_note": "Negative pressure pulls air IN — used to CONTAIN hazards, not to protect clean animals." },
-      { "id": "fac-002-c", "text": "Exactly equal (neutral) pressure", "is_correct": false, "distractor_note": "Neutral pressure provides no directional protection." },
-      { "id": "fac-002-d", "text": "Fluctuating pressure on a timer", "is_correct": false, "distractor_note": "Cycling pressure would defeat consistent contaminant exclusion." }
+      {
+        "id": "fac-002-a",
+        "text": "Positive pressure relative to the corridor",
+        "is_correct": true
+      },
+      {
+        "id": "fac-002-b",
+        "text": "Negative pressure relative to the corridor",
+        "is_correct": false,
+        "distractor_note": "Negative pressure pulls air IN — used to CONTAIN hazards, not to protect clean animals."
+      },
+      {
+        "id": "fac-002-c",
+        "text": "Exactly equal (neutral) pressure",
+        "is_correct": false,
+        "distractor_note": "Neutral pressure provides no directional protection."
+      },
+      {
+        "id": "fac-002-d",
+        "text": "Fluctuating pressure on a timer",
+        "is_correct": false,
+        "distractor_note": "Cycling pressure would defeat consistent contaminant exclusion."
+      }
     ]
   },
   {
-    "id": "spo-001", "objective": "SPO", "difficulty": "medium",
+    "id": "spo-001",
+    "objective": "SPO",
+    "difficulty": "medium",
     "stem": "Under the Animal Welfare Act, facilities must develop and follow a plan to provide dogs with:",
     "explanation": "The AWA requires dealers, exhibitors, and research facilities to have a written plan, approved by the attending veterinarian, to provide dogs with the opportunity for exercise.",
     "hook": "AWA: dogs need an exercise plan.",
     "source": "AWA 9 CFR 3.8",
     "options": [
-      { "id": "spo-001-a", "text": "The opportunity for exercise", "is_correct": true },
-      { "id": "spo-001-b", "text": "Daily outdoor grazing", "is_correct": false, "distractor_note": "The requirement is an exercise plan, not outdoor grazing." },
-      { "id": "spo-001-c", "text": "Group housing in all cases", "is_correct": false, "distractor_note": "Social housing is encouraged but the specific AWA dog requirement is for exercise." },
-      { "id": "spo-001-d", "text": "A vegetarian diet", "is_correct": false, "distractor_note": "Diet type is not the AWA dog-specific provision referenced here." }
+      {
+        "id": "spo-001-a",
+        "text": "The opportunity for exercise",
+        "is_correct": true
+      },
+      {
+        "id": "spo-001-b",
+        "text": "Daily outdoor grazing",
+        "is_correct": false,
+        "distractor_note": "The requirement is an exercise plan, not outdoor grazing."
+      },
+      {
+        "id": "spo-001-c",
+        "text": "Group housing in all cases",
+        "is_correct": false,
+        "distractor_note": "Social housing is encouraged but the specific AWA dog requirement is for exercise."
+      },
+      {
+        "id": "spo-001-d",
+        "text": "A vegetarian diet",
+        "is_correct": false,
+        "distractor_note": "Diet type is not the AWA dog-specific provision referenced here."
+      }
     ]
   },
   {
-    "id": "spo-002", "objective": "SPO", "difficulty": "medium",
+    "id": "spo-002",
+    "objective": "SPO",
+    "difficulty": "medium",
     "stem": "Under the AWA, nonhuman primate facilities must address the animals' need for:",
     "explanation": "The AWA requires a plan to promote the psychological well-being of nonhuman primates, addressing social grouping, environmental enrichment, and special considerations for certain animals.",
     "hook": "NHPs: plan for psychological well-being.",
     "source": "AWA 9 CFR 3.81",
     "options": [
-      { "id": "spo-002-a", "text": "A plan for environmental enhancement to promote psychological well-being", "is_correct": true },
-      { "id": "spo-002-b", "text": "Mandatory single housing", "is_correct": false, "distractor_note": "Social housing is preferred; isolation is the opposite of the requirement." },
-      { "id": "spo-002-c", "text": "Daily anesthesia", "is_correct": false, "distractor_note": "Not a requirement and would be harmful." },
-      { "id": "spo-002-d", "text": "A purified diet only", "is_correct": false, "distractor_note": "Diet formulation is unrelated to the psychological well-being mandate." }
+      {
+        "id": "spo-002-a",
+        "text": "A plan for environmental enhancement to promote psychological well-being",
+        "is_correct": true
+      },
+      {
+        "id": "spo-002-b",
+        "text": "Mandatory single housing",
+        "is_correct": false,
+        "distractor_note": "Social housing is preferred; isolation is the opposite of the requirement."
+      },
+      {
+        "id": "spo-002-c",
+        "text": "Daily anesthesia",
+        "is_correct": false,
+        "distractor_note": "Not a requirement and would be harmful."
+      },
+      {
+        "id": "spo-002-d",
+        "text": "A purified diet only",
+        "is_correct": false,
+        "distractor_note": "Diet formulation is unrelated to the psychological well-being mandate."
+      }
+    ]
+  },
+  {
+    "id": "reg-005",
+    "objective": "REG",
+    "difficulty": "medium",
+    "stem": "The \"Guide for the Care and Use of Laboratory Animals\" (8th edition) is published by the:",
+    "explanation": "The Guide is prepared and published by the National Research Council (National Academies Press). PHS Policy requires institutions to use it as the basis for their animal care and use program.",
+    "hook": "The Guide = National Research Council / National Academies.",
+    "source": "Guide for the Care and Use of Laboratory Animals, 8th ed.",
+    "options": [
+      {
+        "id": "reg-005-a",
+        "text": "National Research Council (National Academies)",
+        "is_correct": true
+      },
+      {
+        "id": "reg-005-b",
+        "text": "USDA-APHIS",
+        "is_correct": false,
+        "distractor_note": "USDA-APHIS enforces the AWA regulations (9 CFR), it does not publish the Guide."
+      },
+      {
+        "id": "reg-005-c",
+        "text": "AVMA",
+        "is_correct": false,
+        "distractor_note": "The AVMA publishes the euthanasia guidelines, not the Guide."
+      },
+      {
+        "id": "reg-005-d",
+        "text": "AAALAC International",
+        "is_correct": false,
+        "distractor_note": "AAALAC uses the Guide as a primary standard but does not author it."
+      }
+    ]
+  },
+  {
+    "id": "reg-006",
+    "objective": "REG",
+    "difficulty": "hard",
+    "stem": "Under the PHS Policy, how does an institution formally document its commitment to comply?",
+    "explanation": "An institution files an Animal Welfare Assurance with the Office of Laboratory Animal Welfare (OLAW). Without an approved Assurance, the institution cannot receive PHS funding for animal work.",
+    "hook": "PHS commitment = an Assurance on file with OLAW.",
+    "source": "PHS Policy IV.A",
+    "options": [
+      {
+        "id": "reg-006-a",
+        "text": "It files an Animal Welfare Assurance with OLAW",
+        "is_correct": true
+      },
+      {
+        "id": "reg-006-b",
+        "text": "It obtains AAALAC accreditation",
+        "is_correct": false,
+        "distractor_note": "AAALAC accreditation is voluntary and separate from the required PHS Assurance."
+      },
+      {
+        "id": "reg-006-c",
+        "text": "It registers as a research facility with USDA",
+        "is_correct": false,
+        "distractor_note": "USDA registration satisfies the AWA, not the PHS Policy Assurance requirement."
+      },
+      {
+        "id": "reg-006-d",
+        "text": "It publishes an IACUC charter in the Federal Register",
+        "is_correct": false,
+        "distractor_note": "No such publication requirement exists; the mechanism is the OLAW Assurance."
+      }
+    ]
+  },
+  {
+    "id": "reg-007",
+    "objective": "REG",
+    "difficulty": "medium",
+    "stem": "The FDA's Good Laboratory Practice (GLP) regulations for nonclinical safety studies are codified at:",
+    "explanation": "FDA GLP regulations are found at 21 CFR Part 58. They govern the conduct of nonclinical laboratory safety studies submitted to the FDA.",
+    "hook": "GLP = 21 CFR 58.",
+    "source": "21 CFR Part 58",
+    "options": [
+      {
+        "id": "reg-007-a",
+        "text": "21 CFR Part 58",
+        "is_correct": true
+      },
+      {
+        "id": "reg-007-b",
+        "text": "9 CFR Parts 1–4",
+        "is_correct": false,
+        "distractor_note": "9 CFR Parts 1–4 are the USDA Animal Welfare Act regulations, not FDA GLP."
+      },
+      {
+        "id": "reg-007-c",
+        "text": "40 CFR Part 160",
+        "is_correct": false,
+        "distractor_note": "40 CFR 160 is EPA's GLP standard, not FDA's."
+      },
+      {
+        "id": "reg-007-d",
+        "text": "42 CFR Part 73",
+        "is_correct": false,
+        "distractor_note": "42 CFR 73 covers select agents, unrelated to GLP."
+      }
+    ]
+  },
+  {
+    "id": "reg-008",
+    "objective": "REG",
+    "difficulty": "easy",
+    "stem": "A routine procedure causing no more than slight, momentary pain or distress (e.g., a simple injection) and requiring no pain-relieving drugs falls into which USDA pain category?",
+    "explanation": "Category C covers procedures involving no more than momentary or slight pain/distress and no use of pain-relieving drugs.",
+    "hook": "C = no/minimal pain, no drugs needed.",
+    "source": "USDA APHIS Annual Report categories B–E",
+    "options": [
+      {
+        "id": "reg-008-a",
+        "text": "Category C",
+        "is_correct": true
+      },
+      {
+        "id": "reg-008-b",
+        "text": "Category B",
+        "is_correct": false,
+        "distractor_note": "Category B is animals being bred, conditioned, or held but not yet used in a study."
+      },
+      {
+        "id": "reg-008-c",
+        "text": "Category D",
+        "is_correct": false,
+        "distractor_note": "Category D involves pain/distress relieved by appropriate drugs."
+      },
+      {
+        "id": "reg-008-d",
+        "text": "Category E",
+        "is_correct": false,
+        "distractor_note": "Category E involves unrelieved pain/distress that requires scientific justification."
+      }
+    ]
+  },
+  {
+    "id": "iac-005",
+    "objective": "IAC",
+    "difficulty": "medium",
+    "stem": "Which member must be included on every IACUC?",
+    "explanation": "Both the AWA and PHS Policy require a Doctor of Veterinary Medicine (with training/experience in lab animal science and delegated program authority), a practicing scientist experienced in animal research, and a nonaffiliated member.",
+    "hook": "Every IACUC needs a veterinarian.",
+    "source": "AWA 9 CFR 2.31(b); PHS Policy IV.A.3.b",
+    "options": [
+      {
+        "id": "iac-005-a",
+        "text": "A veterinarian with delegated program authority",
+        "is_correct": true
+      },
+      {
+        "id": "iac-005-b",
+        "text": "A biostatistician",
+        "is_correct": false,
+        "distractor_note": "Useful but not a required IACUC member."
+      },
+      {
+        "id": "iac-005-c",
+        "text": "An attorney",
+        "is_correct": false,
+        "distractor_note": "Not a required category of IACUC membership."
+      },
+      {
+        "id": "iac-005-d",
+        "text": "The institution's chief executive officer",
+        "is_correct": false,
+        "distractor_note": "The CEO is not required; the IO appoints the committee but need not sit on it."
+      }
+    ]
+  },
+  {
+    "id": "iac-006",
+    "objective": "IAC",
+    "difficulty": "medium",
+    "stem": "What constitutes a quorum to conduct official IACUC business at a convened meeting?",
+    "explanation": "A quorum is a majority (more than half) of the voting members. Actions such as approvals and suspensions require a vote of a majority of the quorum present.",
+    "hook": "Quorum = majority of members present.",
+    "source": "PHS Policy IV.C; OLAW guidance",
+    "options": [
+      {
+        "id": "iac-006-a",
+        "text": "A majority of the voting members",
+        "is_correct": true
+      },
+      {
+        "id": "iac-006-b",
+        "text": "All members",
+        "is_correct": false,
+        "distractor_note": "Unanimous attendance is not required; a majority suffices."
+      },
+      {
+        "id": "iac-006-c",
+        "text": "Any two members",
+        "is_correct": false,
+        "distractor_note": "Two members do not constitute a quorum unless that is a majority of a very small committee."
+      },
+      {
+        "id": "iac-006-d",
+        "text": "The veterinarian alone",
+        "is_correct": false,
+        "distractor_note": "One member cannot convene official committee business."
+      }
+    ]
+  },
+  {
+    "id": "iac-007",
+    "objective": "IAC",
+    "difficulty": "hard",
+    "stem": "An investigator wishes to significantly increase the number of animals on an already-approved protocol. What is required?",
+    "explanation": "A significant change to an approved protocol (e.g., increasing animal numbers or adding painful procedures) requires IACUC review and approval of an amendment BEFORE the change is implemented.",
+    "hook": "Significant change → approved amendment first.",
+    "source": "PHS Policy IV.B; OLAW significant-changes guidance",
+    "options": [
+      {
+        "id": "iac-007-a",
+        "text": "IACUC review and approval of an amendment before making the change",
+        "is_correct": true
+      },
+      {
+        "id": "iac-007-b",
+        "text": "Nothing — animal numbers can be changed freely",
+        "is_correct": false,
+        "distractor_note": "Increasing animal numbers is a significant change requiring approval."
+      },
+      {
+        "id": "iac-007-c",
+        "text": "Only a verbal notice to the veterinarian",
+        "is_correct": false,
+        "distractor_note": "Informal notice does not substitute for IACUC approval of a significant change."
+      },
+      {
+        "id": "iac-007-d",
+        "text": "Approval only at the next annual review",
+        "is_correct": false,
+        "distractor_note": "The change cannot wait — it must be approved before implementation."
+      }
+    ]
+  },
+  {
+    "id": "iac-008",
+    "objective": "IAC",
+    "difficulty": "medium",
+    "stem": "Who appoints the IACUC and holds ultimate responsibility for the animal care and use program?",
+    "explanation": "The Institutional Official (IO) appoints the IACUC and bears ultimate authority and responsibility for the program; the IACUC reports to the IO.",
+    "hook": "IO appoints the IACUC and owns the program.",
+    "source": "PHS Policy IV.A; AWA 9 CFR 2.31",
+    "options": [
+      {
+        "id": "iac-008-a",
+        "text": "The Institutional Official (IO)",
+        "is_correct": true
+      },
+      {
+        "id": "iac-008-b",
+        "text": "The principal investigator",
+        "is_correct": false,
+        "distractor_note": "PIs submit protocols; they do not appoint the IACUC."
+      },
+      {
+        "id": "iac-008-c",
+        "text": "USDA-APHIS",
+        "is_correct": false,
+        "distractor_note": "USDA inspects and enforces but does not appoint an institution's IACUC."
+      },
+      {
+        "id": "iac-008-d",
+        "text": "The funding agency",
+        "is_correct": false,
+        "distractor_note": "Funders require compliance but do not appoint the committee."
+      }
+    ]
+  },
+  {
+    "id": "3rs-003",
+    "objective": "3RS",
+    "difficulty": "easy",
+    "stem": "Substituting a validated cell-culture assay for a procedure that would otherwise use live animals is an example of which R?",
+    "explanation": "Replacement means using methods that avoid or replace the use of animals — including in vitro systems, computer models, or less-sentient organisms.",
+    "hook": "Replacement = remove animals from the test.",
+    "source": "Russell & Burch 1959; ALAT Manual",
+    "options": [
+      {
+        "id": "3rs-003-a",
+        "text": "Replacement",
+        "is_correct": true
+      },
+      {
+        "id": "3rs-003-b",
+        "text": "Reduction",
+        "is_correct": false,
+        "distractor_note": "Reduction lowers the NUMBER of animals; here animals are removed entirely."
+      },
+      {
+        "id": "3rs-003-c",
+        "text": "Refinement",
+        "is_correct": false,
+        "distractor_note": "Refinement reduces suffering in animals still being used."
+      },
+      {
+        "id": "3rs-003-d",
+        "text": "Reuse",
+        "is_correct": false,
+        "distractor_note": "Reuse is not one of the 3Rs."
+      }
+    ]
+  },
+  {
+    "id": "3rs-004",
+    "objective": "3RS",
+    "difficulty": "medium",
+    "stem": "Performing a statistical power analysis so that a study uses the fewest animals needed for a valid result serves which R?",
+    "explanation": "Reduction means obtaining comparable information from fewer animals through good experimental design, statistics, and sharing of animals/tissues.",
+    "hook": "Reduction = fewest animals for valid data.",
+    "source": "Russell & Burch 1959; ALAT Manual",
+    "options": [
+      {
+        "id": "3rs-004-a",
+        "text": "Reduction",
+        "is_correct": true
+      },
+      {
+        "id": "3rs-004-b",
+        "text": "Replacement",
+        "is_correct": false,
+        "distractor_note": "Replacement avoids animal use entirely; here animals are still used, just fewer."
+      },
+      {
+        "id": "3rs-004-c",
+        "text": "Refinement",
+        "is_correct": false,
+        "distractor_note": "Refinement targets welfare/suffering, not the number of animals."
+      },
+      {
+        "id": "3rs-004-d",
+        "text": "Randomization",
+        "is_correct": false,
+        "distractor_note": "Randomization is a design tool, not one of the 3Rs."
+      }
+    ]
+  },
+  {
+    "id": "3rs-005",
+    "objective": "3RS",
+    "difficulty": "medium",
+    "stem": "Sharing tissues from one animal among several investigators instead of each using separate animals primarily supports which R?",
+    "explanation": "Tissue sharing reduces the total number of animals required across projects — an application of Reduction.",
+    "hook": "Share tissue → fewer animals → Reduction.",
+    "source": "ALAT Manual; 3Rs principles",
+    "options": [
+      {
+        "id": "3rs-005-a",
+        "text": "Reduction",
+        "is_correct": true
+      },
+      {
+        "id": "3rs-005-b",
+        "text": "Refinement",
+        "is_correct": false,
+        "distractor_note": "Refinement is about reducing pain/distress, not animal numbers."
+      },
+      {
+        "id": "3rs-005-c",
+        "text": "Replacement",
+        "is_correct": false,
+        "distractor_note": "Animals are still used here; they are simply used more efficiently."
+      },
+      {
+        "id": "3rs-005-d",
+        "text": "Recycling",
+        "is_correct": false,
+        "distractor_note": "Not one of the 3Rs."
+      }
+    ]
+  },
+  {
+    "id": "env-005",
+    "objective": "ENV",
+    "difficulty": "medium",
+    "stem": "The Guide's recommended dry-bulb temperature range for housing mice and rats is approximately:",
+    "explanation": "For common rodents, the Guide recommends roughly 68–79°F (20–26°C). Rabbits prefer cooler temperatures (about 61–72°F).",
+    "hook": "Rodents: ~68–79°F (20–26°C).",
+    "source": "Guide, 8th ed., Table 3.1",
+    "options": [
+      {
+        "id": "env-005-a",
+        "text": "68–79°F (20–26°C)",
+        "is_correct": true
+      },
+      {
+        "id": "env-005-b",
+        "text": "50–60°F (10–16°C)",
+        "is_correct": false,
+        "distractor_note": "Too cold for rodents; promotes cold stress."
+      },
+      {
+        "id": "env-005-c",
+        "text": "82–90°F (28–32°C)",
+        "is_correct": false,
+        "distractor_note": "Too warm; risks heat stress, especially in pregnant animals."
+      },
+      {
+        "id": "env-005-d",
+        "text": "40–50°F (4–10°C)",
+        "is_correct": false,
+        "distractor_note": "Far too cold; this is refrigeration range, not animal housing."
+      }
+    ]
+  },
+  {
+    "id": "env-006",
+    "objective": "ENV",
+    "difficulty": "hard",
+    "stem": "The buildup of ammonia inside a rodent cage is BEST controlled by:",
+    "explanation": "Ammonia from urea breakdown is controlled primarily by adequate ventilation and timely bedding/cage changes. Excess humidity and crowding make ammonia worse.",
+    "hook": "Fight ammonia with ventilation + cage changes.",
+    "source": "Guide, 8th ed.; ALAT Manual",
+    "options": [
+      {
+        "id": "env-006-a",
+        "text": "Adequate ventilation and regular cage/bedding changes",
+        "is_correct": true
+      },
+      {
+        "id": "env-006-b",
+        "text": "Raising the room humidity",
+        "is_correct": false,
+        "distractor_note": "Higher humidity tends to INCREASE ammonia generation."
+      },
+      {
+        "id": "env-006-c",
+        "text": "Increasing the room temperature",
+        "is_correct": false,
+        "distractor_note": "Warmer temperatures accelerate ammonia production, not reduce it."
+      },
+      {
+        "id": "env-006-d",
+        "text": "Dimming the lights",
+        "is_correct": false,
+        "distractor_note": "Light level has no meaningful effect on ammonia."
+      }
+    ]
+  },
+  {
+    "id": "env-007",
+    "objective": "ENV",
+    "difficulty": "medium",
+    "stem": "Sustained noise levels above approximately 85 dB in an animal room can:",
+    "explanation": "Loud or sustained noise (and ultrasound from equipment) can stress animals, alter physiology and reproduction, and damage hearing. Noisy activities should be separated from housing.",
+    "hook": "Keep it under ~85 dB — noise stresses animals.",
+    "source": "Guide, 8th ed., Noise",
+    "options": [
+      {
+        "id": "env-007-a",
+        "text": "Stress animals and disrupt physiology and reproduction",
+        "is_correct": true
+      },
+      {
+        "id": "env-007-b",
+        "text": "Improve breeding performance",
+        "is_correct": false,
+        "distractor_note": "Noise harms, not helps, reproduction."
+      },
+      {
+        "id": "env-007-c",
+        "text": "Have no measurable effect on rodents",
+        "is_correct": false,
+        "distractor_note": "Rodents are sensitive to noise and ultrasound."
+      },
+      {
+        "id": "env-007-d",
+        "text": "Be required to maintain circadian rhythm",
+        "is_correct": false,
+        "distractor_note": "Circadian rhythm is set by the light cycle, not noise."
+      }
+    ]
+  },
+  {
+    "id": "cage-003",
+    "objective": "CAGE",
+    "difficulty": "hard",
+    "stem": "According to the Guide, the minimum interior cage HEIGHT for housing mice is approximately:",
+    "explanation": "The Guide specifies a minimum cage height of 5 inches (12.7 cm) for mice, allowing normal postural adjustments.",
+    "hook": "Mouse cage height ≥ 5 inches.",
+    "source": "Guide, 8th ed., Table 3.2",
+    "options": [
+      {
+        "id": "cage-003-a",
+        "text": "5 inches (12.7 cm)",
+        "is_correct": true
+      },
+      {
+        "id": "cage-003-b",
+        "text": "2 inches (5 cm)",
+        "is_correct": false,
+        "distractor_note": "Too short for a mouse to make normal postural adjustments."
+      },
+      {
+        "id": "cage-003-c",
+        "text": "10 inches (25 cm)",
+        "is_correct": false,
+        "distractor_note": "Greater than the minimum requirement for mice."
+      },
+      {
+        "id": "cage-003-d",
+        "text": "7 inches (18 cm)",
+        "is_correct": false,
+        "distractor_note": "7 inches is the minimum height for rats, not mice."
+      }
+    ]
+  },
+  {
+    "id": "cage-004",
+    "objective": "CAGE",
+    "difficulty": "hard",
+    "stem": "Per the Guide, a female mouse with a litter should be provided a minimum floor area of about:",
+    "explanation": "The Guide recommends at least 51 in² (330 cm²) of floor space for a female mouse with a litter, more than a single adult mouse, to accommodate the nest and pups.",
+    "hook": "Dam + litter ≈ 51 in².",
+    "source": "Guide, 8th ed., Table 3.2",
+    "options": [
+      {
+        "id": "cage-004-a",
+        "text": "51 in² (330 cm²)",
+        "is_correct": true
+      },
+      {
+        "id": "cage-004-b",
+        "text": "6 in² (39 cm²)",
+        "is_correct": false,
+        "distractor_note": "6 in² is the minimum for a single mouse under 10 g, not a dam with litter."
+      },
+      {
+        "id": "cage-004-c",
+        "text": "15 in² (97 cm²)",
+        "is_correct": false,
+        "distractor_note": "15 in² is the minimum for a single adult mouse over 25 g."
+      },
+      {
+        "id": "cage-004-d",
+        "text": "144 in² (929 cm²)",
+        "is_correct": false,
+        "distractor_note": "Larger than required for a mouse dam and litter."
+      }
+    ]
+  },
+  {
+    "id": "cage-005",
+    "objective": "CAGE",
+    "difficulty": "medium",
+    "stem": "The Guide bases minimum cage floor-space requirements for laboratory animals primarily on:",
+    "explanation": "Space requirements are scaled mainly to body weight (and number of animals), ensuring animals can make normal postural adjustments. Performance standards may modify these engineering minimums.",
+    "hook": "Floor space scales with body weight.",
+    "source": "Guide, 8th ed., Tables 3.2–3.6",
+    "options": [
+      {
+        "id": "cage-005-a",
+        "text": "Body weight (and the number of animals)",
+        "is_correct": true
+      },
+      {
+        "id": "cage-005-b",
+        "text": "The animal's age in days only",
+        "is_correct": false,
+        "distractor_note": "Age correlates with size but the tables key off body weight."
+      },
+      {
+        "id": "cage-005-c",
+        "text": "Coat color",
+        "is_correct": false,
+        "distractor_note": "Coat color is irrelevant to space requirements."
+      },
+      {
+        "id": "cage-005-d",
+        "text": "The strain's commercial price",
+        "is_correct": false,
+        "distractor_note": "Cost has nothing to do with welfare-based space minimums."
+      }
+    ]
+  },
+  {
+    "id": "san-005",
+    "objective": "SAN",
+    "difficulty": "medium",
+    "stem": "Which of the following is a common chemical class used to DISINFECT surfaces and equipment in an animal facility?",
+    "explanation": "Quaternary ammonium compounds ('quats'), chlorine/hypochlorites, and phenolics are common disinfectants that kill most pathogens (though not necessarily all spores).",
+    "hook": "Quats, chlorine, phenolics = disinfectants.",
+    "source": "ALAT Manual, Sanitation",
+    "options": [
+      {
+        "id": "san-005-a",
+        "text": "Quaternary ammonium compounds",
+        "is_correct": true
+      },
+      {
+        "id": "san-005-b",
+        "text": "Distilled water",
+        "is_correct": false,
+        "distractor_note": "Water rinses but does not disinfect."
+      },
+      {
+        "id": "san-005-c",
+        "text": "Mineral oil",
+        "is_correct": false,
+        "distractor_note": "Mineral oil is not a disinfectant."
+      },
+      {
+        "id": "san-005-d",
+        "text": "Table salt solution",
+        "is_correct": false,
+        "distractor_note": "Saline is not an effective disinfectant."
+      }
+    ]
+  },
+  {
+    "id": "san-006",
+    "objective": "SAN",
+    "difficulty": "medium",
+    "stem": "How often, at minimum, are solid-bottom (static) rodent cages with bedding typically sanitized?",
+    "explanation": "The Guide indicates solid-bottom caging with bedding is generally sanitized at least once every two weeks, adjusted by performance indicators such as ammonia and soiling.",
+    "hook": "Static rodent cages: at least every 2 weeks.",
+    "source": "Guide, 8th ed., Sanitation frequency",
+    "options": [
+      {
+        "id": "san-006-a",
+        "text": "At least once every 2 weeks",
+        "is_correct": true
+      },
+      {
+        "id": "san-006-b",
+        "text": "Once every 6 months",
+        "is_correct": false,
+        "distractor_note": "Far too infrequent; ammonia and soiling would become excessive."
+      },
+      {
+        "id": "san-006-c",
+        "text": "Several times per day",
+        "is_correct": false,
+        "distractor_note": "Unnecessary and disruptive for bedded cages."
+      },
+      {
+        "id": "san-006-d",
+        "text": "Only once a year",
+        "is_correct": false,
+        "distractor_note": "Grossly inadequate sanitation frequency."
+      }
+    ]
+  },
+  {
+    "id": "fac-003",
+    "objective": "FAC",
+    "difficulty": "hard",
+    "stem": "Which biosafety cabinet is a fully enclosed, gas-tight glovebox used for work with the most hazardous (e.g., BSL-4) agents?",
+    "explanation": "A Class III BSC is a sealed, gas-tight enclosure operated under negative pressure with attached gloves, providing maximum containment for the most dangerous agents.",
+    "hook": "Class III = sealed glovebox, maximum containment.",
+    "source": "ALAT Manual; CDC/NIH BMBL",
+    "options": [
+      {
+        "id": "fac-003-a",
+        "text": "Class III biosafety cabinet",
+        "is_correct": true
+      },
+      {
+        "id": "fac-003-b",
+        "text": "Class I biosafety cabinet",
+        "is_correct": false,
+        "distractor_note": "Class I is open-fronted and protects personnel/environment but not at maximum containment."
+      },
+      {
+        "id": "fac-003-c",
+        "text": "Class II biosafety cabinet",
+        "is_correct": false,
+        "distractor_note": "Class II is open-fronted with HEPA-filtered laminar flow; not gas-tight."
+      },
+      {
+        "id": "fac-003-d",
+        "text": "Chemical fume hood",
+        "is_correct": false,
+        "distractor_note": "A fume hood handles chemical vapors, not high-containment biological work."
+      }
+    ]
+  },
+  {
+    "id": "fac-004",
+    "objective": "FAC",
+    "difficulty": "medium",
+    "stem": "A chemical fume hood provides protection to:",
+    "explanation": "A chemical fume hood pulls air away from the worker and exhausts it, protecting personnel from chemical vapors. It does NOT protect the product/sample and does not HEPA-filter biological agents.",
+    "hook": "Fume hood = worker protection from chemicals only.",
+    "source": "ALAT Manual, Safety equipment",
+    "options": [
+      {
+        "id": "fac-004-a",
+        "text": "The worker from chemical vapors (not the product)",
+        "is_correct": true
+      },
+      {
+        "id": "fac-004-b",
+        "text": "Both the worker and the product from biological agents",
+        "is_correct": false,
+        "distractor_note": "That describes a Class II BSC; a fume hood does not protect product or filter biologicals."
+      },
+      {
+        "id": "fac-004-c",
+        "text": "Only the product/sample",
+        "is_correct": false,
+        "distractor_note": "A clean bench protects only the product; a fume hood protects the worker."
+      },
+      {
+        "id": "fac-004-d",
+        "text": "Animals from room contaminants",
+        "is_correct": false,
+        "distractor_note": "Fume hoods are not used to protect housed animals."
+      }
+    ]
+  },
+  {
+    "id": "fac-005",
+    "objective": "FAC",
+    "difficulty": "medium",
+    "stem": "A room housing animals infected with a hazardous, transmissible agent should be kept at:",
+    "explanation": "Containment (biohazard) rooms are kept under NEGATIVE pressure relative to the corridor so air flows IN, preventing the escape of contaminated air.",
+    "hook": "Contain a hazard → negative pressure (air flows in).",
+    "source": "ALAT Manual; Guide 8th ed., Facility design",
+    "options": [
+      {
+        "id": "fac-005-a",
+        "text": "Negative pressure relative to the corridor",
+        "is_correct": true
+      },
+      {
+        "id": "fac-005-b",
+        "text": "Positive pressure relative to the corridor",
+        "is_correct": false,
+        "distractor_note": "Positive pressure pushes room air OUT — used to protect clean animals, not to contain hazards."
+      },
+      {
+        "id": "fac-005-c",
+        "text": "Neutral pressure",
+        "is_correct": false,
+        "distractor_note": "Neutral pressure provides no directional containment."
+      },
+      {
+        "id": "fac-005-d",
+        "text": "Pressure that alternates on a timer",
+        "is_correct": false,
+        "distractor_note": "Cycling pressure would allow contaminated air to escape."
+      }
+    ]
+  },
+  {
+    "id": "feed-003",
+    "objective": "FEED",
+    "difficulty": "medium",
+    "stem": "Autoclavable laboratory animal diets are specially formulated to:",
+    "explanation": "Autoclavable diets are fortified with extra heat-stable vitamins so that nutrient levels remain adequate after the destructive heat of steam sterilization.",
+    "hook": "Autoclavable diet = over-fortified to survive heat.",
+    "source": "ALAT Manual, Nutrition",
+    "options": [
+      {
+        "id": "feed-003-a",
+        "text": "Contain extra vitamins to offset losses during sterilization",
+        "is_correct": true
+      },
+      {
+        "id": "feed-003-b",
+        "text": "Contain less protein than standard diets",
+        "is_correct": false,
+        "distractor_note": "Protein content is not the defining feature; vitamin fortification is."
+      },
+      {
+        "id": "feed-003-c",
+        "text": "Be free of all fat",
+        "is_correct": false,
+        "distractor_note": "Autoclavable diets are not fat-free."
+      },
+      {
+        "id": "feed-003-d",
+        "text": "Include broad-spectrum antibiotics",
+        "is_correct": false,
+        "distractor_note": "Routine diets are not medicated; medicated feed is a separate, regulated category."
+      }
+    ]
+  },
+  {
+    "id": "feed-004",
+    "objective": "FEED",
+    "difficulty": "easy",
+    "stem": "Laboratory animal feed should be stored:",
+    "explanation": "Feed should be kept cool, dry, off the floor (on pallets/shelves away from walls), protected from pests, and rotated first-in/first-out to preserve nutrients and prevent contamination.",
+    "hook": "Cool, dry, off the floor, rotate FIFO.",
+    "source": "ALAT Manual, Feed storage",
+    "options": [
+      {
+        "id": "feed-004-a",
+        "text": "In a cool, dry area off the floor, rotated first-in/first-out",
+        "is_correct": true
+      },
+      {
+        "id": "feed-004-b",
+        "text": "Directly on the floor near a drain",
+        "is_correct": false,
+        "distractor_note": "Floor storage invites moisture, pests, and contamination."
+      },
+      {
+        "id": "feed-004-c",
+        "text": "In direct sunlight to keep it warm",
+        "is_correct": false,
+        "distractor_note": "Heat and light accelerate vitamin degradation."
+      },
+      {
+        "id": "feed-004-d",
+        "text": "Indefinitely, regardless of milling date",
+        "is_correct": false,
+        "distractor_note": "Feed has a limited shelf life (~6 months) from milling."
+      }
+    ]
+  },
+  {
+    "id": "feed-005",
+    "objective": "FEED",
+    "difficulty": "medium",
+    "stem": "Irradiated or autoclaved diets are most important when feeding:",
+    "explanation": "Sterilized (irradiated or autoclaved) diets reduce microbial contamination and are used for immunodeficient, gnotobiotic, or barrier-maintained animals that are vulnerable to opportunistic infection.",
+    "hook": "Sterile diets protect immunocompromised/barrier animals.",
+    "source": "ALAT Manual, Specialized diets",
+    "options": [
+      {
+        "id": "feed-005-a",
+        "text": "Immunodeficient or barrier-maintained animals",
+        "is_correct": true
+      },
+      {
+        "id": "feed-005-b",
+        "text": "Only animals that dislike pelleted feed",
+        "is_correct": false,
+        "distractor_note": "Sterilization is about microbial control, not palatability."
+      },
+      {
+        "id": "feed-005-c",
+        "text": "Animals to extend feed shelf life to several years",
+        "is_correct": false,
+        "distractor_note": "Sterilization does not give feed a multi-year shelf life."
+      },
+      {
+        "id": "feed-005-d",
+        "text": "Only to lower feed cost",
+        "is_correct": false,
+        "distractor_note": "Sterilized diets generally cost more, not less."
+      }
+    ]
+  },
+  {
+    "id": "hus-004",
+    "objective": "HUS",
+    "difficulty": "medium",
+    "stem": "The main reason newly shipped animals are given an acclimation period before use in a study is to:",
+    "explanation": "Shipping is stressful and transiently alters physiology (stress hormones, immune function, body weight). Acclimation lets animals stabilize so study data are valid and welfare is protected.",
+    "hook": "Acclimate so shipping stress doesn't skew the science.",
+    "source": "ALAT Manual, Acclimation",
+    "options": [
+      {
+        "id": "hus-004-a",
+        "text": "Allow them to stabilize physiologically after transport stress",
+        "is_correct": true
+      },
+      {
+        "id": "hus-004-b",
+        "text": "Allow disease to spread through the colony",
+        "is_correct": false,
+        "distractor_note": "That is the opposite of the goal; quarantine prevents disease spread."
+      },
+      {
+        "id": "hus-004-c",
+        "text": "Intentionally cause weight loss",
+        "is_correct": false,
+        "distractor_note": "Acclimation supports recovery, not weight loss."
+      },
+      {
+        "id": "hus-004-d",
+        "text": "Satisfy a shipping invoice requirement",
+        "is_correct": false,
+        "distractor_note": "Acclimation is a scientific/welfare practice, not a billing step."
+      }
+    ]
+  },
+  {
+    "id": "hus-005",
+    "objective": "HUS",
+    "difficulty": "easy",
+    "stem": "Which of the following is NOT a permanent method of individual animal identification?",
+    "explanation": "Ear tags, ear notches/punches, tattoos, and microchips are permanent IDs attached to or marking the animal. A cage card is a temporary, cage-level record that can be separated from the animal.",
+    "hook": "Cage cards label the cage, not the animal.",
+    "source": "ALAT Manual, Animal identification",
+    "options": [
+      {
+        "id": "hus-005-a",
+        "text": "Cage card",
+        "is_correct": true
+      },
+      {
+        "id": "hus-005-b",
+        "text": "Ear tag",
+        "is_correct": false,
+        "distractor_note": "An ear tag is a permanent ID attached to the animal."
+      },
+      {
+        "id": "hus-005-c",
+        "text": "Tattoo",
+        "is_correct": false,
+        "distractor_note": "A tattoo is a permanent individual identifier."
+      },
+      {
+        "id": "hus-005-d",
+        "text": "Microchip (transponder)",
+        "is_correct": false,
+        "distractor_note": "An implanted microchip is a permanent identifier."
+      }
+    ]
+  },
+  {
+    "id": "hus-006",
+    "objective": "HUS",
+    "difficulty": "medium",
+    "stem": "Environmental enrichment is best described as:",
+    "explanation": "Enrichment is the addition of stimuli or resources (nesting, shelters, foraging, social housing, novel objects) that promote species-typical behavior and improve animal well-being.",
+    "hook": "Enrichment = supports natural behavior.",
+    "source": "Guide, 8th ed., Environmental enrichment",
+    "options": [
+      {
+        "id": "hus-006-a",
+        "text": "Additions that promote species-typical behavior and well-being",
+        "is_correct": true
+      },
+      {
+        "id": "hus-006-b",
+        "text": "Anything that reduces cage cleaning frequency",
+        "is_correct": false,
+        "distractor_note": "Enrichment is about behavior/welfare, not cleaning schedules."
+      },
+      {
+        "id": "hus-006-c",
+        "text": "Increasing stocking density to add social contact",
+        "is_correct": false,
+        "distractor_note": "Overcrowding is a stressor, not enrichment."
+      },
+      {
+        "id": "hus-006-d",
+        "text": "Removing all objects to keep cages simple",
+        "is_correct": false,
+        "distractor_note": "A barren cage is the opposite of enrichment."
+      }
+    ]
+  },
+  {
+    "id": "spm-004",
+    "objective": "SPM",
+    "difficulty": "easy",
+    "stem": "The genus and species (scientific name) of the common laboratory house mouse is:",
+    "explanation": "The laboratory mouse is Mus musculus. Knowing binomial names is fundamental ALAT terminology.",
+    "hook": "Mouse = Mus musculus.",
+    "source": "ALAT Manual, Taxonomy",
+    "options": [
+      {
+        "id": "spm-004-a",
+        "text": "Mus musculus",
+        "is_correct": true
+      },
+      {
+        "id": "spm-004-b",
+        "text": "Rattus norvegicus",
+        "is_correct": false,
+        "distractor_note": "Rattus norvegicus is the laboratory rat."
+      },
+      {
+        "id": "spm-004-c",
+        "text": "Mesocricetus auratus",
+        "is_correct": false,
+        "distractor_note": "Mesocricetus auratus is the Syrian (golden) hamster."
+      },
+      {
+        "id": "spm-004-d",
+        "text": "Cavia porcellus",
+        "is_correct": false,
+        "distractor_note": "Cavia porcellus is the guinea pig."
+      }
+    ]
+  },
+  {
+    "id": "spm-005",
+    "objective": "SPM",
+    "difficulty": "easy",
+    "stem": "Laboratory mice are typically weaned at approximately:",
+    "explanation": "Mice are usually weaned around 21 days of age, once pups are eating solid food and drinking independently.",
+    "hook": "Wean mice at ~21 days.",
+    "source": "ALAT Manual, Mouse breeding",
+    "options": [
+      {
+        "id": "spm-005-a",
+        "text": "21 days of age",
+        "is_correct": true
+      },
+      {
+        "id": "spm-005-b",
+        "text": "7 days of age",
+        "is_correct": false,
+        "distractor_note": "Far too early; pups are still nursing and underdeveloped."
+      },
+      {
+        "id": "spm-005-c",
+        "text": "45 days of age",
+        "is_correct": false,
+        "distractor_note": "Later than typical; ~21 days is standard."
+      },
+      {
+        "id": "spm-005-d",
+        "text": "60 days of age",
+        "is_correct": false,
+        "distractor_note": "By 60 days mice are near breeding age, well past weaning."
+      }
+    ]
+  },
+  {
+    "id": "spm-006",
+    "objective": "SPM",
+    "difficulty": "hard",
+    "stem": "The Lee-Boot effect in mice refers to:",
+    "explanation": "The Lee-Boot effect is the suppression of estrus (or induction of pseudopregnancy) that occurs when female mice are group-housed together in the absence of a male.",
+    "hook": "Lee-Boot = all-female grouping shuts estrus down.",
+    "source": "ALAT Manual, Mouse reproduction",
+    "options": [
+      {
+        "id": "spm-006-a",
+        "text": "Estrus suppression in females grouped without a male",
+        "is_correct": true
+      },
+      {
+        "id": "spm-006-b",
+        "text": "Estrus synchronization caused by male pheromones",
+        "is_correct": false,
+        "distractor_note": "That is the Whitten effect."
+      },
+      {
+        "id": "spm-006-c",
+        "text": "Pregnancy block by a strange male",
+        "is_correct": false,
+        "distractor_note": "That is the Bruce effect."
+      },
+      {
+        "id": "spm-006-d",
+        "text": "A fertile estrus immediately after birth",
+        "is_correct": false,
+        "distractor_note": "That is postpartum estrus."
+      }
+    ]
+  },
+  {
+    "id": "spm-007",
+    "objective": "SPM",
+    "difficulty": "medium",
+    "stem": "Which is a common viral pathogen historically monitored in mouse colony health-surveillance programs?",
+    "explanation": "Mouse Hepatitis Virus (MHV), a coronavirus, is one of the most common and contagious viral agents in mouse colonies and is a standard part of health monitoring.",
+    "hook": "MHV (a coronavirus) = classic mouse-colony pathogen.",
+    "source": "ALAT Manual, Mouse health surveillance",
+    "options": [
+      {
+        "id": "spm-007-a",
+        "text": "Mouse Hepatitis Virus (MHV)",
+        "is_correct": true
+      },
+      {
+        "id": "spm-007-b",
+        "text": "Herpes B virus",
+        "is_correct": false,
+        "distractor_note": "Herpes B virus is associated with macaques, not mice."
+      },
+      {
+        "id": "spm-007-c",
+        "text": "Feline leukemia virus",
+        "is_correct": false,
+        "distractor_note": "FeLV affects cats."
+      },
+      {
+        "id": "spm-007-d",
+        "text": "Pasteurella multocida",
+        "is_correct": false,
+        "distractor_note": "Pasteurella (snuffles) is a bacterial agent of rabbits, and it is not a virus."
+      }
+    ]
+  },
+  {
+    "id": "spr-004",
+    "objective": "SPR",
+    "difficulty": "easy",
+    "stem": "The genus and species of the common laboratory rat is:",
+    "explanation": "The laboratory rat is Rattus norvegicus (the Norway/brown rat). Rattus rattus is a different species (the black/roof rat).",
+    "hook": "Lab rat = Rattus norvegicus.",
+    "source": "ALAT Manual, Taxonomy",
+    "options": [
+      {
+        "id": "spr-004-a",
+        "text": "Rattus norvegicus",
+        "is_correct": true
+      },
+      {
+        "id": "spr-004-b",
+        "text": "Rattus rattus",
+        "is_correct": false,
+        "distractor_note": "Rattus rattus is the black/roof rat, a different species not standard in research."
+      },
+      {
+        "id": "spr-004-c",
+        "text": "Mus musculus",
+        "is_correct": false,
+        "distractor_note": "Mus musculus is the house mouse."
+      },
+      {
+        "id": "spr-004-d",
+        "text": "Sigmodon hispidus",
+        "is_correct": false,
+        "distractor_note": "Sigmodon hispidus is the cotton rat, used in specialized infectious-disease work."
+      }
+    ]
+  },
+  {
+    "id": "spr-005",
+    "objective": "SPR",
+    "difficulty": "easy",
+    "stem": "The gestation period of the laboratory rat is approximately:",
+    "explanation": "Rat gestation is about 21–23 days, similar to the mouse. Pups are weaned around 21 days.",
+    "hook": "Rat gestation ≈ 3 weeks (21–23 days).",
+    "source": "ALAT Manual, Rat biology",
+    "options": [
+      {
+        "id": "spr-005-a",
+        "text": "21–23 days",
+        "is_correct": true
+      },
+      {
+        "id": "spr-005-b",
+        "text": "16 days",
+        "is_correct": false,
+        "distractor_note": "~16 days is the Syrian hamster's gestation, not the rat's."
+      },
+      {
+        "id": "spr-005-c",
+        "text": "31–33 days",
+        "is_correct": false,
+        "distractor_note": "About a month is closer to a rabbit, not a rat."
+      },
+      {
+        "id": "spr-005-d",
+        "text": "63 days",
+        "is_correct": false,
+        "distractor_note": "~63 days is the dog/cat gestation."
+      }
+    ]
+  },
+  {
+    "id": "spr-006",
+    "objective": "SPR",
+    "difficulty": "medium",
+    "stem": "Which of the following is an OUTBRED stock of laboratory rat?",
+    "explanation": "Sprague-Dawley and Wistar are widely used outbred (genetically variable) rat stocks. F344 (Fischer 344), Lewis, and Brown Norway are inbred strains.",
+    "hook": "Sprague-Dawley & Wistar = outbred.",
+    "source": "ALAT Manual, Genetics of rats",
+    "options": [
+      {
+        "id": "spr-006-a",
+        "text": "Sprague-Dawley",
+        "is_correct": true
+      },
+      {
+        "id": "spr-006-b",
+        "text": "F344 (Fischer 344)",
+        "is_correct": false,
+        "distractor_note": "F344 is an inbred strain, not an outbred stock."
+      },
+      {
+        "id": "spr-006-c",
+        "text": "Lewis",
+        "is_correct": false,
+        "distractor_note": "Lewis (LEW) is an inbred strain."
+      },
+      {
+        "id": "spr-006-d",
+        "text": "Brown Norway",
+        "is_correct": false,
+        "distractor_note": "Brown Norway (BN) is an inbred strain."
+      }
+    ]
+  },
+  {
+    "id": "sps-003",
+    "objective": "SPS",
+    "difficulty": "easy",
+    "stem": "The genus and species of the Syrian (golden) hamster is:",
+    "explanation": "The Syrian or golden hamster is Mesocricetus auratus. The Chinese hamster (Cricetulus griseus) is a different species used in cell-line work (CHO cells).",
+    "hook": "Golden hamster = Mesocricetus auratus.",
+    "source": "ALAT Manual, Taxonomy",
+    "options": [
+      {
+        "id": "sps-003-a",
+        "text": "Mesocricetus auratus",
+        "is_correct": true
+      },
+      {
+        "id": "sps-003-b",
+        "text": "Cricetulus griseus",
+        "is_correct": false,
+        "distractor_note": "Cricetulus griseus is the Chinese hamster, a separate species."
+      },
+      {
+        "id": "sps-003-c",
+        "text": "Meriones unguiculatus",
+        "is_correct": false,
+        "distractor_note": "Meriones unguiculatus is the Mongolian gerbil."
+      },
+      {
+        "id": "sps-003-d",
+        "text": "Cavia porcellus",
+        "is_correct": false,
+        "distractor_note": "Cavia porcellus is the guinea pig."
+      }
+    ]
+  },
+  {
+    "id": "sps-004",
+    "objective": "SPS",
+    "difficulty": "easy",
+    "stem": "The genus and species of the guinea pig is:",
+    "explanation": "The guinea pig is Cavia porcellus. It is a hystricomorph rodent that requires dietary vitamin C.",
+    "hook": "Guinea pig = Cavia porcellus.",
+    "source": "ALAT Manual, Taxonomy",
+    "options": [
+      {
+        "id": "sps-004-a",
+        "text": "Cavia porcellus",
+        "is_correct": true
+      },
+      {
+        "id": "sps-004-b",
+        "text": "Oryctolagus cuniculus",
+        "is_correct": false,
+        "distractor_note": "Oryctolagus cuniculus is the domestic rabbit."
+      },
+      {
+        "id": "sps-004-c",
+        "text": "Mesocricetus auratus",
+        "is_correct": false,
+        "distractor_note": "Mesocricetus auratus is the Syrian hamster."
+      },
+      {
+        "id": "sps-004-d",
+        "text": "Meriones unguiculatus",
+        "is_correct": false,
+        "distractor_note": "Meriones unguiculatus is the Mongolian gerbil."
+      }
+    ]
+  },
+  {
+    "id": "sps-005",
+    "objective": "SPS",
+    "difficulty": "medium",
+    "stem": "Compared with mice and rats, newborn guinea pigs are:",
+    "explanation": "Guinea pigs have a long gestation (~59–72 days) and are born precocial — fully furred, eyes open, and able to walk and eat solid food within days.",
+    "hook": "Guinea pigs: long pregnancy, precocial (ready-to-go) young.",
+    "source": "ALAT Manual, Guinea pig biology",
+    "options": [
+      {
+        "id": "sps-005-a",
+        "text": "Precocial — furred, eyes open, and mobile at birth",
+        "is_correct": true
+      },
+      {
+        "id": "sps-005-b",
+        "text": "Altricial — naked, blind, and helpless at birth",
+        "is_correct": false,
+        "distractor_note": "Altricial describes newborn mice and rats, not guinea pigs."
+      },
+      {
+        "id": "sps-005-c",
+        "text": "Born after only a 16-day gestation",
+        "is_correct": false,
+        "distractor_note": "16 days is the hamster's gestation; guinea pigs gestate ~59–72 days."
+      },
+      {
+        "id": "sps-005-d",
+        "text": "Unable to eat solid food for several weeks",
+        "is_correct": false,
+        "distractor_note": "Guinea pig pups nibble solid food within days of birth."
+      }
+    ]
+  },
+  {
+    "id": "sps-006",
+    "objective": "SPS",
+    "difficulty": "easy",
+    "stem": "The genus and species of the Mongolian gerbil is:",
+    "explanation": "The Mongolian gerbil is Meriones unguiculatus. It is prone to spontaneous seizures and has a ventral (abdominal) scent gland.",
+    "hook": "Gerbil = Meriones unguiculatus.",
+    "source": "ALAT Manual, Taxonomy",
+    "options": [
+      {
+        "id": "sps-006-a",
+        "text": "Meriones unguiculatus",
+        "is_correct": true
+      },
+      {
+        "id": "sps-006-b",
+        "text": "Mesocricetus auratus",
+        "is_correct": false,
+        "distractor_note": "Mesocricetus auratus is the Syrian hamster."
+      },
+      {
+        "id": "sps-006-c",
+        "text": "Cavia porcellus",
+        "is_correct": false,
+        "distractor_note": "Cavia porcellus is the guinea pig."
+      },
+      {
+        "id": "sps-006-d",
+        "text": "Mus musculus",
+        "is_correct": false,
+        "distractor_note": "Mus musculus is the house mouse."
+      }
+    ]
+  },
+  {
+    "id": "sps-007",
+    "objective": "SPS",
+    "difficulty": "hard",
+    "stem": "A first-time female guinea pig bred for the first time after about 6–8 months of age is at increased risk of dystocia because:",
+    "explanation": "If a sow is not bred before roughly 6–8 months, the fibrocartilage of the pubic symphysis fuses and no longer separates adequately during parturition, leading to dystocia (difficult birth).",
+    "hook": "Breed sows young — the pubic symphysis fuses by ~6–8 months.",
+    "source": "ALAT Manual, Guinea pig reproduction",
+    "options": [
+      {
+        "id": "sps-007-a",
+        "text": "The pubic symphysis fuses and cannot widen for birth",
+        "is_correct": true
+      },
+      {
+        "id": "sps-007-b",
+        "text": "Guinea pigs lose the ability to ovulate",
+        "is_correct": false,
+        "distractor_note": "They still ovulate; the problem is the rigid birth canal."
+      },
+      {
+        "id": "sps-007-c",
+        "text": "They can no longer synthesize vitamin C",
+        "is_correct": false,
+        "distractor_note": "Guinea pigs never synthesize vitamin C; that is unrelated to dystocia from symphyseal fusion."
+      },
+      {
+        "id": "sps-007-d",
+        "text": "Their gestation shortens dramatically",
+        "is_correct": false,
+        "distractor_note": "Gestation length is not the cause of age-related dystocia."
+      }
+    ]
+  },
+  {
+    "id": "spb-005",
+    "objective": "SPB",
+    "difficulty": "easy",
+    "stem": "The genus and species of the domestic laboratory rabbit is:",
+    "explanation": "The domestic rabbit is Oryctolagus cuniculus. It is a lagomorph, not a rodent.",
+    "hook": "Rabbit = Oryctolagus cuniculus (a lagomorph).",
+    "source": "ALAT Manual, Taxonomy",
+    "options": [
+      {
+        "id": "spb-005-a",
+        "text": "Oryctolagus cuniculus",
+        "is_correct": true
+      },
+      {
+        "id": "spb-005-b",
+        "text": "Lepus europaeus",
+        "is_correct": false,
+        "distractor_note": "Lepus species are hares, not the domestic rabbit."
+      },
+      {
+        "id": "spb-005-c",
+        "text": "Sylvilagus floridanus",
+        "is_correct": false,
+        "distractor_note": "Sylvilagus is the cottontail rabbit, a wild genus, not the lab rabbit."
+      },
+      {
+        "id": "spb-005-d",
+        "text": "Cavia porcellus",
+        "is_correct": false,
+        "distractor_note": "Cavia porcellus is the guinea pig, a rodent."
+      }
+    ]
+  },
+  {
+    "id": "spb-006",
+    "objective": "SPB",
+    "difficulty": "medium",
+    "stem": "Thick, cloudy, sometimes reddish-tinged rabbit urine is usually:",
+    "explanation": "Rabbits absorb dietary calcium efficiently and excrete the excess in urine as calcium carbonate, making normal urine creamy/cloudy; plant porphyrin pigments can tinge it red. This is typically normal, not blood.",
+    "hook": "Cloudy/red rabbit urine = normal calcium + pigment, not blood.",
+    "source": "ALAT Manual, Rabbit physiology",
+    "options": [
+      {
+        "id": "spb-006-a",
+        "text": "Normal, due to excreted calcium and plant pigments",
+        "is_correct": true
+      },
+      {
+        "id": "spb-006-b",
+        "text": "Always a sign of urinary tract infection",
+        "is_correct": false,
+        "distractor_note": "Cloudy/pigmented urine is frequently normal in rabbits; it does not by itself indicate infection."
+      },
+      {
+        "id": "spb-006-c",
+        "text": "Always frank blood requiring transfusion",
+        "is_correct": false,
+        "distractor_note": "The red tinge is usually porphyrin pigment, not blood."
+      },
+      {
+        "id": "spb-006-d",
+        "text": "Evidence of vitamin C deficiency",
+        "is_correct": false,
+        "distractor_note": "Rabbits synthesize their own vitamin C; this is unrelated."
+      }
+    ]
+  },
+  {
+    "id": "spb-007",
+    "objective": "SPB",
+    "difficulty": "medium",
+    "stem": "A rabbit that has stopped eating for more than 12 hours and is producing no feces is most likely experiencing:",
+    "explanation": "Anorexia with absent fecal output signals gastrointestinal (GI) stasis, a serious and potentially fatal emergency in rabbits requiring prompt veterinary intervention.",
+    "hook": "No eating + no poop in a rabbit = GI stasis emergency.",
+    "source": "ALAT Manual, Rabbit health",
+    "options": [
+      {
+        "id": "spb-007-a",
+        "text": "Gastrointestinal (GI) stasis",
+        "is_correct": true
+      },
+      {
+        "id": "spb-007-b",
+        "text": "Normal fasting behavior",
+        "is_correct": false,
+        "distractor_note": "Rabbits are continuous feeders; a sudden stop is abnormal and urgent."
+      },
+      {
+        "id": "spb-007-c",
+        "text": "Induced ovulation",
+        "is_correct": false,
+        "distractor_note": "Induced ovulation is a reproductive phenomenon, unrelated to anorexia."
+      },
+      {
+        "id": "spb-007-d",
+        "text": "Cecotrophy",
+        "is_correct": false,
+        "distractor_note": "Cecotrophy is normal re-ingestion of night feces, not a cause of anorexia."
+      }
+    ]
+  },
+  {
+    "id": "spn-003",
+    "objective": "SPN",
+    "difficulty": "medium",
+    "stem": "The genus and species of the rhesus macaque, a commonly used research primate, is:",
+    "explanation": "The rhesus macaque is Macaca mulatta. The cynomolgus (long-tailed/crab-eating) macaque is Macaca fascicularis.",
+    "hook": "Rhesus = Macaca mulatta.",
+    "source": "ALAT Manual, NHP taxonomy",
+    "options": [
+      {
+        "id": "spn-003-a",
+        "text": "Macaca mulatta",
+        "is_correct": true
+      },
+      {
+        "id": "spn-003-b",
+        "text": "Macaca fascicularis",
+        "is_correct": false,
+        "distractor_note": "Macaca fascicularis is the cynomolgus (crab-eating) macaque, a different species."
+      },
+      {
+        "id": "spn-003-c",
+        "text": "Callithrix jacchus",
+        "is_correct": false,
+        "distractor_note": "Callithrix jacchus is the common marmoset, a New World monkey."
+      },
+      {
+        "id": "spn-003-d",
+        "text": "Papio anubis",
+        "is_correct": false,
+        "distractor_note": "Papio anubis is the olive baboon."
+      }
+    ]
+  },
+  {
+    "id": "spn-004",
+    "objective": "SPN",
+    "difficulty": "medium",
+    "stem": "The cynomolgus macaque (long-tailed, crab-eating macaque) has the scientific name:",
+    "explanation": "The cynomolgus macaque is Macaca fascicularis, widely used in pharmacology and toxicology.",
+    "hook": "Cynomolgus = Macaca fascicularis.",
+    "source": "ALAT Manual, NHP taxonomy",
+    "options": [
+      {
+        "id": "spn-004-a",
+        "text": "Macaca fascicularis",
+        "is_correct": true
+      },
+      {
+        "id": "spn-004-b",
+        "text": "Macaca mulatta",
+        "is_correct": false,
+        "distractor_note": "Macaca mulatta is the rhesus macaque."
+      },
+      {
+        "id": "spn-004-c",
+        "text": "Chlorocebus aethiops",
+        "is_correct": false,
+        "distractor_note": "Chlorocebus aethiops is the African green/vervet monkey."
+      },
+      {
+        "id": "spn-004-d",
+        "text": "Saimiri sciureus",
+        "is_correct": false,
+        "distractor_note": "Saimiri sciureus is the squirrel monkey, a New World species."
+      }
+    ]
+  },
+  {
+    "id": "spn-005",
+    "objective": "SPN",
+    "difficulty": "medium",
+    "stem": "The common marmoset, a small New World primate used in research, is:",
+    "explanation": "The common marmoset is Callithrix jacchus, a small New World monkey valued for its size and reproductive characteristics.",
+    "hook": "Common marmoset = Callithrix jacchus (New World).",
+    "source": "ALAT Manual, NHP taxonomy",
+    "options": [
+      {
+        "id": "spn-005-a",
+        "text": "Callithrix jacchus",
+        "is_correct": true
+      },
+      {
+        "id": "spn-005-b",
+        "text": "Macaca mulatta",
+        "is_correct": false,
+        "distractor_note": "Macaca mulatta is the rhesus macaque, an Old World monkey."
+      },
+      {
+        "id": "spn-005-c",
+        "text": "Pan troglodytes",
+        "is_correct": false,
+        "distractor_note": "Pan troglodytes is the chimpanzee, a great ape."
+      },
+      {
+        "id": "spn-005-d",
+        "text": "Macaca fascicularis",
+        "is_correct": false,
+        "distractor_note": "Macaca fascicularis is the cynomolgus macaque, an Old World monkey."
+      }
+    ]
+  },
+  {
+    "id": "spn-006",
+    "objective": "SPN",
+    "difficulty": "medium",
+    "stem": "Newly arrived nonhuman primates are typically held in quarantine for a minimum of about:",
+    "explanation": "A quarantine of at least roughly 6 weeks is standard for newly received NHPs, allowing health assessment including tuberculosis testing before colony entry.",
+    "hook": "NHP quarantine ≈ 6 weeks (with TB testing).",
+    "source": "ALAT Manual, NHP quarantine",
+    "options": [
+      {
+        "id": "spn-006-a",
+        "text": "6 weeks",
+        "is_correct": true
+      },
+      {
+        "id": "spn-006-b",
+        "text": "24 hours",
+        "is_correct": false,
+        "distractor_note": "Far too short to detect TB and other concerns."
+      },
+      {
+        "id": "spn-006-c",
+        "text": "1 week",
+        "is_correct": false,
+        "distractor_note": "Insufficient time for repeated TB testing and health evaluation."
+      },
+      {
+        "id": "spn-006-d",
+        "text": "1 year",
+        "is_correct": false,
+        "distractor_note": "Longer than the standard minimum quarantine for NHPs."
+      }
+    ]
+  },
+  {
+    "id": "spo-003",
+    "objective": "SPO",
+    "difficulty": "easy",
+    "stem": "The genus and species of the domestic ferret is:",
+    "explanation": "The domestic ferret is Mustela putorius furo, an obligate carnivore used in influenza, respiratory, and neuroscience research.",
+    "hook": "Ferret = Mustela putorius furo.",
+    "source": "ALAT Manual, Taxonomy",
+    "options": [
+      {
+        "id": "spo-003-a",
+        "text": "Mustela putorius furo",
+        "is_correct": true
+      },
+      {
+        "id": "spo-003-b",
+        "text": "Felis catus",
+        "is_correct": false,
+        "distractor_note": "Felis catus is the domestic cat."
+      },
+      {
+        "id": "spo-003-c",
+        "text": "Canis familiaris",
+        "is_correct": false,
+        "distractor_note": "Canis familiaris is the domestic dog."
+      },
+      {
+        "id": "spo-003-d",
+        "text": "Sus scrofa",
+        "is_correct": false,
+        "distractor_note": "Sus scrofa is the domestic pig."
+      }
+    ]
+  },
+  {
+    "id": "spo-004",
+    "objective": "SPO",
+    "difficulty": "medium",
+    "stem": "The zebrafish, an increasingly popular research model, has the scientific name:",
+    "explanation": "The zebrafish is Danio rerio, a small freshwater fish widely used in developmental biology and genetics.",
+    "hook": "Zebrafish = Danio rerio.",
+    "source": "ALAT Manual, Aquatic species",
+    "options": [
+      {
+        "id": "spo-004-a",
+        "text": "Danio rerio",
+        "is_correct": true
+      },
+      {
+        "id": "spo-004-b",
+        "text": "Xenopus laevis",
+        "is_correct": false,
+        "distractor_note": "Xenopus laevis is the African clawed frog, an amphibian."
+      },
+      {
+        "id": "spo-004-c",
+        "text": "Oryzias latipes",
+        "is_correct": false,
+        "distractor_note": "Oryzias latipes is the medaka (Japanese rice fish), a different model fish."
+      },
+      {
+        "id": "spo-004-d",
+        "text": "Carassius auratus",
+        "is_correct": false,
+        "distractor_note": "Carassius auratus is the goldfish, not the standard zebrafish model."
+      }
+    ]
+  },
+  {
+    "id": "spo-005",
+    "objective": "SPO",
+    "difficulty": "medium",
+    "stem": "The African clawed frog, a classic amphibian research model, is:",
+    "explanation": "The African clawed frog is Xenopus laevis, used in developmental biology, oocyte studies, and physiology.",
+    "hook": "African clawed frog = Xenopus laevis.",
+    "source": "ALAT Manual, Amphibian species",
+    "options": [
+      {
+        "id": "spo-005-a",
+        "text": "Xenopus laevis",
+        "is_correct": true
+      },
+      {
+        "id": "spo-005-b",
+        "text": "Rana pipiens",
+        "is_correct": false,
+        "distractor_note": "Rana pipiens is the northern leopard frog, a different species."
+      },
+      {
+        "id": "spo-005-c",
+        "text": "Danio rerio",
+        "is_correct": false,
+        "distractor_note": "Danio rerio is the zebrafish, a fish, not a frog."
+      },
+      {
+        "id": "spo-005-d",
+        "text": "Ambystoma mexicanum",
+        "is_correct": false,
+        "distractor_note": "Ambystoma mexicanum is the axolotl, a salamander."
+      }
+    ]
+  },
+  {
+    "id": "spo-006",
+    "objective": "SPO",
+    "difficulty": "medium",
+    "stem": "The domestic pig (swine), used in cardiovascular and dermal research, has the scientific name:",
+    "explanation": "The domestic pig is Sus scrofa (often Sus scrofa domesticus). Its skin and cardiovascular system resemble humans', making it a valuable model.",
+    "hook": "Pig = Sus scrofa.",
+    "source": "ALAT Manual, Taxonomy",
+    "options": [
+      {
+        "id": "spo-006-a",
+        "text": "Sus scrofa",
+        "is_correct": true
+      },
+      {
+        "id": "spo-006-b",
+        "text": "Ovis aries",
+        "is_correct": false,
+        "distractor_note": "Ovis aries is the domestic sheep."
+      },
+      {
+        "id": "spo-006-c",
+        "text": "Capra hircus",
+        "is_correct": false,
+        "distractor_note": "Capra hircus is the domestic goat."
+      },
+      {
+        "id": "spo-006-d",
+        "text": "Bos taurus",
+        "is_correct": false,
+        "distractor_note": "Bos taurus is domestic cattle."
+      }
+    ]
+  },
+  {
+    "id": "spo-007",
+    "objective": "SPO",
+    "difficulty": "easy",
+    "stem": "The genus and species of the domestic dog is:",
+    "explanation": "The domestic dog is Canis familiaris (also written Canis lupus familiaris). Under the AWA, dogs require a documented exercise plan.",
+    "hook": "Dog = Canis familiaris.",
+    "source": "ALAT Manual, Taxonomy",
+    "options": [
+      {
+        "id": "spo-007-a",
+        "text": "Canis familiaris",
+        "is_correct": true
+      },
+      {
+        "id": "spo-007-b",
+        "text": "Felis catus",
+        "is_correct": false,
+        "distractor_note": "Felis catus is the domestic cat."
+      },
+      {
+        "id": "spo-007-c",
+        "text": "Vulpes vulpes",
+        "is_correct": false,
+        "distractor_note": "Vulpes vulpes is the red fox, not the domestic dog."
+      },
+      {
+        "id": "spo-007-d",
+        "text": "Canis latrans",
+        "is_correct": false,
+        "distractor_note": "Canis latrans is the coyote, a wild species."
+      }
+    ]
+  },
+  {
+    "id": "spo-008",
+    "objective": "SPO",
+    "difficulty": "easy",
+    "stem": "The genus and species of the domestic cat is:",
+    "explanation": "The domestic cat is Felis catus, an obligate carnivore that requires dietary taurine.",
+    "hook": "Cat = Felis catus.",
+    "source": "ALAT Manual, Taxonomy",
+    "options": [
+      {
+        "id": "spo-008-a",
+        "text": "Felis catus",
+        "is_correct": true
+      },
+      {
+        "id": "spo-008-b",
+        "text": "Canis familiaris",
+        "is_correct": false,
+        "distractor_note": "Canis familiaris is the domestic dog."
+      },
+      {
+        "id": "spo-008-c",
+        "text": "Lynx rufus",
+        "is_correct": false,
+        "distractor_note": "Lynx rufus is the bobcat, a wild felid."
+      },
+      {
+        "id": "spo-008-d",
+        "text": "Mustela putorius furo",
+        "is_correct": false,
+        "distractor_note": "Mustela putorius furo is the ferret."
+      }
+    ]
+  },
+  {
+    "id": "ohs-003",
+    "objective": "OHS",
+    "difficulty": "medium",
+    "stem": "Which zoonotic disease can be transmitted to personnel through the bite of an infected rat?",
+    "explanation": "Rat-bite fever, caused by Streptobacillus moniliformis (and sometimes Spirillum minus), can be transmitted through bites or scratches from infected rats.",
+    "hook": "Rat bite → rat-bite fever (Streptobacillus moniliformis).",
+    "source": "ALAT Manual, Zoonoses",
+    "options": [
+      {
+        "id": "ohs-003-a",
+        "text": "Rat-bite fever (Streptobacillus moniliformis)",
+        "is_correct": true
+      },
+      {
+        "id": "ohs-003-b",
+        "text": "Herpes B virus infection",
+        "is_correct": false,
+        "distractor_note": "Herpes B is associated with macaque exposure, not rats."
+      },
+      {
+        "id": "ohs-003-c",
+        "text": "Feline leukemia",
+        "is_correct": false,
+        "distractor_note": "Feline leukemia is a cat retrovirus and is not zoonotic from rats."
+      },
+      {
+        "id": "ohs-003-d",
+        "text": "Snuffles",
+        "is_correct": false,
+        "distractor_note": "Snuffles is a rabbit respiratory disease, not a human zoonosis from rats."
+      }
+    ]
+  },
+  {
+    "id": "ohs-004",
+    "objective": "OHS",
+    "difficulty": "medium",
+    "stem": "A technician develops sneezing, nasal congestion, and itchy eyes within minutes of changing rat cages. The most likely explanation is:",
+    "explanation": "These are classic signs of laboratory animal allergy (LAA), driven by inhaled rodent allergens (urinary proteins, dander). Controls include ventilated changing stations and respiratory protection, plus reporting to occupational health.",
+    "hook": "Symptoms on cage change = laboratory animal allergy.",
+    "source": "ALAT Manual, Occupational health",
+    "options": [
+      {
+        "id": "ohs-004-a",
+        "text": "Laboratory animal allergy",
+        "is_correct": true
+      },
+      {
+        "id": "ohs-004-b",
+        "text": "A contagious common cold from the rats",
+        "is_correct": false,
+        "distractor_note": "Rats do not give people the common cold; the timing points to allergy."
+      },
+      {
+        "id": "ohs-004-c",
+        "text": "Carbon dioxide toxicity",
+        "is_correct": false,
+        "distractor_note": "CO2 exposure does not cause itchy eyes and sneezing on cage change."
+      },
+      {
+        "id": "ohs-004-d",
+        "text": "Vitamin C deficiency",
+        "is_correct": false,
+        "distractor_note": "Scurvy does not cause acute respiratory allergy symptoms."
+      }
+    ]
+  },
+  {
+    "id": "ohs-005",
+    "objective": "OHS",
+    "difficulty": "hard",
+    "stem": "Lymphocytic choriomeningitis virus (LCMV), a zoonotic agent of particular concern in pregnant workers, is most associated with which laboratory animals?",
+    "explanation": "LCMV is carried by mice (and hamsters) and can infect humans, posing serious risk in pregnancy. Rodent health monitoring and PPE reduce exposure.",
+    "hook": "LCMV → mice and hamsters.",
+    "source": "ALAT Manual, Zoonoses",
+    "options": [
+      {
+        "id": "ohs-005-a",
+        "text": "Mice and hamsters",
+        "is_correct": true
+      },
+      {
+        "id": "ohs-005-b",
+        "text": "Rabbits",
+        "is_correct": false,
+        "distractor_note": "Rabbits are not the reservoir for LCMV."
+      },
+      {
+        "id": "ohs-005-c",
+        "text": "Dogs",
+        "is_correct": false,
+        "distractor_note": "Dogs are not the typical LCMV reservoir."
+      },
+      {
+        "id": "ohs-005-d",
+        "text": "Zebrafish",
+        "is_correct": false,
+        "distractor_note": "Fish do not carry LCMV."
+      }
+    ]
+  },
+  {
+    "id": "ohs-006",
+    "objective": "OHS",
+    "difficulty": "hard",
+    "stem": "Q fever, an occupational zoonosis especially associated with parturient (birthing) sheep and other ruminants, is caused by:",
+    "explanation": "Q fever is caused by Coxiella burnetii, which is highly concentrated in birth fluids and placentas of infected ruminants and is readily aerosolized.",
+    "hook": "Q fever = Coxiella burnetii from birthing ruminants.",
+    "source": "ALAT Manual, Zoonoses",
+    "options": [
+      {
+        "id": "ohs-006-a",
+        "text": "Coxiella burnetii",
+        "is_correct": true
+      },
+      {
+        "id": "ohs-006-b",
+        "text": "Streptobacillus moniliformis",
+        "is_correct": false,
+        "distractor_note": "That bacterium causes rat-bite fever, not Q fever."
+      },
+      {
+        "id": "ohs-006-c",
+        "text": "Pasteurella multocida",
+        "is_correct": false,
+        "distractor_note": "Pasteurella causes rabbit snuffles, not Q fever."
+      },
+      {
+        "id": "ohs-006-d",
+        "text": "Macacine herpesvirus 1",
+        "is_correct": false,
+        "distractor_note": "That is Herpes B virus from macaques."
+      }
+    ]
+  },
+  {
+    "id": "gen-003",
+    "objective": "GEN",
+    "difficulty": "medium",
+    "stem": "An outbred stock of animals is maintained in order to:",
+    "explanation": "Outbred stocks are bred (using schemes that minimize inbreeding) to preserve genetic heterogeneity, modeling the variability of a natural population.",
+    "hook": "Outbred = keep genetic variability high.",
+    "source": "ALAT Manual, Genetics",
+    "options": [
+      {
+        "id": "gen-003-a",
+        "text": "Maintain maximum genetic variability",
+        "is_correct": true
+      },
+      {
+        "id": "gen-003-b",
+        "text": "Make every animal genetically identical",
+        "is_correct": false,
+        "distractor_note": "That describes an inbred strain, the opposite of outbred."
+      },
+      {
+        "id": "gen-003-c",
+        "text": "Insert a foreign gene into the genome",
+        "is_correct": false,
+        "distractor_note": "That describes producing a transgenic animal."
+      },
+      {
+        "id": "gen-003-d",
+        "text": "Eliminate a single targeted gene",
+        "is_correct": false,
+        "distractor_note": "That describes a knockout, not an outbred stock."
+      }
+    ]
+  },
+  {
+    "id": "gen-004",
+    "objective": "GEN",
+    "difficulty": "hard",
+    "stem": "A 'knockout' mouse is one in which:",
+    "explanation": "A knockout has a specific gene inactivated or disrupted so its function can be studied. This differs from a transgenic animal, which carries an added foreign gene.",
+    "hook": "Knockout = a gene switched OFF.",
+    "source": "ALAT Manual, Genetics",
+    "options": [
+      {
+        "id": "gen-004-a",
+        "text": "A specific gene has been inactivated",
+        "is_correct": true
+      },
+      {
+        "id": "gen-004-b",
+        "text": "A foreign gene has been added to the genome",
+        "is_correct": false,
+        "distractor_note": "Adding a gene produces a transgenic animal, not a knockout."
+      },
+      {
+        "id": "gen-004-c",
+        "text": "Two inbred strains were crossed once",
+        "is_correct": false,
+        "distractor_note": "That produces an F1 hybrid."
+      },
+      {
+        "id": "gen-004-d",
+        "text": "It underwent 20 generations of sib mating",
+        "is_correct": false,
+        "distractor_note": "That produces an inbred strain, unrelated to gene knockout."
+      }
+    ]
+  },
+  {
+    "id": "gen-005",
+    "objective": "GEN",
+    "difficulty": "medium",
+    "stem": "A transgenic animal is one that:",
+    "explanation": "A transgenic animal carries an inserted segment of foreign (exogenous) DNA in its genome, which is then transmitted to offspring.",
+    "hook": "Transgenic = a gene added IN.",
+    "source": "ALAT Manual, Genetics",
+    "options": [
+      {
+        "id": "gen-005-a",
+        "text": "Carries an inserted foreign gene",
+        "is_correct": true
+      },
+      {
+        "id": "gen-005-b",
+        "text": "Has had a gene deleted/inactivated",
+        "is_correct": false,
+        "distractor_note": "Gene deletion describes a knockout, not a transgenic."
+      },
+      {
+        "id": "gen-005-c",
+        "text": "Is the F1 cross of two inbred strains",
+        "is_correct": false,
+        "distractor_note": "That is an F1 hybrid, made by breeding rather than gene insertion."
+      },
+      {
+        "id": "gen-005-d",
+        "text": "Arose from a spontaneous mutation only",
+        "is_correct": false,
+        "distractor_note": "Transgenics are deliberately engineered, not merely spontaneous mutants."
+      }
+    ]
+  },
+  {
+    "id": "gen-006",
+    "objective": "GEN",
+    "difficulty": "hard",
+    "stem": "In the inbred mouse strain designation 'C57BL/6J', what does the 'J' indicate?",
+    "explanation": "The letters after the slash identify the substrain/holder. 'J' designates The Jackson Laboratory. Substrain matters because genetic drift can create real phenotypic differences (e.g., C57BL/6J vs 6N).",
+    "hook": "C57BL/6J — the 'J' = Jackson Laboratory.",
+    "source": "ALAT Manual, Nomenclature; ILAR standardized nomenclature",
+    "options": [
+      {
+        "id": "gen-006-a",
+        "text": "The holding institution/substrain (The Jackson Laboratory)",
+        "is_correct": true
+      },
+      {
+        "id": "gen-006-b",
+        "text": "The generation number of inbreeding",
+        "is_correct": false,
+        "distractor_note": "Generation count is written differently (e.g., F or N numbers), not a single trailing letter code."
+      },
+      {
+        "id": "gen-006-c",
+        "text": "The coat color",
+        "is_correct": false,
+        "distractor_note": "Coat color is not encoded by the substrain letter."
+      },
+      {
+        "id": "gen-006-d",
+        "text": "The sex of the animals",
+        "is_correct": false,
+        "distractor_note": "Sex is not part of strain nomenclature."
+      }
+    ]
+  },
+  {
+    "id": "gen-007",
+    "objective": "GEN",
+    "difficulty": "hard",
+    "stem": "A congenic strain is produced by:",
+    "explanation": "A congenic strain is created by repeatedly backcrossing to an inbred 'background' strain (commonly ten or more backcross generations) to transfer a single gene or small chromosomal region while keeping the rest of the genome identical to the background.",
+    "hook": "Congenic = backcross a single gene onto an inbred background.",
+    "source": "ALAT Manual, Genetics",
+    "options": [
+      {
+        "id": "gen-007-a",
+        "text": "Repeated backcrossing to move one locus onto an inbred background",
+        "is_correct": true
+      },
+      {
+        "id": "gen-007-b",
+        "text": "A single cross of two inbred strains",
+        "is_correct": false,
+        "distractor_note": "A single cross gives an F1 hybrid, not a congenic strain."
+      },
+      {
+        "id": "gen-007-c",
+        "text": "Random mating to maximize variability",
+        "is_correct": false,
+        "distractor_note": "That describes maintaining an outbred stock."
+      },
+      {
+        "id": "gen-007-d",
+        "text": "Inserting foreign DNA into an embryo",
+        "is_correct": false,
+        "distractor_note": "That produces a transgenic animal, not a congenic strain."
+      }
+    ]
+  },
+  {
+    "id": "ane-003",
+    "objective": "ANE",
+    "difficulty": "medium",
+    "stem": "Because anesthetized rodents lose body heat very quickly, the technician should:",
+    "explanation": "Anesthesia impairs thermoregulation and small body size means rapid heat loss; supplemental heat (circulating warm-water pad, warming device) is needed to prevent hypothermia, which slows recovery.",
+    "hook": "Anesthetized rodent = keep it warm.",
+    "source": "ALAT Manual, Anesthesia support",
+    "options": [
+      {
+        "id": "ane-003-a",
+        "text": "Provide supplemental heat to prevent hypothermia",
+        "is_correct": true
+      },
+      {
+        "id": "ane-003-b",
+        "text": "Actively cool the animal with ice packs",
+        "is_correct": false,
+        "distractor_note": "Cooling worsens hypothermia and delays recovery."
+      },
+      {
+        "id": "ane-003-c",
+        "text": "Do nothing; temperature does not matter under anesthesia",
+        "is_correct": false,
+        "distractor_note": "Hypothermia is a real and dangerous risk under anesthesia."
+      },
+      {
+        "id": "ane-003-d",
+        "text": "Increase the isoflurane concentration",
+        "is_correct": false,
+        "distractor_note": "Deeper anesthesia further depresses thermoregulation; it does not warm the animal."
+      }
+    ]
+  },
+  {
+    "id": "ane-004",
+    "objective": "ANE",
+    "difficulty": "medium",
+    "stem": "During isoflurane anesthesia, a rat's respirations become very slow and shallow and its membranes look dusky. The appropriate first response is to:",
+    "explanation": "Slow, shallow breathing and poor color signal anesthesia that is too deep. The first action is to decrease the vaporizer setting (and ensure oxygen flow/airway), then reassess depth.",
+    "hook": "Too deep → turn the vaporizer DOWN.",
+    "source": "ALAT Manual, Anesthetic monitoring",
+    "options": [
+      {
+        "id": "ane-004-a",
+        "text": "Decrease the vaporizer (isoflurane) setting",
+        "is_correct": true
+      },
+      {
+        "id": "ane-004-b",
+        "text": "Increase the vaporizer setting",
+        "is_correct": false,
+        "distractor_note": "More anesthetic would deepen the dangerous depression further."
+      },
+      {
+        "id": "ane-004-c",
+        "text": "Add a second animal to the circuit",
+        "is_correct": false,
+        "distractor_note": "Irrelevant to the animal's depth of anesthesia."
+      },
+      {
+        "id": "ane-004-d",
+        "text": "Ignore it as a normal finding",
+        "is_correct": false,
+        "distractor_note": "These are danger signs requiring immediate intervention."
+      }
+    ]
+  },
+  {
+    "id": "ane-005",
+    "objective": "ANE",
+    "difficulty": "hard",
+    "stem": "A neuromuscular blocking agent (paralytic) such as a curare-type drug must never be used alone because it:",
+    "explanation": "Paralytics abolish movement but provide NO anesthesia or analgesia; used alone an animal would be conscious and able to feel pain while unable to move. They must be combined with a true anesthetic.",
+    "hook": "Paralytic ≠ anesthetic — never use it alone.",
+    "source": "ALAT Manual; AVMA principles",
+    "options": [
+      {
+        "id": "ane-005-a",
+        "text": "Provides no anesthesia or pain relief — the animal could be conscious",
+        "is_correct": true
+      },
+      {
+        "id": "ane-005-b",
+        "text": "Is itself a complete general anesthetic",
+        "is_correct": false,
+        "distractor_note": "It is not an anesthetic at all; it only causes paralysis."
+      },
+      {
+        "id": "ane-005-c",
+        "text": "Provides excellent analgesia on its own",
+        "is_correct": false,
+        "distractor_note": "Paralytics give zero analgesia."
+      },
+      {
+        "id": "ane-005-d",
+        "text": "Reverses isoflurane",
+        "is_correct": false,
+        "distractor_note": "It does not reverse inhalant anesthesia."
+      }
+    ]
+  },
+  {
+    "id": "eut-004",
+    "objective": "EUT",
+    "difficulty": "medium",
+    "stem": "Why does the AVMA advise AGAINST pre-filling a CO2 chamber to a high concentration before placing a conscious rodent inside?",
+    "explanation": "High CO2 concentrations are aversive and cause pain to mucous membranes (forming carbonic acid). A gradual fill with the animal already inside is less distressing.",
+    "hook": "High CO2 hurts mucous membranes — fill gradually.",
+    "source": "AVMA Guidelines for the Euthanasia of Animals: 2020 Edition",
+    "options": [
+      {
+        "id": "eut-004-a",
+        "text": "High CO2 concentrations are aversive and painful to mucous membranes",
+        "is_correct": true
+      },
+      {
+        "id": "eut-004-b",
+        "text": "Pre-filling is simply too slow",
+        "is_correct": false,
+        "distractor_note": "The concern is animal distress, not speed."
+      },
+      {
+        "id": "eut-004-c",
+        "text": "It only wastes compressed gas",
+        "is_correct": false,
+        "distractor_note": "Gas cost is not the welfare rationale."
+      },
+      {
+        "id": "eut-004-d",
+        "text": "It would freeze the animal",
+        "is_correct": false,
+        "distractor_note": "Freezing is not the reason; mucosal pain and aversion are."
+      }
+    ]
+  },
+  {
+    "id": "eut-005",
+    "objective": "EUT",
+    "difficulty": "medium",
+    "stem": "Before disposing of an animal following euthanasia, death must be confirmed by:",
+    "explanation": "Death is verified by checking for cessation of vital signs — no heartbeat AND no respiration — often supplemented by other signs or a secondary physical method, because animals can recover if removed prematurely.",
+    "hook": "Confirm death: no heartbeat AND no breathing.",
+    "source": "AVMA 2020; ALAT Manual",
+    "options": [
+      {
+        "id": "eut-005-a",
+        "text": "Confirming the absence of both heartbeat and respiration",
+        "is_correct": true
+      },
+      {
+        "id": "eut-005-b",
+        "text": "Assuming death after exactly one minute of gas",
+        "is_correct": false,
+        "distractor_note": "Elapsed time alone does not confirm death."
+      },
+      {
+        "id": "eut-005-c",
+        "text": "Observing that the cage is quiet",
+        "is_correct": false,
+        "distractor_note": "A quiet animal may still be alive; vital signs must be checked."
+      },
+      {
+        "id": "eut-005-d",
+        "text": "Placing the animal in a freezer to be sure",
+        "is_correct": false,
+        "distractor_note": "Freezing a possibly-living animal is inhumane and does not verify death."
+      }
+    ]
+  },
+  {
+    "id": "res-004",
+    "objective": "RES",
+    "difficulty": "easy",
+    "stem": "A subcutaneous (SC) injection is administered:",
+    "explanation": "A subcutaneous injection is placed under the skin into the loose connective tissue (commonly over the scruff or flank), where it is absorbed gradually.",
+    "hook": "SC = under the skin (the scruff).",
+    "source": "ALAT Manual, Injection routes",
+    "options": [
+      {
+        "id": "res-004-a",
+        "text": "Under the skin",
+        "is_correct": true
+      },
+      {
+        "id": "res-004-b",
+        "text": "Into a muscle",
+        "is_correct": false,
+        "distractor_note": "That is the intramuscular (IM) route."
+      },
+      {
+        "id": "res-004-c",
+        "text": "Into a vein",
+        "is_correct": false,
+        "distractor_note": "That is the intravenous (IV) route."
+      },
+      {
+        "id": "res-004-d",
+        "text": "Into the abdominal cavity",
+        "is_correct": false,
+        "distractor_note": "That is the intraperitoneal (IP) route."
+      }
+    ]
+  },
+  {
+    "id": "res-005",
+    "objective": "RES",
+    "difficulty": "hard",
+    "stem": "A healthy 300 g rat has a total blood volume of roughly 21–24 mL (about 7–8% of body weight). The maximum recommended single blood collection (about 10% of blood volume) is therefore approximately:",
+    "explanation": "Total blood volume ≈ 7–8% of body weight → ~21–24 mL for a 300 g rat. A safe single sample is about 10% of that, i.e., roughly 2 mL, with several weeks to recover.",
+    "hook": "10% of ~22 mL ≈ 2 mL single draw.",
+    "source": "ALAT Manual, Blood collection; NIH/ARAC guidelines",
+    "options": [
+      {
+        "id": "res-005-a",
+        "text": "About 2 mL",
+        "is_correct": true
+      },
+      {
+        "id": "res-005-b",
+        "text": "About 10 mL",
+        "is_correct": false,
+        "distractor_note": "~10 mL is nearly half the blood volume — dangerously excessive."
+      },
+      {
+        "id": "res-005-c",
+        "text": "About 22 mL",
+        "is_correct": false,
+        "distractor_note": "That is essentially the entire blood volume — fatal."
+      },
+      {
+        "id": "res-005-d",
+        "text": "About 0.2 mL",
+        "is_correct": false,
+        "distractor_note": "That is only ~1% of blood volume — far below the allowable single draw."
+      }
+    ]
+  },
+  {
+    "id": "res-006",
+    "objective": "RES",
+    "difficulty": "medium",
+    "stem": "Controlled substances such as ketamine and pentobarbital must be:",
+    "explanation": "DEA-scheduled controlled substances must be stored securely (e.g., locked, double-locked for some) and tracked with accurate usage logs documenting amounts used and remaining.",
+    "hook": "Controlled drugs: lock them up and log every use.",
+    "source": "ALAT Manual; DEA controlled-substance regulations",
+    "options": [
+      {
+        "id": "res-006-a",
+        "text": "Stored securely and tracked with usage logs",
+        "is_correct": true
+      },
+      {
+        "id": "res-006-b",
+        "text": "Left on the bench for convenience",
+        "is_correct": false,
+        "distractor_note": "Open storage violates DEA security requirements."
+      },
+      {
+        "id": "res-006-c",
+        "text": "Tracked only by the USDA",
+        "is_correct": false,
+        "distractor_note": "Controlled-substance accountability is a DEA requirement handled by the registrant, not USDA."
+      },
+      {
+        "id": "res-006-d",
+        "text": "Discarded down the sink when unused",
+        "is_correct": false,
+        "distractor_note": "Controlled substances require documented, compliant disposal — not sink disposal."
+      }
+    ]
+  },
+  {
+    "id": "res-007",
+    "objective": "RES",
+    "difficulty": "medium",
+    "stem": "The most common site for intravenous (IV) injection in a mouse is the:",
+    "explanation": "The lateral tail vein is the standard accessible site for IV injection in mice; warming the tail dilates the vein and aids access.",
+    "hook": "Mouse IV = lateral tail vein.",
+    "source": "ALAT Manual, Injection techniques",
+    "options": [
+      {
+        "id": "res-007-a",
+        "text": "Lateral tail vein",
+        "is_correct": true
+      },
+      {
+        "id": "res-007-b",
+        "text": "Marginal ear vein",
+        "is_correct": false,
+        "distractor_note": "The marginal ear vein is used in rabbits, not mice."
+      },
+      {
+        "id": "res-007-c",
+        "text": "Cephalic vein of the foreleg",
+        "is_correct": false,
+        "distractor_note": "The cephalic vein is used in dogs; it is impractical in a mouse."
+      },
+      {
+        "id": "res-007-d",
+        "text": "Jugular vein only",
+        "is_correct": false,
+        "distractor_note": "Jugular access in mice is a surgical approach, not the common routine IV site."
+      }
     ]
   }
 ]

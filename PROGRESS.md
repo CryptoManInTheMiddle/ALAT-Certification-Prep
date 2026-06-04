@@ -27,7 +27,7 @@ npm test           # vitest — 16 passing engine + content tests
 | Phase | Scope | Status |
 |------|-------|--------|
 | 0 | Scaffold: Next 14 App Router, Tailwind, TS, clinical dark tokens | ✅ Done |
-| 1 | Schema + RLS, objectives/lessons/study-plan seed, 55 verified items, validator | ✅ Done |
+| 1 | Schema + RLS, objectives/lessons/study-plan seed, 126 verified items, validator | ✅ Done |
 | 2 | Practice engine: id-based shuffle, latency/confidence, rich feedback, attempts, scheduler | ✅ Done |
 | 3 | FSRS (`ts-fsrs`), `review_state` + `objective_mastery`, due-only Review | ✅ Done |
 | 4 | 120-Q blueprint-weighted timed simulator, readiness score + dashboard | ✅ Done |
@@ -50,11 +50,13 @@ npm test           # vitest — 16 passing engine + content tests
 
 ## Known gaps / next steps
 
-1. **Seed bank size.** 55 human-verified items cover all 20 objectives (2–4 each).
-   Launch acceptance wants **≥5 per objective and ≥150 total**. Grow via the
-   Phase 6 generation pipeline (each candidate is validated + held inactive for
-   human spot-check) plus continued manual authoring. _Accuracy guardrail: do not
-   activate generated items without review._
+1. **Seed bank size.** 126 human-verified items cover all 20 objectives
+   (5–8 each — the ≥5-per-objective launch bar is met and test-enforced),
+   including a set of genus/species binomial-nomenclature items. Total is still
+   short of the **≥150** stretch target; grow via the Phase 6 generation pipeline
+   (each candidate validated + held inactive for human spot-check) plus continued
+   manual authoring. _Accuracy guardrail: do not activate generated items without
+   review._
 2. **PWA icons are SVG.** `public/icons/*.svg` install fine on modern Chrome;
    add rasterized 192/512 PNGs for broadest store/Lighthouse compatibility.
 3. **Supabase live wiring.** Schema + loader + clients exist but were not run
@@ -77,7 +79,8 @@ npm test           # vitest — 16 passing engine + content tests
 - [x] Installable PWA; offline practice works (bundled bank + service worker).
 - [x] Generation pipeline built with grounding + validation + human-review flag.
 - [x] No secrets in client bundle (verified).
-- [ ] ≥5 verified items per objective / ≥150 total _(currently 55 — see gap #1)._
+- [x] ≥5 verified items per objective _(126 items, 5–8 each — test-enforced)._
+- [ ] ≥150 total verified items _(currently 126 — stretch target, see gap #1)._
 - [ ] Deployed on Vercel + live Supabase RLS verified _(infra step — see gap #3)._
 - [ ] Offline attempts sync to Supabase on reconnect _(see gap #4)._
 - [ ] Magic-link login on phone _(auth UI pending — see gap #3)._
