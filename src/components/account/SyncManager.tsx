@@ -11,15 +11,20 @@ import { startSync, stopSync } from "@/lib/store/sync";
  */
 export default function SyncManager() {
   useEffect(() => {
-    useAuth.getState().init();
-    const unsub = useAuth.subscribe((state) => {
-      if (state.status === "signed-in" && state.user) startSync(state.user.id);
-      else if (state.status === "signed-out") stopSync();
-    });
-    // Handle the case where we're already signed in at mount.
-    const s = useAuth.getState();
-    if (s.status === "signed-in" && s.user) startSync(s.user.id);
-    return () => unsub();
+    try {
+      useAuth.getState().init();
+      const unsub = useAuth.subscribe((state) => {
+        if (state.status === "signed-in" && state.user) startSync(state.user.id);
+        else if (state.status === "signed-out") stopSync();
+      });
+      // Handle the case where we're already signed in at mount.
+      const s = useAuth.getState();
+      if (s.status === "signed-in" && s.user) startSync(s.user.id);
+      return () => unsub();
+    } catch {
+      // Sync is best-effort; the app must keep working offline regardless.
+      return () => {};
+    }
   }, []);
   return null;
 }

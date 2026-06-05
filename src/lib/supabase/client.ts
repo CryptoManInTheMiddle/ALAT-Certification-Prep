@@ -18,16 +18,21 @@ let client: SupabaseClient | null = null;
 export function getSupabaseBrowser(): SupabaseClient | null {
   if (!isSupabaseConfigured) return null;
   if (client) return client;
-  client = createClient(url!, anon!, {
-    auth: {
-      persistSession: true,
-      autoRefreshToken: true,
-      detectSessionInUrl: true,
-      // Implicit flow + a typed 6-digit code both work when the magic-link email
-      // opens in a different browser context than an installed PWA.
-      flowType: "implicit",
-      storageKey: "labready-auth",
-    },
-  });
-  return client;
+  try {
+    client = createClient(url!, anon!, {
+      auth: {
+        persistSession: true,
+        autoRefreshToken: true,
+        detectSessionInUrl: true,
+        // Implicit flow + a typed 6-digit code both work when the magic-link email
+        // opens in a different browser context than an installed PWA.
+        flowType: "implicit",
+        storageKey: "labready-auth",
+      },
+    });
+    return client;
+  } catch {
+    // Never let client construction crash the app — fall back to offline mode.
+    return null;
+  }
 }

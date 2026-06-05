@@ -28,48 +28,64 @@ export const useAuth = create<AuthState>((set, get) => ({
 
   init: () => {
     if (get().initialized) return;
-    const sb = getSupabaseBrowser();
-    if (!sb) {
+    try {
+      const sb = getSupabaseBrowser();
+      if (!sb) {
+        set({ status: "unconfigured", initialized: true });
+        return;
+      }
+      set({ initialized: true });
+
+      sb.auth
+        .getSession()
+        .then(({ data }) => {
+          set({
+            session: data.session,
+            user: data.session?.user ?? null,
+            status: data.session ? "signed-in" : "signed-out",
+          });
+        })
+        .catch(() => set({ status: "signed-out" }));
+
+      sb.auth.onAuthStateChange((_event, session) => {
+        set({
+          session,
+          user: session?.user ?? null,
+          status: session ? "signed-in" : "signed-out",
+        });
+      });
+    } catch {
+      // If anything in auth setup fails, degrade gracefully to offline mode.
       set({ status: "unconfigured", initialized: true });
-      return;
     }
-    set({ initialized: true });
-
-    sb.auth.getSession().then(({ data }) => {
-      set({
-        session: data.session,
-        user: data.session?.user ?? null,
-        status: data.session ? "signed-in" : "signed-out",
-      });
-    });
-
-    sb.auth.onAuthStateChange((_event, session) => {
-      set({
-        session,
-        user: session?.user ?? null,
-        status: session ? "signed-in" : "signed-out",
-      });
-    });
   },
 
   signIn: async (email) => {
     const sb = getSupabaseBrowser();
     if (!sb) return { error: "Sync is not configured." };
-    const { error } = await sb.auth.signInWithOtp({
-      email,
-      options: {
-        shouldCreateUser: true,
-        emailRedirectTo: typeof window !== "undefined" ? window.location.origin : undefined,
-      },
-    });
-    return { error: error?.message ?? null };
+    try {
+      const { error } = await sb.auth.signInWithOtp({
+        email,
+        options: {
+          shouldCreateUser: true,
+          emailRedirectTo: typeof window !== "undefined" ? window.location.origin : undefined,
+        },
+      });
+      return { error: error?.message ?? null };
+    } catch (e) {
+      return { error: e instanceof Error ? e.message : "Could not send the email." };
+    }
   },
 
   verifyCode: async (email, token) => {
     const sb = getSupabaseBrowser();
     if (!sb) return { error: "Sync is not configured." };
-    const { error } = await sb.auth.verifyOtp({ email, token: token.trim(), type: "email" });
-    return { error: error?.message ?? null };
+    try {
+      const { error } = await sb.auth.verifyOtp({ email, token: token.trim(), type: "email" });
+      return { error: error?.message ?? null };
+    } catch (e) {
+      return { error: e instanceof Error ? e.message : "Could not verify the code." };
+    }
   },
 
   signOut: async () => {
