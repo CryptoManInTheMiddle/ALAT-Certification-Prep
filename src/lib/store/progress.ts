@@ -30,6 +30,7 @@ interface ProgressState {
   notes: string;
   streakDays: number;
   lastStudyDay: string | null; // YYYY-MM-DD
+  updatedAt: string | null; // ISO, bumped on every mutation (for sync merge)
 
   recordAnswer: (
     item: Item,
@@ -38,7 +39,21 @@ interface ProgressState {
   ) => GradedAnswer;
   recordSession: (s: Omit<SessionRecord, "id">) => void;
   setNotes: (body: string) => void;
+  /** Replace state with a merged (local + remote) snapshot — used by sync. */
+  applyRemote: (remote: ProgressSlice) => void;
   reset: () => void;
+}
+
+/** The portion of state that syncs to Supabase (one JSONB blob per user). */
+export interface ProgressSlice {
+  reviewState: Record<string, ReviewState>;
+  mastery: Record<string, ObjectiveMastery>;
+  attempts: Attempt[];
+  sessions: SessionRecord[];
+  notes: string;
+  streakDays: number;
+  lastStudyDay: string | null;
+  updatedAt: string | null;
 }
 
 function todayKey(d = new Date()): string {
@@ -63,6 +78,7 @@ export const useProgress = create<ProgressState>()(
       notes: "",
       streakDays: 0,
       lastStudyDay: null,
+      updatedAt: null,
 
       recordAnswer: (item, selectedOptionId, opts) => {
         const now = new Date();
@@ -98,6 +114,7 @@ export const useProgress = create<ProgressState>()(
           reviewState: { ...s.reviewState, [item.id]: nextReview },
           mastery: { ...s.mastery, [item.objective]: nextMastery },
           attempts: [...s.attempts, attempt],
+          updatedAt: now.toISOString(),
           ...bumpStreak(s),
         }));
 
@@ -116,10 +133,13 @@ export const useProgress = create<ProgressState>()(
       recordSession: (s) =>
         set((prev) => ({
           sessions: [...prev.sessions, { ...s, id: crypto.randomUUID() }],
+          updatedAt: new Date().toISOString(),
           ...bumpStreak(prev),
         })),
 
-      setNotes: (body) => set({ notes: body }),
+      setNotes: (body) => set({ notes: body, updatedAt: new Date().toISOString() }),
+
+      applyRemote: (remote) => set((local) => mergeSlices(local, remote)),
 
       reset: () =>
         set({
@@ -130,11 +150,78 @@ export const useProgress = create<ProgressState>()(
           notes: "",
           streakDays: 0,
           lastStudyDay: null,
+          updatedAt: null,
         }),
     }),
     { name: "labready-progress-v1" }
   )
 );
+
+// --- Sync helpers ---
+
+export function exportSlice(state: ProgressState): ProgressSlice {
+  return {
+    reviewState: state.reviewState,
+    mastery: state.mastery,
+    attempts: state.attempts,
+    sessions: state.sessions,
+    notes: state.notes,
+    streakDays: state.streakDays,
+    lastStudyDay: state.lastStudyDay,
+    updatedAt: state.updatedAt,
+  };
+}
+
+/**
+ * Non-destructive merge of a remote snapshot into local state. Designed so a
+ * cross-device sign-in never loses history:
+ *  - attempts/sessions: union by id
+ *  - reviewState: per item, keep the most recently reviewed
+ *  - mastery: per objective, keep the entry with more attempts
+ *  - scalars (notes / streak / lastStudyDay): from whichever side is newer
+ */
+function mergeSlices(local: ProgressSlice, remote: ProgressSlice): Partial<ProgressState> {
+  const unionById = <T extends { id: string }>(a: T[], b: T[]): T[] => {
+    const m = new Map<string, T>();
+    for (const x of a) m.set(x.id, x);
+    for (const x of b) if (!m.has(x.id)) m.set(x.id, x);
+    return [...m.values()];
+  };
+
+  const reviewState: Record<string, ReviewState> = { ...remote.reviewState };
+  for (const [id, rs] of Object.entries(local.reviewState)) {
+    const r = reviewState[id];
+    reviewState[id] = r && reviewedAfter(r, rs) ? r : rs;
+  }
+
+  const mastery: Record<string, ObjectiveMastery> = { ...remote.mastery };
+  for (const [code, m] of Object.entries(local.mastery)) {
+    const r = mastery[code];
+    mastery[code] = r && (r.attempts ?? 0) > (m.attempts ?? 0) ? r : m;
+  }
+
+  const remoteNewer = ts(remote.updatedAt) > ts(local.updatedAt);
+  const scalarSrc = remoteNewer ? remote : local;
+
+  return {
+    reviewState,
+    mastery,
+    attempts: unionById(local.attempts ?? [], remote.attempts ?? []),
+    sessions: unionById(local.sessions ?? [], remote.sessions ?? []),
+    notes: scalarSrc.notes ?? local.notes,
+    streakDays: Math.max(local.streakDays ?? 0, remote.streakDays ?? 0),
+    lastStudyDay: scalarSrc.lastStudyDay ?? local.lastStudyDay,
+    updatedAt: new Date().toISOString(),
+  };
+}
+
+function reviewedAfter(a: ReviewState, b: ReviewState): boolean {
+  return ts(a.last_review ?? a.due_at) > ts(b.last_review ?? b.due_at);
+}
+
+function ts(iso: string | null | undefined): number {
+  return iso ? new Date(iso).getTime() : 0;
+}
 
 // --- Derived selectors (used by dashboard / scheduler bridges) ---
 

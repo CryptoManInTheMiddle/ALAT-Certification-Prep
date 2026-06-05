@@ -3,6 +3,7 @@ import "./globals.css";
 import BottomTabBar from "@/components/nav/BottomTabBar";
 import ServiceWorkerRegistrar from "@/components/pwa/ServiceWorkerRegistrar";
 import InstallPrompt from "@/components/pwa/InstallPrompt";
+import SyncManager from "@/components/account/SyncManager";
 
 export const metadata: Metadata = {
   title: "LabReady — ALAT Prep",
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <BottomTabBar />
         <InstallPrompt />
         <ServiceWorkerRegistrar />
+        <SyncManager />
       </body>
     </html>
   );

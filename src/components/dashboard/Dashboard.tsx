@@ -30,9 +30,20 @@ export default function Dashboard() {
 
   return (
     <div className="space-y-5">
-      <header>
-        <h1 className="text-2xl font-bold">LabReady</h1>
-        <p className="text-sm text-muted">Your path to ALAT certification</p>
+      <header className="flex items-start justify-between">
+        <div>
+          <h1 className="text-2xl font-bold">LabReady</h1>
+          <p className="text-sm text-muted">Your path to ALAT certification</p>
+        </div>
+        <Link
+          href="/account"
+          aria-label="Account and sync"
+          className="rounded-full border border-ink-line bg-ink-raised p-2 text-clinical-300"
+        >
+          <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="8" r="3.5" /><path d="M5 20a7 7 0 0114 0" />
+          </svg>
+        </Link>
       </header>
 
       <ReadinessGauge readiness={readiness} />

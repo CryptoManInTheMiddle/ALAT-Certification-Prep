@@ -59,14 +59,18 @@ npm test           # vitest — 16 passing engine + content tests
    review._
 2. **PWA icons are SVG.** `public/icons/*.svg` install fine on modern Chrome;
    add rasterized 192/512 PNGs for broadest store/Lighthouse compatibility.
-3. **Supabase live wiring.** Schema + loader + clients exist but were not run
-   against a live project in this environment (no credentials). Next: run
-   `0001_init.sql`, `npx tsx supabase/seed/seed.ts`, wire magic-link auth UI, and
-   add a sync bridge so the local store flushes attempts to Supabase on reconnect.
-4. **Offline attempt queue → Supabase sync.** Local persistence works; the
-   reconnect-sync bridge to Supabase is still to be built (Phase 7 polish).
-5. **Readiness band calibration.** Bands use the spec's defaults; calibrate
+3. **Cloud sync — built, awaiting live keys.** Because the 126-item bank is
+   bundled (offline), Supabase only stores per-user PROGRESS as a single prefixed
+   `lr_progress` JSONB row (so it can reuse an existing Supabase project without
+   touching other apps). Magic-link auth (`/account`), a non-destructive
+   local↔cloud merge on sign-in, and debounced push-on-change are implemented and
+   stay dormant until `NEXT_PUBLIC_SUPABASE_URL` / `..._ANON_KEY` are set. To go
+   live: run `supabase/migrations/0002_labready_sync.sql`, set the Supabase Site
+   URL/redirect to the Vercel domain, add the two env vars in Vercel, redeploy.
+   Multi-user is handled by RLS (`user_id = auth.uid()`) — every user is isolated.
+4. **Readiness band calibration.** Bands use the spec's defaults; calibrate
    against accumulated simulator scores over time.
+5. **PNG icons / 150+ bank** remain the polish items above.
 
 ## Acceptance checklist (CLAUDE.md §12)
 
@@ -81,6 +85,6 @@ npm test           # vitest — 16 passing engine + content tests
 - [x] No secrets in client bundle (verified).
 - [x] ≥5 verified items per objective _(126 items, 5–8 each — test-enforced)._
 - [ ] ≥150 total verified items _(currently 126 — stretch target, see gap #1)._
-- [ ] Deployed on Vercel + live Supabase RLS verified _(infra step — see gap #3)._
-- [ ] Offline attempts sync to Supabase on reconnect _(see gap #4)._
-- [ ] Magic-link login on phone _(auth UI pending — see gap #3)._
+- [x] Deployed on Vercel (alat-certification-prep.vercel.app).
+- [x] Multi-user cloud sync built (RLS-isolated `lr_progress`) — awaiting live keys (gap #3).
+- [x] Magic-link login UI on phone (`/account`) — awaiting live keys (gap #3).

@@ -2,8 +2,8 @@
 // Strategy: precache the shell; network-first for navigation (fresh content
 // when online, cached fallback when offline); cache-first for static assets.
 
-const CACHE = "labready-v1";
-const SHELL = ["/", "/learn", "/practice", "/review", "/drill", "/simulate", "/progress", "/notes", "/manifest.json", "/icons/icon.svg"];
+const CACHE = "labready-v2";
+const SHELL = ["/", "/learn", "/practice", "/review", "/drill", "/simulate", "/progress", "/notes", "/account", "/manifest.json", "/icons/icon.svg"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
