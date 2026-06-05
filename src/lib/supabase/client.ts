@@ -23,7 +23,9 @@ export function getSupabaseBrowser(): SupabaseClient | null {
       persistSession: true,
       autoRefreshToken: true,
       detectSessionInUrl: true,
-      flowType: "pkce",
+      // Implicit flow + a typed 6-digit code both work when the magic-link email
+      // opens in a different browser context than an installed PWA.
+      flowType: "implicit",
       storageKey: "labready-auth",
     },
   });

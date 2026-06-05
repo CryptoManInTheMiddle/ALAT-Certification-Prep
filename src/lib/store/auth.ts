@@ -13,8 +13,10 @@ interface AuthState {
   initialized: boolean;
   /** Wire up auth state; safe to call repeatedly. */
   init: () => void;
-  /** Send a magic link to the given email. */
+  /** Send a magic link + 6-digit code to the given email. */
   signIn: (email: string) => Promise<{ error: string | null }>;
+  /** Verify a typed 6-digit code (works inside an installed PWA). */
+  verifyCode: (email: string, token: string) => Promise<{ error: string | null }>;
   signOut: () => Promise<void>;
 }
 
@@ -55,8 +57,18 @@ export const useAuth = create<AuthState>((set, get) => ({
     if (!sb) return { error: "Sync is not configured." };
     const { error } = await sb.auth.signInWithOtp({
       email,
-      options: { emailRedirectTo: typeof window !== "undefined" ? window.location.origin : undefined },
+      options: {
+        shouldCreateUser: true,
+        emailRedirectTo: typeof window !== "undefined" ? window.location.origin : undefined,
+      },
     });
+    return { error: error?.message ?? null };
+  },
+
+  verifyCode: async (email, token) => {
+    const sb = getSupabaseBrowser();
+    if (!sb) return { error: "Sync is not configured." };
+    const { error } = await sb.auth.verifyOtp({ email, token: token.trim(), type: "email" });
     return { error: error?.message ?? null };
   },
 

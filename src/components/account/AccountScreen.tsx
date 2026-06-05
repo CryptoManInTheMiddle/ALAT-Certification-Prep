@@ -9,9 +9,11 @@ export default function AccountScreen() {
   const status = useAuth((s) => s.status);
   const user = useAuth((s) => s.user);
   const signIn = useAuth((s) => s.signIn);
+  const verifyCode = useAuth((s) => s.verifyCode);
   const signOut = useAuth((s) => s.signOut);
 
   const [email, setEmail] = useState("");
+  const [code, setCode] = useState("");
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
@@ -27,6 +29,16 @@ export default function AccountScreen() {
     setBusy(false);
     if (error) setError(error);
     else setSent(true);
+  }
+
+  async function submitCode(e: React.FormEvent) {
+    e.preventDefault();
+    setError(null);
+    setBusy(true);
+    const { error } = await verifyCode(email.trim(), code);
+    setBusy(false);
+    if (error) setError(error);
+    // On success, onAuthStateChange flips status to signed-in automatically.
   }
 
   return (
@@ -69,16 +81,31 @@ export default function AccountScreen() {
       )}
 
       {status === "signed-out" && sent && (
-        <div className="card space-y-2 text-sm">
+        <form onSubmit={submitCode} className="card space-y-3 text-sm">
           <p className="text-lg font-semibold text-clinical-300">Check your email 📧</p>
           <p className="text-slate-300">
-            We sent a sign-in link to <span className="font-medium text-slate-100">{email}</span>. Tap it on
-            this phone to finish signing in. Your current progress will merge into your account.
+            We sent a sign-in email to <span className="font-medium text-slate-100">{email}</span>. Enter the
+            6-digit code below (most reliable in the installed app), or tap the link in the email.
           </p>
-          <button className="btn-ghost mt-2 text-sm" onClick={() => setSent(false)}>
+          <input
+            inputMode="numeric"
+            autoComplete="one-time-code"
+            pattern="[0-9]*"
+            maxLength={6}
+            placeholder="123456"
+            value={code}
+            onChange={(e) => setCode(e.target.value.replace(/\D/g, ""))}
+            className="w-full rounded-xl border border-ink-line bg-ink px-4 py-3 text-center text-2xl tracking-[0.4em] outline-none focus:border-clinical-500"
+          />
+          {error && <p className="text-sm text-signal-bad">{error}</p>}
+          <button className="btn-primary w-full disabled:opacity-50" disabled={busy || code.length < 6}>
+            {busy ? "Verifying…" : "Verify code & sign in"}
+          </button>
+          <p className="text-xs text-muted">Your current on-device progress will merge into your account.</p>
+          <button type="button" className="btn-ghost w-full text-sm" onClick={() => { setSent(false); setCode(""); setError(null); }}>
             Use a different email
           </button>
-        </div>
+        </form>
       )}
 
       {status === "signed-in" && (
